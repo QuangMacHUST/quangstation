@@ -20,7 +20,7 @@ pymedphys="^0.40.0"
 [tool.poetry.dev-dependencies]
 
 [tool.poetry.scripts]
-opentps = "opentps.gui:main.run"
+quangstation = "quangstation.gui:main.run"
 
 [build-system]
 requires = ["poetry-core>=1.2.0"]

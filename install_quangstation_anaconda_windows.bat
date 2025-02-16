@@ -6,10 +6,10 @@ if not defined CONDA_PREFIX (
     exit /b
 )
 
-conda env list | findstr /c:"OpenTPS" >nul 2>&1
+conda env list | findstr /c:"quangstation" >nul 2>&1
 if %errorlevel% == 1 (
-    echo Creating the OpenTPS environment
-    call conda create --name OpenTPS python=3.9
+    echo Creating the quangstation environment
+    call conda create --name quangstation python=3.9
 )
 
 call conda activate OpenTPS
@@ -34,5 +34,5 @@ pip3 install keras
 rem pip3 install cupy
 
 echo
-echo Start the OpenTPS GUI by running
-echo      start_opentps_anaconda_windows.bat
+echo Start the quangstation GUI by running
+echo      start_quangstation_anaconda_windows.bat

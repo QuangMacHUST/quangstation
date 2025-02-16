@@ -21,4 +21,4 @@ echo Virtual environment 'OpenTPS_venv' activated
 REM Run main.py
 set "PYTHONPATH=%~dp0opentps_core;%~dp0opentps_gui"
 
-python "%~dp0opentps_gui\opentps\gui\main.py"
+python "%~dp0gui\main.py"

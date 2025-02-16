@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ENV_PATH="$PWD/OpenTPS_venv"
+ENV_PATH="$PWD/quangstation_venv"
 
 # Directory that contains this script
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
@@ -11,7 +11,7 @@ if [ -d "$ENV_PATH" ]; then
     exit 1;
 fi
 
-echo "This script will install system libraries and tools that you will need to work with OpenTPS. At several points in the installation process apt will ask you to confirm the installation and updates of packages. The script will also create a virtual python environment in the CURRENT directory named $ENV_PATH that will be used to install the python dependencies of OpenTPS."
+echo "This script will install system libraries and tools that you will need to work with OpenTPS. At several points in the installation process apt will ask you to confirm the installation and updates of packages. The script will also create a virtual python environment in the CURRENT directory named $ENV_PATH that will be used to install the python dependencies of quangstation."
 
 read -p "Do you want to proceed? (y/n) " CONT
 if [ "$CONT" = "y" ]; then
@@ -60,7 +60,7 @@ python3.9 -m venv $ENV_PATH
 
 # Activate the virtual environment
 source $ENV_PATH/bin/activate
-echo "Virtual environment 'OpenTPS_venv' created"
+echo "Virtual environment 'quangstation_venv' created"
 
 # Upgrade pip
 pip3 install --upgrade pip
@@ -84,6 +84,6 @@ pip3 install pymedphys==0.40.0
 # pip3 install cupy
 
 echo
-echo "Installation complete. You can start opentps with"
-echo "   bash $SCRIPT_DIR/start_opentps_linux.sh"
+echo "Installation complete. You can start quangstation with"
+echo "   bash $SCRIPT_DIR/start_quangstation_linux.sh"
 echo "You have to be in the directory where you ran the install script."

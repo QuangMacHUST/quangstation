@@ -1,6 +1,6 @@
 @echo off
 
-set ENV_PATH=%cd%\OpenTPS_venv
+set ENV_PATH=%cd%\quangstation_venv
 
 :: Get the directory that contains this script
 for %%I in ("%~dp0.") do set "SCRIPT_DIR=%%~fI"
@@ -11,7 +11,7 @@ if exist "ENV_PATH" (
     exit /b 1
 )
 
-echo This script will install system libraries and tools that you will need to work with OpenTPS. At several points in the installation process, the script will also create a virtual python environment in the CURRENT directory named %ENV_PATH% that will be used to install the python dependencies of OpenTPS.
+echo This script will install system libraries and tools that you will need to work with OpenTPS. At several points in the installation process, the script will also create a virtual python environment in the CURRENT directory named %ENV_PATH% that will be used to install the python dependencies of quangstation.
 
 echo Create the Python virtual environment. You need to install python version 3.9.13 on your PC and set the python path in the system environment.
 
@@ -62,6 +62,6 @@ REM pip3 install cupy
 
 echo All packages installed successfully.
 
-echo Installation complete. You can start opentps with
-echo    start_opentps_venv_windows.bat
+echo Installation complete. You can start quangstation with
+echo    start_quangstation_venv_windows.bat
 echo You have to be in the directory where you ran the install script.

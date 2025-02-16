@@ -3,8 +3,7 @@
 # Author: Mac Dang Quang
 
 # Run program :
-    python main.py
+    python treatment-planning-system-quangstation/gui/main.py
 
 # Feature update(02/16/2025) :
-    import and export DICOM
-    contouring organs
+    contouring

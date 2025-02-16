@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ENV_NAME="OpenTPS_venv"
+ENV_NAME="quangstation_venv"
 ENV_PATH="$PWD/$ENV_NAME"
 
 # Directory that contains this script
@@ -18,7 +18,7 @@ fi
 source $ENV_PATH/bin/activate
 
 # Set PYTHONPATH
-export PYTHONPATH="$SCRIPT_DIR/opentps_core:$SCRIPT_DIR/opentps_gui"
+export PYTHONPATH="$SCRIPT_DIR/core:$SCRIPT_DIR/gui"
 
 # Run main.py
-python3 "$SCRIPT_DIR/opentps_gui/opentps/gui/main.py"
+python3 "$SCRIPT_DIR/gui/main.py"
