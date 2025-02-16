@@ -1,3 +1,10 @@
 # treatment-planning-system-Quangstation
+
 # Author: Mac Dang Quang
-This is an open-source treatment planning system for radiotherapy, education purpose and clinical study
+
+# Run program :
+    python main.py
+
+# Feature update(02/16/2025) :
+    import and export DICOM
+    contouring organs

@@ -1,4 +1,4 @@
-from core.io.import import load_dicom_series
+from core.io.nhapanhdicom import load_dicom_series
 from core.processing.contouring.contouring_dicom import contour_dicom
 
 def main():
