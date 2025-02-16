@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+from core.io.import import load_dicom_series
 
 # Initialize global variables
 drawing = False  # True if the mouse is pressed
@@ -28,17 +29,28 @@ def draw_contour(event, x, y, flags, param):
         else:
             cv2.circle(img, (x, y), 5, (0, 0, 255), -1)
 
-# Load an image
-img = np.zeros((512, 512, 3), np.uint8)
-cv2.namedWindow('image')
-cv2.setMouseCallback('image', draw_contour)
+def contour_dicom(volume):
+    global img
+    # Display the first slice for contouring
+    img = volume[0]
+    img = cv2.normalize(img, None, 0, 255, cv2.NORM_MINMAX).astype(np.uint8)
+    img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
 
-while True:
-    cv2.imshow('image', img)
-    k = cv2.waitKey(1) & 0xFF
-    if k == ord('m'):
-        mode = not mode
-    elif k == 27:
-        break
+    cv2.namedWindow('image')
+    cv2.setMouseCallback('image', draw_contour)
 
-cv2.destroyAllWindows()
+    while True:
+        cv2.imshow('image', img)
+        k = cv2.waitKey(1) & 0xFF
+        if k == ord('m'):
+            mode = not mode
+        elif k == 27:
+            break
+
+    cv2.destroyAllWindows()
+
+# Load DICOM series
+directory = "data/CT/"
+volume, patient_pos = load_dicom_series(directory)
+
+contour_dicom(volume)
