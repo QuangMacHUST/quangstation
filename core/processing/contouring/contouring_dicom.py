@@ -1,6 +1,9 @@
-import cv2
+
+<Questions>
+</Questions>
+</Question>import cv2
 import numpy as np
-from core.io.nhapanhdicom import load_dicom_series
+from core.io.import import load_dicom_series
 
 # Initialize global variables
 drawing = False  # True if the mouse is pressed
