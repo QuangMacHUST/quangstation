@@ -1,10 +1,10 @@
-opentps.core.config.logger package
+quangstation.core.config.logger package
 ==================================
 
 Module contents
 ---------------
 
-.. automodule:: opentps.core.config.logger
+.. automodule:: quangstation.core.config.logger
    :members:
    :undoc-members:
    :show-inheritance:

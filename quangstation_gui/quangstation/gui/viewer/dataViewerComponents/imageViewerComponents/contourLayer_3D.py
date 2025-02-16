@@ -3,12 +3,12 @@ from typing import Sequence, Union, Optional
 
 import vtkmodules.vtkRenderingCore as vtkRenderingCore
 
-from opentps.core.data import ROIContour
-from opentps.core.data.images import ROIMask, Image3D
-from opentps.gui.viewer.dataForViewer.ROIContourForViewer import ROIContourForViewer
-from opentps.gui.viewer.dataForViewer.ROIMaskForViewer import ROIMaskForViewer
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.lookupTables import uniqueColorLTTo3DLT
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.secondaryImage3DLayer_3D import \
+from quangstation.core.data import ROIContour
+from quangstation.core.data.images import ROIMask, Image3D
+from quangstation.gui.viewer.dataForViewer.ROIContourForViewer import ROIContourForViewer
+from quangstation.gui.viewer.dataForViewer.ROIMaskForViewer import ROIMaskForViewer
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.lookupTables import uniqueColorLTTo3DLT
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.secondaryImage3DLayer_3D import \
     SecondaryImage3DLayer_3D
 
 

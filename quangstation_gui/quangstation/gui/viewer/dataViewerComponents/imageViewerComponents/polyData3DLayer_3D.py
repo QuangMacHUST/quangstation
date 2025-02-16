@@ -3,9 +3,9 @@ from typing import Optional
 from vtkmodules.vtkCommonColor import vtkNamedColors
 from vtkmodules.vtkRenderingCore import vtkPolyDataMapper, vtkActor
 
-from opentps.core import Event
-from opentps.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
-from opentps.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
+from quangstation.core import Event
+from quangstation.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
+from quangstation.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
 
 
 class PolyData3DLayer_3D:

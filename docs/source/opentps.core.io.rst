@@ -1,69 +1,69 @@
-opentps.core.io package
+quangstation.core.io package
 =======================
 
 Submodules
 ----------
 
-opentps.core.io.dataExporter module
+quangstation.core.io.dataExporter module
 -----------------------------------
 
-.. automodule:: opentps.core.io.dataExporter
+.. automodule:: quangstation.core.io.dataExporter
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.io.dataLoader module
+quangstation.core.io.dataLoader module
 ---------------------------------
 
-.. automodule:: opentps.core.io.dataLoader
+.. automodule:: quangstation.core.io.dataLoader
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.io.dicomAnonymizer module
+quangstation.core.io.dicomAnonymizer module
 --------------------------------------
 
-.. automodule:: opentps.core.io.dicomAnonymizer
+.. automodule:: quangstation.core.io.dicomAnonymizer
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.io.dicomIO module
+quangstation.core.io.dicomIO module
 ------------------------------
 
-.. automodule:: opentps.core.io.dicomIO
+.. automodule:: quangstation.core.io.dicomIO
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.io.mcsquareIO module
+quangstation.core.io.mcsquareIO module
 ---------------------------------
 
-.. automodule:: opentps.core.io.mcsquareIO
+.. automodule:: quangstation.core.io.mcsquareIO
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.io.mhdIO module
+quangstation.core.io.mhdIO module
 ----------------------------
 
-.. automodule:: opentps.core.io.mhdIO
+.. automodule:: quangstation.core.io.mhdIO
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.io.scannerReader module
+quangstation.core.io.scannerReader module
 ------------------------------------
 
-.. automodule:: opentps.core.io.scannerReader
+.. automodule:: quangstation.core.io.scannerReader
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.io.serializedObjectIO module
+quangstation.core.io.serializedObjectIO module
 -----------------------------------------
 
-.. automodule:: opentps.core.io.serializedObjectIO
+.. automodule:: quangstation.core.io.serializedObjectIO
    :members:
    :undoc-members:
    :show-inheritance:
@@ -71,7 +71,7 @@ opentps.core.io.serializedObjectIO module
 Module contents
 ---------------
 
-.. automodule:: opentps.core.io
+.. automodule:: quangstation.core.io
    :members:
    :undoc-members:
    :show-inheritance:

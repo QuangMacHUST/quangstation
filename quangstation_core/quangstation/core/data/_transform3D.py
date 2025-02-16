@@ -8,8 +8,8 @@ import math as m
 
 import numpy as np
 
-from opentps.core.data._patientData import PatientData
-from opentps.core.processing.imageProcessing.imageTransform3D import transform3DMatrixFromTranslationAndRotationsVectors, applyTransform3D, translateDataByChangingOrigin
+from quangstation.core.data._patientData import PatientData
+from quangstation.core.processing.imageProcessing.imageTransform3D import transform3DMatrixFromTranslationAndRotationsVectors, applyTransform3D, translateDataByChangingOrigin
 
 logger = logging.getLogger(__name__)
 

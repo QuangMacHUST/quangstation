@@ -3,11 +3,11 @@ from PyQt5.QtCore import QDir
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QPushButton, QFileDialog, QDialog, \
     QStackedWidget, QListView, QLineEdit, QHBoxLayout, QCheckBox
 
-import opentps.core.io.dataLoader as dataLoader
-from opentps.core.io.serializedObjectIO import saveDataStructure
-from opentps.core import Event
-from opentps.gui.viewer.exportWindow import ExportWindow
-from opentps.gui.panels.patientDataPanel.patientDataSelection import PatientDataSelection
+import quangstation.core.io.dataLoader as dataLoader
+from quangstation.core.io.serializedObjectIO import saveDataStructure
+from quangstation.core import Event
+from quangstation.gui.viewer.exportWindow import ExportWindow
+from quangstation.gui.panels.patientDataPanel.patientDataSelection import PatientDataSelection
 
 
 class PatientDataPanel(QWidget):

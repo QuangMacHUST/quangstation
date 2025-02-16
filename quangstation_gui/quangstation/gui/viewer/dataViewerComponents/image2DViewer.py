@@ -9,19 +9,19 @@ from vtkmodules.qt.QVTKRenderWindowInteractor import QVTKRenderWindowInteractor
 from vtkmodules.vtkCommonCore import vtkCommand
 from vtkmodules.vtkRenderingCore import vtkCoordinate
 
-from opentps.core.data.images import Image2D
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core import Event
-from opentps.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
-from opentps.gui.viewer.dataForViewer.image2DForViewer import Image2DForViewer
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.rtPlanLayer import RTPlanLayer
-from opentps.gui.viewer.dataViewerComponents.blackEmptyPlot import BlackEmptyPlot
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.contourLayer import ContourLayer
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.crossHairLayer import CrossHairLayer
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.primaryImage2DLayer import PrimaryImage2DLayer
-from opentps.gui.viewer.dataViewerComponents.profileWidget import ProfileWidget
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.secondaryImage2DLayer import SecondaryImage2DLayer
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.textLayer import TextLayer
+from quangstation.core.data.images import Image2D
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core import Event
+from quangstation.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
+from quangstation.gui.viewer.dataForViewer.image2DForViewer import Image2DForViewer
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.rtPlanLayer import RTPlanLayer
+from quangstation.gui.viewer.dataViewerComponents.blackEmptyPlot import BlackEmptyPlot
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.contourLayer import ContourLayer
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.crossHairLayer import CrossHairLayer
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.primaryImage2DLayer import PrimaryImage2DLayer
+from quangstation.gui.viewer.dataViewerComponents.profileWidget import ProfileWidget
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.secondaryImage2DLayer import SecondaryImage2DLayer
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.textLayer import TextLayer
 
 
 class Image2DViewer(QWidget):

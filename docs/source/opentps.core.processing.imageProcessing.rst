@@ -1,69 +1,69 @@
-opentps.core.processing.imageProcessing package
+quangstation.core.processing.imageProcessing package
 ===============================================
 
 Submodules
 ----------
 
-opentps.core.processing.imageProcessing.crop2D module
+quangstation.core.processing.imageProcessing.crop2D module
 -----------------------------------------------------
 
-.. automodule:: opentps.core.processing.imageProcessing.crop2D
+.. automodule:: quangstation.core.processing.imageProcessing.crop2D
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.imageProcessing.cupyImageProcessing module
+quangstation.core.processing.imageProcessing.cupyImageProcessing module
 ------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.imageProcessing.cupyImageProcessing
+.. automodule:: quangstation.core.processing.imageProcessing.cupyImageProcessing
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.imageProcessing.filter3D module
+quangstation.core.processing.imageProcessing.filter3D module
 -------------------------------------------------------
 
-.. automodule:: opentps.core.processing.imageProcessing.filter3D
+.. automodule:: quangstation.core.processing.imageProcessing.filter3D
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.imageProcessing.image2DManip module
+quangstation.core.processing.imageProcessing.image2DManip module
 -----------------------------------------------------------
 
-.. automodule:: opentps.core.processing.imageProcessing.image2DManip
+.. automodule:: quangstation.core.processing.imageProcessing.image2DManip
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.imageProcessing.imageTransform3D module
+quangstation.core.processing.imageProcessing.imageTransform3D module
 ---------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.imageProcessing.imageTransform3D
+.. automodule:: quangstation.core.processing.imageProcessing.imageTransform3D
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.imageProcessing.resampler3D module
+quangstation.core.processing.imageProcessing.resampler3D module
 ----------------------------------------------------------
 
-.. automodule:: opentps.core.processing.imageProcessing.resampler3D
+.. automodule:: quangstation.core.processing.imageProcessing.resampler3D
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.imageProcessing.sitkImageProcessing module
+quangstation.core.processing.imageProcessing.sitkImageProcessing module
 ------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.imageProcessing.sitkImageProcessing
+.. automodule:: quangstation.core.processing.imageProcessing.sitkImageProcessing
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.imageProcessing.syntheticDeformation module
+quangstation.core.processing.imageProcessing.syntheticDeformation module
 -------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.imageProcessing.syntheticDeformation
+.. automodule:: quangstation.core.processing.imageProcessing.syntheticDeformation
    :members:
    :undoc-members:
    :show-inheritance:
@@ -71,7 +71,7 @@ opentps.core.processing.imageProcessing.syntheticDeformation module
 Module contents
 ---------------
 
-.. automodule:: opentps.core.processing.imageProcessing
+.. automodule:: quangstation.core.processing.imageProcessing
    :members:
    :undoc-members:
    :show-inheritance:

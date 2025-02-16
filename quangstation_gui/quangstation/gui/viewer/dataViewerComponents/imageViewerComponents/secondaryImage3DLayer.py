@@ -4,9 +4,9 @@ from vtkmodules import vtkImagingCore
 from vtkmodules.vtkInteractionWidgets import vtkScalarBarWidget
 from vtkmodules.vtkRenderingAnnotation import vtkScalarBarActor
 
-from opentps.core import Event
-from opentps.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.primaryImage3DLayer import PrimaryImage3DLayer
+from quangstation.core import Event
+from quangstation.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.primaryImage3DLayer import PrimaryImage3DLayer
 
 
 class SecondaryImage3DLayer(PrimaryImage3DLayer):

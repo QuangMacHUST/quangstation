@@ -2,11 +2,11 @@
 import logging
 import os
 
-import opentps.core.processing.doseCalculation.protons.MCsquare.BDL as bdlModule
-import opentps.core.processing.doseCalculation.protons.MCsquare.Scanners as ScannerModule
-from opentps.core import Event
+import quangstation.core.processing.doseCalculation.protons.MCsquare.BDL as bdlModule
+import quangstation.core.processing.doseCalculation.protons.MCsquare.Scanners as ScannerModule
+from quangstation.core import Event
 
-from opentps.core.utils.applicationConfig import AbstractApplicationConfig
+from quangstation.core.utils.applicationConfig import AbstractApplicationConfig
 
 __all__ = ['DoseCalculationConfig']
 

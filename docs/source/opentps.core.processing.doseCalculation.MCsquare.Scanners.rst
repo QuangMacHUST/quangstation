@@ -1,10 +1,10 @@
-opentps.core.processing.doseCalculation.MCsquare.Scanners package
+quangstation.core.processing.doseCalculation.MCsquare.Scanners package
 =================================================================
 
 Module contents
 ---------------
 
-.. automodule:: opentps.core.processing.doseCalculation.MCsquare.Scanners
+.. automodule:: quangstation.core.processing.doseCalculation.MCsquare.Scanners
    :members:
    :undoc-members:
    :show-inheritance:

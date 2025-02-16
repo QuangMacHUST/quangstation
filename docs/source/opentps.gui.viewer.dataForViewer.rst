@@ -1,77 +1,77 @@
-opentps.gui.viewer.dataForViewer package
+quangstation.gui.viewer.dataForViewer package
 ========================================
 
 Submodules
 ----------
 
-opentps.gui.viewer.dataForViewer.ROIContourForViewer module
+quangstation.gui.viewer.dataForViewer.ROIContourForViewer module
 -----------------------------------------------------------
 
-.. automodule:: opentps.gui.viewer.dataForViewer.ROIContourForViewer
+.. automodule:: quangstation.gui.viewer.dataForViewer.ROIContourForViewer
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.dataForViewer.ROIMaskForViewer module
+quangstation.gui.viewer.dataForViewer.ROIMaskForViewer module
 --------------------------------------------------------
 
-.. automodule:: opentps.gui.viewer.dataForViewer.ROIMaskForViewer
+.. automodule:: quangstation.gui.viewer.dataForViewer.ROIMaskForViewer
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.dataForViewer.dataMultiton module
+quangstation.gui.viewer.dataForViewer.dataMultiton module
 ----------------------------------------------------
 
-.. automodule:: opentps.gui.viewer.dataForViewer.dataMultiton
+.. automodule:: quangstation.gui.viewer.dataForViewer.dataMultiton
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.dataForViewer.dyn2DSeqForViewer module
+quangstation.gui.viewer.dataForViewer.dyn2DSeqForViewer module
 ---------------------------------------------------------
 
-.. automodule:: opentps.gui.viewer.dataForViewer.dyn2DSeqForViewer
+.. automodule:: quangstation.gui.viewer.dataForViewer.dyn2DSeqForViewer
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.dataForViewer.dyn3DSeqForViewer module
+quangstation.gui.viewer.dataForViewer.dyn3DSeqForViewer module
 ---------------------------------------------------------
 
-.. automodule:: opentps.gui.viewer.dataForViewer.dyn3DSeqForViewer
+.. automodule:: quangstation.gui.viewer.dataForViewer.dyn3DSeqForViewer
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.dataForViewer.genericImageForViewer module
+quangstation.gui.viewer.dataForViewer.genericImageForViewer module
 -------------------------------------------------------------
 
-.. automodule:: opentps.gui.viewer.dataForViewer.genericImageForViewer
+.. automodule:: quangstation.gui.viewer.dataForViewer.genericImageForViewer
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.dataForViewer.image2DForViewer module
+quangstation.gui.viewer.dataForViewer.image2DForViewer module
 --------------------------------------------------------
 
-.. automodule:: opentps.gui.viewer.dataForViewer.image2DForViewer
+.. automodule:: quangstation.gui.viewer.dataForViewer.image2DForViewer
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.dataForViewer.image3DForViewer module
+quangstation.gui.viewer.dataForViewer.image3DForViewer module
 --------------------------------------------------------
 
-.. automodule:: opentps.gui.viewer.dataForViewer.image3DForViewer
+.. automodule:: quangstation.gui.viewer.dataForViewer.image3DForViewer
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.dataForViewer.polyDataForViewer module
+quangstation.gui.viewer.dataForViewer.polyDataForViewer module
 ---------------------------------------------------------
 
-.. automodule:: opentps.gui.viewer.dataForViewer.polyDataForViewer
+.. automodule:: quangstation.gui.viewer.dataForViewer.polyDataForViewer
    :members:
    :undoc-members:
    :show-inheritance:
@@ -79,7 +79,7 @@ opentps.gui.viewer.dataForViewer.polyDataForViewer module
 Module contents
 ---------------
 
-.. automodule:: opentps.gui.viewer.dataForViewer
+.. automodule:: quangstation.gui.viewer.dataForViewer
    :members:
    :undoc-members:
    :show-inheritance:

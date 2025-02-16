@@ -1,9 +1,9 @@
 import os, sys
 import numpy as np
 import logging
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.data.plan._planProtonBeam import PlanProtonBeam
-from opentps.core.data.plan._planProtonLayer import PlanProtonLayer
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.data.plan._planProtonBeam import PlanProtonBeam
+from quangstation.core.data.plan._planProtonLayer import PlanProtonLayer
 
 logger = logging.getLogger(__name__)
 

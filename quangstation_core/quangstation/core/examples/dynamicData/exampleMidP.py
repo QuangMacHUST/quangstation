@@ -4,10 +4,10 @@ import time
 import logging
 import os
 
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.data.images import CTImage
-from opentps.core.examples.syntheticData import *
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.data.images import CTImage
+from quangstation.core.examples.syntheticData import *
 
 logger = logging.getLogger(__name__)
 

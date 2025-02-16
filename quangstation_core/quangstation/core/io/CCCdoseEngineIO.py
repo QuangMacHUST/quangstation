@@ -5,15 +5,15 @@ import logging
 import numpy as np
 import scipy.sparse as sp
 from scipy.sparse import csc_matrix
-from opentps.core.data.images import CTImage
-from opentps.core.data.plan._photonPlan import PhotonPlan
+from quangstation.core.data.images import CTImage
+from quangstation.core.data.plan._photonPlan import PhotonPlan
 import math
-from opentps.core.data import SparseBeamlets
+from quangstation.core.data import SparseBeamlets
 import math
-from opentps.core.data.images._doseImage import DoseImage
+from quangstation.core.data.images._doseImage import DoseImage
 from typing import Optional, Sequence, Union
-from opentps.core.data import ROIContour
-from opentps.core.data.images import ROIMask
+from quangstation.core.data import ROIContour
+from quangstation.core.data.images import ROIMask
 from matplotlib import pyplot as plt
 
 logger = logging.getLogger(__name__)
@@ -154,12 +154,12 @@ def convertTo1Dcoord(arr,size):
 def convertTo1DcoordFortran(arr,size): ### Ravel the array in order='F' FortranMode
     return arr[0] + arr[1] * size[0] + arr[2] * size[1] * size[0]
 
-def formatToOpenTPSformat(arr,size):
+def formatToquangstationformat(arr,size):
     return convertTo1DcoordFortran([size[0]-(arr[0]+1), size[1]-(arr[1]+1), arr[2]],size) ### Flip axis 0 and 1
 
-def changeOfCoordinates(beamIndexes, size): ### The indexes exported in CCC have coordinates [size[2],size[0],size[1]]. This function change the index for size[0],size[1],size[2] in OpenTPS order
+def changeOfCoordinates(beamIndexes, size): ### The indexes exported in CCC have coordinates [size[2],size[0],size[1]]. This function change the index for size[0],size[1],size[2] in quangstation order
     i, j, k = convertTo3Dcoord(np.array(beamIndexes), [size[2], size[0], size[1]])
-    return formatToOpenTPSformat([j, k, i], size) ### This transpose the axis j = 0, k = 1, i = 2 and order the indexes following the indexation used in OpenTPS 
+    return formatToquangstationformat([j, k, i], size) ### This transpose the axis j = 0, k = 1, i = 2 and order the indexes following the indexation used in quangstation 
         
 
 def read_sparse_data(matrixBeamlets_path, header, BeamletMatrix = None):

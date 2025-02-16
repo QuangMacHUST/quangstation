@@ -1,12 +1,12 @@
 from abc import abstractmethod
 from typing import Optional
 
-from opentps.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
-from opentps.core.data.images._ctImage import CTImage
-from opentps.core.data.images._roiMask import ROIMask
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.processing.doseCalculation.abstractDoseCalculator import ProgressInfo
-from opentps.core import Event
+from quangstation.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
+from quangstation.core.data.images._ctImage import CTImage
+from quangstation.core.data.images._roiMask import ROIMask
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.processing.doseCalculation.abstractDoseCalculator import ProgressInfo
+from quangstation.core import Event
 
 __all__ = ['AbstractDoseInfluenceCalculator']
 

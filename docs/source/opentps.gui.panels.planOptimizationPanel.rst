@@ -1,29 +1,29 @@
-opentps.gui.panels.planOptimizationPanel package
+quangstation.gui.panels.planOptimizationPanel package
 ================================================
 
 Submodules
 ----------
 
-opentps.gui.panels.planOptimizationPanel.objectivesWindow module
+quangstation.gui.panels.planOptimizationPanel.objectivesWindow module
 ----------------------------------------------------------------
 
-.. automodule:: opentps.gui.panels.planOptimizationPanel.objectivesWindow
+.. automodule:: quangstation.gui.panels.planOptimizationPanel.objectivesWindow
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.panels.planOptimizationPanel.optimizationSettings module
+quangstation.gui.panels.planOptimizationPanel.optimizationSettings module
 --------------------------------------------------------------------
 
-.. automodule:: opentps.gui.panels.planOptimizationPanel.optimizationSettings
+.. automodule:: quangstation.gui.panels.planOptimizationPanel.optimizationSettings
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.panels.planOptimizationPanel.planOptiPanel module
+quangstation.gui.panels.planOptimizationPanel.planOptiPanel module
 -------------------------------------------------------------
 
-.. automodule:: opentps.gui.panels.planOptimizationPanel.planOptiPanel
+.. automodule:: quangstation.gui.panels.planOptimizationPanel.planOptiPanel
    :members:
    :undoc-members:
    :show-inheritance:
@@ -31,7 +31,7 @@ opentps.gui.panels.planOptimizationPanel.planOptiPanel module
 Module contents
 ---------------
 
-.. automodule:: opentps.gui.panels.planOptimizationPanel
+.. automodule:: quangstation.gui.panels.planOptimizationPanel
    :members:
    :undoc-members:
    :show-inheritance:

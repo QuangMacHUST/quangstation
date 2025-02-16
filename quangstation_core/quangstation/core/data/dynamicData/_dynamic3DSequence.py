@@ -1,7 +1,7 @@
 import numpy as np
 from pydicom.uid import generate_uid
 
-from opentps.core.data._patientData import PatientData
+from quangstation.core.data._patientData import PatientData
 
 
 class Dynamic3DSequence(PatientData):

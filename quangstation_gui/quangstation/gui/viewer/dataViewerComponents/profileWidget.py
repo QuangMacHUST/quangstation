@@ -5,9 +5,9 @@ import numpy as np
 from pyqtgraph import mkPen
 from vtkmodules.vtkInteractionWidgets import vtkLineWidget2
 
-from opentps.core import Event
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.contourLayer import ContourLayer
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.primaryImage3DLayer import PrimaryImage3DLayer
+from quangstation.core import Event
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.contourLayer import ContourLayer
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.primaryImage3DLayer import PrimaryImage3DLayer
 
 
 class ProfileWidget:

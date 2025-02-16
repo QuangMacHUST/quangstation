@@ -1,7 +1,7 @@
 import pymedphys
 import numpy as np
 from typing import Sequence, Tuple
-from opentps.core.data.images._image3D import Image3D
+from quangstation.core.data.images._image3D import Image3D
 
 def _orientation_is_head_first(orientation_vector, is_decubitus):
     """
@@ -165,7 +165,7 @@ def gammaIndex(referenceImage:Image3D, evaluationImage:Image3D,
                skip_once_passed=False, random_subset=None, ram_available=int(2**30 * 4)):
     """
     Compute the gamma index between two images using pymedphys library (https://github.com/pymedphys/pymedphys).
-    This function is essentially a wrapper on function `pymedphys.gamma` using when using OpenTPS data.
+    This function is essentially a wrapper on function `pymedphys.gamma` using when using quangstation data.
     As such, most of the parameters are the same.
 
     pymedphys DOCSTRING:

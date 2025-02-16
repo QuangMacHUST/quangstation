@@ -1,7 +1,7 @@
 import numpy as np
 import logging
 
-import opentps.core.processing.imageProcessing.filter3D as imageFilter3D
+import quangstation.core.processing.imageProcessing.filter3D as imageFilter3D
 
 logger = logging.getLogger(__name__)
 

@@ -4,15 +4,15 @@ import logging
 import numpy as np
 
 from matplotlib import pyplot as plt
-from opentps.core.data.images import CTImage
-from opentps.core.data.images import ROIMask
-from opentps.core.data import Patient
-from opentps.core.io import mcsquareIO
-from opentps.core.io.scannerReader import readScanner
-from opentps.core.io.serializedObjectIO import saveRTPlan, loadRTPlan
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.core.processing.planEvaluation.robustnessEvaluation import RobustnessEvalPhoton
-from opentps.core.processing.doseCalculation.photons.cccDoseCalculator import CCCDoseCalculator
+from quangstation.core.data.images import CTImage
+from quangstation.core.data.images import ROIMask
+from quangstation.core.data import Patient
+from quangstation.core.io import mcsquareIO
+from quangstation.core.io.scannerReader import readScanner
+from quangstation.core.io.serializedObjectIO import saveRTPlan, loadRTPlan
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.core.processing.planEvaluation.robustnessEvaluation import RobustnessEvalPhoton
+from quangstation.core.processing.doseCalculation.photons.cccDoseCalculator import CCCDoseCalculator
 
 
 logger = logging.getLogger(__name__)

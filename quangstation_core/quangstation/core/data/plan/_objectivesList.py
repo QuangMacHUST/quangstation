@@ -14,10 +14,10 @@ from scipy import ndimage
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from opentps.core.data.images._ctImage import CTImage
+    from quangstation.core.data.images._ctImage import CTImage
 
-from opentps.core.data.images._roiMask import ROIMask
-from opentps.core.processing.imageProcessing import resampler3D
+from quangstation.core.data.images._roiMask import ROIMask
+from quangstation.core.processing.imageProcessing import resampler3D
 
 logger = logging.getLogger(__name__)
 
@@ -279,7 +279,7 @@ class FidObjective:
 
 
     def _updateMaskVec(self, spacing:Sequence[float], gridSize:Sequence[int], origin:Sequence[float]):
-        from opentps.core.data._roiContour import ROIContour
+        from quangstation.core.data._roiContour import ROIContour
 
         if isinstance(self.roi, ROIContour):
             mask = self.roi.getBinaryMask(origin=origin, gridSize=gridSize, spacing=spacing)

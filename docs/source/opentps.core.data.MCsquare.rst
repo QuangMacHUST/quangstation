@@ -1,10 +1,10 @@
-opentps.core.data.MCsquare package
+quangstation.core.data.MCsquare package
 ==================================
 
 Module contents
 ---------------
 
-.. automodule:: opentps.core.data.MCsquare
+.. automodule:: quangstation.core.data.MCsquare
    :members:
    :undoc-members:
    :show-inheritance:

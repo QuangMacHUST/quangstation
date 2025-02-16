@@ -1,9 +1,9 @@
 import os
 import sys
 
-from opentps.core.io.dataLoader import readData
-from opentps.core.data.images._deformation3D import Deformation3D
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+from quangstation.core.io.dataLoader import readData
+from quangstation.core.data.images._deformation3D import Deformation3D
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
 
 # Load DICOM CT
 inputPaths = f"/data/MidP_ct/"
@@ -24,7 +24,7 @@ for df in defList:
 del defList
 print(deformationList)
 
-patient_name = 'OpenTPS_Patient'
+patient_name = 'quangstation_Patient'
 
 # Create Dynamic 3D Model
 model3D = Dynamic3DModel(name=patient_name, midp=midP, deformationList=deformationList)

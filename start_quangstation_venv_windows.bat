@@ -1,6 +1,6 @@
 @echo off
 
-set ENV_PATH=%cd%\OpenTPS_venv
+set ENV_PATH=%cd%\quangstation_venv
 
 REM Get the directory containing this script
 for %%i in ("%~dp0.") do set "SCRIPT_DIR=%%~fi"
@@ -15,10 +15,10 @@ if exist "%ENV_PATH%\Scripts\activate.bat" (
 
 REM Activate the virtual environment
 call %ENV_PATH%\Scripts\activate
-echo Virtual environment 'OpenTPS_venv' activated
+echo Virtual environment 'quangstation_venv' activated
 
 
 REM Run main.py
-set "PYTHONPATH=%~dp0opentps_core;%~dp0opentps_gui"
+set "PYTHONPATH=%~dp0quangstation_core;%~dp0quangstation_gui"
 
 python "%~dp0gui\main.py"

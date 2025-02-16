@@ -1,4 +1,4 @@
-opentps.core.config package
+quangstation.core.config package
 ===========================
 
 Subpackages
@@ -7,12 +7,12 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   opentps.core.config.logger
+   quangstation.core.config.logger
 
 Module contents
 ---------------
 
-.. automodule:: opentps.core.config
+.. automodule:: quangstation.core.config
    :members:
    :undoc-members:
    :show-inheritance:

@@ -1,9 +1,9 @@
 from vtkmodules.vtkIOImage import vtkImageImport
 
-from opentps.core.data.images._image3D import Image3D
-from opentps.core import Event
-from opentps.gui.viewer.dataForViewer.ROIMaskForViewer import ROIMaskForViewer
-from opentps.gui.viewer.dataForViewer.dataMultiton import DataMultiton
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core import Event
+from quangstation.gui.viewer.dataForViewer.ROIMaskForViewer import ROIMaskForViewer
+from quangstation.gui.viewer.dataForViewer.dataMultiton import DataMultiton
 
 
 class ROIContourForViewer(DataMultiton):

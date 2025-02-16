@@ -1,11 +1,11 @@
 import numpy as np
 np.random.seed(42)
-from opentps.core.data.plan._planProtonBeam import PlanProtonBeam
-from opentps.core.data.plan._planProtonLayer import PlanProtonLayer
-from opentps.core.data.plan._protonPlan import ProtonPlan
-from opentps.core.processing.planDeliverySimulation.scanAlgoBeamDeliveryTimings import ScanAlgoBeamDeliveryTimings
-from opentps.core.processing.planDeliverySimulation.simpleBeamDeliveryTimings import SimpleBeamDeliveryTimings
-from opentps.core.io.dicomIO import readDicomPlan
+from quangstation.core.data.plan._planProtonBeam import PlanProtonBeam
+from quangstation.core.data.plan._planProtonLayer import PlanProtonLayer
+from quangstation.core.data.plan._protonPlan import ProtonPlan
+from quangstation.core.processing.planDeliverySimulation.scanAlgoBeamDeliveryTimings import ScanAlgoBeamDeliveryTimings
+from quangstation.core.processing.planDeliverySimulation.simpleBeamDeliveryTimings import SimpleBeamDeliveryTimings
+from quangstation.core.io.dicomIO import readDicomPlan
 
 # Create random plan
 plan = ProtonPlan()

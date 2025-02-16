@@ -15,11 +15,11 @@ import time
 import numpy as np
 
 from pydicom.uid import generate_uid
-from opentps.core.io.dataLoader import readData
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.io.serializedObjectIO import saveSerializedObjects
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
-from opentps.core.data._patient import Patient
+from quangstation.core.io.dataLoader import readData
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.io.serializedObjectIO import saveSerializedObjects
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+from quangstation.core.data._patient import Patient
 
 
 if __name__ == '__main__':

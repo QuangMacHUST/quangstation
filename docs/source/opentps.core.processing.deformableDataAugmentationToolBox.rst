@@ -1,61 +1,61 @@
-opentps.core.processing.deformableDataAugmentationToolBox package
+quangstation.core.processing.deformableDataAugmentationToolBox package
 =================================================================
 
 Submodules
 ----------
 
-opentps.core.processing.deformableDataAugmentationToolBox.BreathingSignalGeneration module
+quangstation.core.processing.deformableDataAugmentationToolBox.BreathingSignalGeneration module
 ------------------------------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.deformableDataAugmentationToolBox.BreathingSignalGeneration
+.. automodule:: quangstation.core.processing.deformableDataAugmentationToolBox.BreathingSignalGeneration
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.deformableDataAugmentationToolBox.generateDynamicSequencesFromModel module
+quangstation.core.processing.deformableDataAugmentationToolBox.generateDynamicSequencesFromModel module
 --------------------------------------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.deformableDataAugmentationToolBox.generateDynamicSequencesFromModel
+.. automodule:: quangstation.core.processing.deformableDataAugmentationToolBox.generateDynamicSequencesFromModel
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.deformableDataAugmentationToolBox.generateRandomSamplesFromModel module
+quangstation.core.processing.deformableDataAugmentationToolBox.generateRandomSamplesFromModel module
 -----------------------------------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.deformableDataAugmentationToolBox.generateRandomSamplesFromModel
+.. automodule:: quangstation.core.processing.deformableDataAugmentationToolBox.generateRandomSamplesFromModel
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.deformableDataAugmentationToolBox.interFractionChanges module
+quangstation.core.processing.deformableDataAugmentationToolBox.interFractionChanges module
 -------------------------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.deformableDataAugmentationToolBox.interFractionChanges
+.. automodule:: quangstation.core.processing.deformableDataAugmentationToolBox.interFractionChanges
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.deformableDataAugmentationToolBox.modelManipFunctions module
+quangstation.core.processing.deformableDataAugmentationToolBox.modelManipFunctions module
 ------------------------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.deformableDataAugmentationToolBox.modelManipFunctions
+.. automodule:: quangstation.core.processing.deformableDataAugmentationToolBox.modelManipFunctions
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.deformableDataAugmentationToolBox.multiProcSpawnMethods module
+quangstation.core.processing.deformableDataAugmentationToolBox.multiProcSpawnMethods module
 --------------------------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.deformableDataAugmentationToolBox.multiProcSpawnMethods
+.. automodule:: quangstation.core.processing.deformableDataAugmentationToolBox.multiProcSpawnMethods
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.deformableDataAugmentationToolBox.weightMaps module
+quangstation.core.processing.deformableDataAugmentationToolBox.weightMaps module
 ---------------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.deformableDataAugmentationToolBox.weightMaps
+.. automodule:: quangstation.core.processing.deformableDataAugmentationToolBox.weightMaps
    :members:
    :undoc-members:
    :show-inheritance:
@@ -63,7 +63,7 @@ opentps.core.processing.deformableDataAugmentationToolBox.weightMaps module
 Module contents
 ---------------
 
-.. automodule:: opentps.core.processing.deformableDataAugmentationToolBox
+.. automodule:: quangstation.core.processing.deformableDataAugmentationToolBox
    :members:
    :undoc-members:
    :show-inheritance:

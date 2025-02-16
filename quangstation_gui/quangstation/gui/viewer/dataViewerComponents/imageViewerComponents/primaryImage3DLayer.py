@@ -7,9 +7,9 @@ from vtkmodules.vtkIOGeometry import vtkSTLReader
 from vtkmodules.vtkInteractionWidgets import vtkOrientationMarkerWidget
 from vtkmodules.vtkRenderingCore import vtkActor, vtkDataSetMapper
 
-from opentps.core import Event
-from opentps.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
-from opentps.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
+from quangstation.core import Event
+from quangstation.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
+from quangstation.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
 
 
 class PrimaryImage3DLayer:

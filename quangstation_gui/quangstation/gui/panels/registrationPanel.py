@@ -1,10 +1,10 @@
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QComboBox, QLabel, QPushButton
 
-from opentps.core.data.images import CTImage
-from opentps.core.data._patient import Patient
-from opentps.core.processing.registration.registrationMorphons import RegistrationMorphons
-from opentps.core.processing.registration.registrationDemons import RegistrationDemons
-from opentps.core.processing.registration.registrationRigid import RegistrationRigid
+from quangstation.core.data.images import CTImage
+from quangstation.core.data._patient import Patient
+from quangstation.core.processing.registration.registrationMorphons import RegistrationMorphons
+from quangstation.core.processing.registration.registrationDemons import RegistrationDemons
+from quangstation.core.processing.registration.registrationRigid import RegistrationRigid
 
 class RegistrationPanel(QWidget):
     def __init__(self, viewController):

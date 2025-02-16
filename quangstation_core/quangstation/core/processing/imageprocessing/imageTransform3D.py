@@ -2,7 +2,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING, Optional, Union, Sequence
 
 if TYPE_CHECKING:
-    from opentps.core.data.images import ROIMask, Image3D
+    from quangstation.core.data.images import ROIMask, Image3D
 
 import logging
 from math import pi, cos, sin
@@ -13,17 +13,17 @@ from numpy import linalg
 from scipy.spatial.transform import Rotation as R
 import copy
 
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.data.plan._planProtonBeam import PlanProtonBeam
-# from opentps.core.data._roiContour import ROIContour
-# from opentps.core.data.images._image3D import Image3D
-from opentps.core.data.images._vectorField3D import VectorField3D
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data.plan._planProtonBeam import PlanProtonBeam
+# from quangstation.core.data._roiContour import ROIContour
+# from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data.images._vectorField3D import VectorField3D
 
-from opentps.core.data._roiContour import ROIContour
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
-from opentps.core.processing.segmentation import segmentation3D
-from opentps.core.processing.imageProcessing import sitkImageProcessing, cupyImageProcessing
+from quangstation.core.data._roiContour import ROIContour
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+from quangstation.core.processing.segmentation import segmentation3D
+from quangstation.core.processing.imageProcessing import sitkImageProcessing, cupyImageProcessing
 
 
 
@@ -32,7 +32,7 @@ from opentps.core.processing.imageProcessing import sitkImageProcessing, cupyIma
 logger = logging.getLogger(__name__)
 
 try:
-    from opentps.core.processing.imageProcessing import sitkImageProcessing
+    from quangstation.core.processing.imageProcessing import sitkImageProcessing
 except:
     logger.warning('No module SimpleITK found')
 
@@ -196,7 +196,7 @@ def _cropBoxAfterTransform(image, tform, cropROI:Optional[Union[ROIContour, ROIM
     outputBox = 'keepAll'
 
     if not (cropROI is None):
-        from opentps.core.data.images._roiMask import ROIMask
+        from quangstation.core.data.images._roiMask import ROIMask
 
         outputBox = np.array(sitkImageProcessing.extremePointsAfterTransform(image, tform))
         cropROIBEV = ROIMask.fromImage3D(cropROI, patient=None)

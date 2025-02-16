@@ -7,20 +7,20 @@ import copy
 from scipy.sparse import csc_matrix
 sys.path.append('..')
 
-from opentps.core.io.dicomIO import writeRTDose, writeDicomCT, writeRTPlan, writeRTStruct
-from opentps.core.processing.planOptimization.tools import evaluateClinical
-from opentps.core.data.images import CTImage
-from opentps.core.data.images import ROIMask
-from opentps.core.data import DVH
-from opentps.core.data import Patient
-from opentps.core.data.plan import FidObjective
-from opentps.core.io.scannerReader import readScanner
-from opentps.core.io.serializedObjectIO import saveRTPlan, loadRTPlan
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
-from opentps.core.processing.planOptimization.planOptimization import  IntensityModulationOptimizer
-from opentps.core.processing.doseCalculation.photons.cccDoseCalculator import CCCDoseCalculator
-from opentps.core.data.plan import PhotonPlanDesign
+from quangstation.core.io.dicomIO import writeRTDose, writeDicomCT, writeRTPlan, writeRTStruct
+from quangstation.core.processing.planOptimization.tools import evaluateClinical
+from quangstation.core.data.images import CTImage
+from quangstation.core.data.images import ROIMask
+from quangstation.core.data import DVH
+from quangstation.core.data import Patient
+from quangstation.core.data.plan import FidObjective
+from quangstation.core.io.scannerReader import readScanner
+from quangstation.core.io.serializedObjectIO import saveRTPlan, loadRTPlan
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
+from quangstation.core.processing.planOptimization.planOptimization import  IntensityModulationOptimizer
+from quangstation.core.processing.doseCalculation.photons.cccDoseCalculator import CCCDoseCalculator
+from quangstation.core.data.plan import PhotonPlanDesign
 
 logger = logging.getLogger(__name__)
 
@@ -107,7 +107,7 @@ def run(output_path=""):
         
         plan.planDesign.beamlets = beamlets
         beamlets.storeOnFS(os.path.join(output_path, "BeamletMatrix_" + plan.seriesInstanceUID + ".blm"))
-        # Save plan with initial spot weights in serialized format (OpenTPS format)
+        # Save plan with initial spot weights in serialized format (quangstation format)
         saveRTPlan(plan, plan_file)
 
 
@@ -126,7 +126,7 @@ def run(output_path=""):
     # or default name
     writeRTDose(doseImage, output_path)
 
-    # Save plan with updated spot weights in serialized format (OpenTPS format)
+    # Save plan with updated spot weights in serialized format (quangstation format)
     plan_file_optimized = os.path.join(output_path, "Plan_WaterPhantom_cropped_resampled_optimized.tps")
     saveRTPlan(plan, plan_file_optimized)
     # Save plan with updated spot weights in dicom format

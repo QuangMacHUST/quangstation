@@ -1,10 +1,10 @@
 import logging
 
-from opentps.core.data.plan._rtPlan import RTPlan
+from quangstation.core.data.plan._rtPlan import RTPlan
 import numpy as np
-from opentps.core.data.plan._planPhotonBeam import PlanPhotonBeam
+from quangstation.core.data.plan._planPhotonBeam import PlanPhotonBeam
 from typing import Sequence
-from opentps.core.data.plan._planPhotonSegment import PlanPhotonSegment
+from quangstation.core.data.plan._planPhotonSegment import PlanPhotonSegment
 import copy
 
 __all__ = ['PhotonPlan']

@@ -4,14 +4,14 @@ import matplotlib.pyplot as plt
 import logging
 import os
 
-from opentps.core.data.images import VectorField3D
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
-from opentps.core.data._transform3D import Transform3D
-from opentps.core.examples.showStuff import showModelWithAnimatedFields
-from opentps.core.examples.syntheticData import *
-from opentps.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
-from opentps.core.processing.imageProcessing.imageTransform3D import rotateData, translateData
-from opentps.core.processing.imageProcessing.resampler3D import resample
+from quangstation.core.data.images import VectorField3D
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+from quangstation.core.data._transform3D import Transform3D
+from quangstation.core.examples.showStuff import showModelWithAnimatedFields
+from quangstation.core.examples.syntheticData import *
+from quangstation.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
+from quangstation.core.processing.imageProcessing.imageTransform3D import rotateData, translateData
+from quangstation.core.processing.imageProcessing.resampler3D import resample
 
 logger = logging.getLogger(__name__)
 

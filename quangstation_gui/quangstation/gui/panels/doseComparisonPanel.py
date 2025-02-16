@@ -1,8 +1,8 @@
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QComboBox, QLabel, QPushButton
 
-from opentps.core.data.images import DoseImage
-from opentps.core.data._patient import Patient
-from opentps.gui.panels.patientDataWidgets import PatientDataComboBox
+from quangstation.core.data.images import DoseImage
+from quangstation.core.data._patient import Patient
+from quangstation.gui.panels.patientDataWidgets import PatientDataComboBox
 
 
 class DoseComparisonPanel(QWidget):

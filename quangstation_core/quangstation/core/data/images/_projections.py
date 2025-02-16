@@ -1,7 +1,7 @@
 
 __all__ = ['Projection']
 
-from opentps.core.data.images._image2D import Image2D
+from quangstation.core.data.images._image2D import Image2D
 
 
 class Projection(Image2D):

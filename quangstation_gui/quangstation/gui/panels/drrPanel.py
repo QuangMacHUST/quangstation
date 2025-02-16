@@ -6,7 +6,7 @@ import math
 
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import Qt, QDir#, pyqtSignal
-from opentps.core import createDRRDynamic2DSequences
+from quangstation.core import createDRRDynamic2DSequences
 
 
 

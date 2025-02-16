@@ -1,9 +1,9 @@
 from typing import Optional
 
-from opentps.core.data.images import DoseImage
-from opentps.core.data.images._image3D import Image3D
-from opentps.gui.viewer.dataViewerComponents.doseComparisonImageProvider import DoseComparisonImageProvider
-from opentps.gui.viewer.dataViewer import DataViewer
+from quangstation.core.data.images import DoseImage
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.gui.viewer.dataViewerComponents.doseComparisonImageProvider import DoseComparisonImageProvider
+from quangstation.gui.viewer.dataViewer import DataViewer
 
 
 class DoseComparisonDataViewer(DataViewer):

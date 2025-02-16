@@ -11,7 +11,7 @@ if exist "ENV_PATH" (
     exit /b 1
 )
 
-echo This script will install system libraries and tools that you will need to work with OpenTPS. At several points in the installation process, the script will also create a virtual python environment in the CURRENT directory named %ENV_PATH% that will be used to install the python dependencies of quangstation.
+echo This script will install system libraries and tools that you will need to work with quangstation. At several points in the installation process, the script will also create a virtual python environment in the CURRENT directory named %ENV_PATH% that will be used to install the python dependencies of quangstation.
 
 echo Create the Python virtual environment. You need to install python version 3.9.13 on your PC and set the python path in the system environment.
 
@@ -28,7 +28,7 @@ if not exist "%ENV_PATH%" (
 
 REM Activate the virtual environment
 call %ENV_PATH%\Scripts\activate
-echo Virtual environment 'OpenTPS_venv' created
+echo Virtual environment 'quangstation_venv' created
 
 REM Checke the virtual environment is activated
 if defined ENV_PATH (

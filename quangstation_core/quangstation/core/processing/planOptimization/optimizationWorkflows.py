@@ -2,19 +2,19 @@ import logging
 import time
 import numpy as np
 
-from opentps.core.data.images._doseImage import DoseImage
-from opentps.core.data.images._roiMask import ROIMask
-from opentps.core.data.plan._planProtonBeam import PlanProtonBeam
-from opentps.core.data.plan._protonPlanDesign import ProtonPlanDesign
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.io import scannerReader, mcsquareIO
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
-from opentps.core.processing.imageProcessing import resampler3D
-from opentps.core.processing.planOptimization.objectives.doseFidelity import DoseFidelity
-from opentps.core.processing.planOptimization.planInitializer import PlanInitializer
-from opentps.core.processing.planOptimization.planOptimization import IntensityModulationOptimizer
-from opentps.core.processing.planOptimization.planOptimizationConfig import PlanOptimizationConfig
+from quangstation.core.data.images._doseImage import DoseImage
+from quangstation.core.data.images._roiMask import ROIMask
+from quangstation.core.data.plan._planProtonBeam import PlanProtonBeam
+from quangstation.core.data.plan._protonPlanDesign import ProtonPlanDesign
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.io import scannerReader, mcsquareIO
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
+from quangstation.core.processing.imageProcessing import resampler3D
+from quangstation.core.processing.planOptimization.objectives.doseFidelity import DoseFidelity
+from quangstation.core.processing.planOptimization.planInitializer import PlanInitializer
+from quangstation.core.processing.planOptimization.planOptimization import IntensityModulationOptimizer
+from quangstation.core.processing.planOptimization.planOptimizationConfig import PlanOptimizationConfig
 
 logger = logging.getLogger(__name__)
 
@@ -46,7 +46,7 @@ def optimizeIMPT(plan:RTPlan, planStructure:ProtonPlanDesign):
     finalDose.patient = plan.patient
 
 def _defineTargetMaskAndPrescription(planStructure:ProtonPlanDesign):
-    from opentps.core.data._roiContour import ROIContour
+    from quangstation.core.data._roiContour import ROIContour
 
     targetMask = None
     for objective in planStructure.objectives.fidObjList:

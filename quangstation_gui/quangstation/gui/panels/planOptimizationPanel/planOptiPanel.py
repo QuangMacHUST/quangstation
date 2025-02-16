@@ -4,22 +4,22 @@ import numpy as np
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QComboBox, QLabel, QPushButton, QCheckBox, QDialog, \
     QLineEdit, QDoubleSpinBox, QHBoxLayout
 from PyQt5.QtCore import Qt
-from opentps.core.data.images import CTImage
-from opentps.core.data.plan import ObjectivesList
-from opentps.core.data.plan import ProtonPlanDesign,Robustness
-from opentps.core.data._patient import Patient
-from opentps.core.data.plan._photonPlanDesign import PhotonPlanDesign
-from opentps.core.data.plan._rtPlanDesign import RTPlanDesign
-from opentps.core.io import mcsquareIO
-from opentps.core.io.scannerReader import readScanner
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.core.processing.doseCalculation.photons.cccDoseCalculator import CCCDoseCalculator
-from opentps.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
-from opentps.core.processing.planOptimization.planOptimization import BoundConstraintsOptimizer, IntensityModulationOptimizer
-from opentps.gui.panels.doseComputationPanel import DoseComputationPanel
-from opentps.gui.panels.patientDataWidgets import PatientDataComboBox
-from opentps.gui.panels.planOptimizationPanel.objectivesWindow import ObjectivesWindow
-from opentps.gui.panels.planOptimizationPanel.optimizationSettings import OptiSettingsDialog
+from quangstation.core.data.images import CTImage
+from quangstation.core.data.plan import ObjectivesList
+from quangstation.core.data.plan import ProtonPlanDesign,Robustness
+from quangstation.core.data._patient import Patient
+from quangstation.core.data.plan._photonPlanDesign import PhotonPlanDesign
+from quangstation.core.data.plan._rtPlanDesign import RTPlanDesign
+from quangstation.core.io import mcsquareIO
+from quangstation.core.io.scannerReader import readScanner
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.core.processing.doseCalculation.photons.cccDoseCalculator import CCCDoseCalculator
+from quangstation.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
+from quangstation.core.processing.planOptimization.planOptimization import BoundConstraintsOptimizer, IntensityModulationOptimizer
+from quangstation.gui.panels.doseComputationPanel import DoseComputationPanel
+from quangstation.gui.panels.patientDataWidgets import PatientDataComboBox
+from quangstation.gui.panels.planOptimizationPanel.objectivesWindow import ObjectivesWindow
+from quangstation.gui.panels.planOptimizationPanel.optimizationSettings import OptiSettingsDialog
 
 logger = logging.getLogger(__name__)
 

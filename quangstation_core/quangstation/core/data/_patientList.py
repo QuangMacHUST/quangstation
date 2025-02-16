@@ -5,9 +5,9 @@ import functools
 import unittest
 from typing import Sequence
 
-from opentps.core.data._patient import Patient
-from opentps.core.data._patientData import PatientData
-from opentps.core import Event
+from quangstation.core.data._patient import Patient
+from quangstation.core.data._patientData import PatientData
+from quangstation.core import Event
 
 
 class PatientList():
@@ -173,7 +173,7 @@ class PatientList():
 
 class EventTestCase(unittest.TestCase):
     def testPropertiesAndAccessMethods(self):
-        from opentps.core.data import Patient
+        from quangstation.core.data import Patient
         patient = Patient()
 
         obj = PatientList()

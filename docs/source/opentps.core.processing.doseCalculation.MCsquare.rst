@@ -1,4 +1,4 @@
-opentps.core.processing.doseCalculation.MCsquare package
+quangstation.core.processing.doseCalculation.MCsquare package
 ========================================================
 
 Subpackages
@@ -7,14 +7,14 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   opentps.core.processing.doseCalculation.MCsquare.BDL
-   opentps.core.processing.doseCalculation.MCsquare.Materials
-   opentps.core.processing.doseCalculation.MCsquare.Scanners
+   quangstation.core.processing.doseCalculation.MCsquare.BDL
+   quangstation.core.processing.doseCalculation.MCsquare.Materials
+   quangstation.core.processing.doseCalculation.MCsquare.Scanners
 
 Module contents
 ---------------
 
-.. automodule:: opentps.core.processing.doseCalculation.MCsquare
+.. automodule:: quangstation.core.processing.doseCalculation.MCsquare
    :members:
    :undoc-members:
    :show-inheritance:

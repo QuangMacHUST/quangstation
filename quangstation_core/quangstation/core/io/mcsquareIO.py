@@ -12,25 +12,25 @@ import pydicom
 import scipy.sparse as sp
 from scipy.sparse import csc_matrix
 
-from opentps.core.data.CTCalibrations.MCsquareCalibration import MCsquareCTCalibration
-from opentps.core.data.CTCalibrations.MCsquareCalibration import MCsquareMaterial
-from opentps.core.data.CTCalibrations.MCsquareCalibration import MCsquareMolecule
-from opentps.core.data.CTCalibrations import AbstractCTCalibration
-from opentps.core.data.images import CTImage
-from opentps.core.data.images import DoseImage
-from opentps.core.data.images import ROIMask
-from opentps.core.data.MCsquare import BDL
-from opentps.core.data.MCsquare import MCsquareConfig
-from opentps.core.data.plan import ObjectivesList
-from opentps.core.data.plan import PlanProtonBeam
-from opentps.core.data.plan import PlanProtonLayer
-from opentps.core.data.plan import RangeShifter
-from opentps.core.data.plan import RTPlan
-from opentps.core.data import SparseBeamlets
-from opentps.core.io import mhdIO
-from opentps.core.io.mhdIO import exportImageMHD, importImageMHD
+from quangstation.core.data.CTCalibrations.MCsquareCalibration import MCsquareCTCalibration
+from quangstation.core.data.CTCalibrations.MCsquareCalibration import MCsquareMaterial
+from quangstation.core.data.CTCalibrations.MCsquareCalibration import MCsquareMolecule
+from quangstation.core.data.CTCalibrations import AbstractCTCalibration
+from quangstation.core.data.images import CTImage
+from quangstation.core.data.images import DoseImage
+from quangstation.core.data.images import ROIMask
+from quangstation.core.data.MCsquare import BDL
+from quangstation.core.data.MCsquare import MCsquareConfig
+from quangstation.core.data.plan import ObjectivesList
+from quangstation.core.data.plan import PlanProtonBeam
+from quangstation.core.data.plan import PlanProtonLayer
+from quangstation.core.data.plan import RangeShifter
+from quangstation.core.data.plan import RTPlan
+from quangstation.core.data import SparseBeamlets
+from quangstation.core.io import mhdIO
+from quangstation.core.io.mhdIO import exportImageMHD, importImageMHD
 
-from opentps.core.data.images import Image3D
+from quangstation.core.data.images import Image3D
 
 
 logger = logging.getLogger(__name__)
@@ -956,7 +956,7 @@ def writeBin(destFolder):
     destFolder : str
         The folder where the binaries will be written
     """
-    import opentps.core.processing.doseCalculation.protons.MCsquare as MCsquareModule
+    import quangstation.core.processing.doseCalculation.protons.MCsquare as MCsquareModule
     mcsquarePath = str(MCsquareModule.__path__[0])
 
     if (platform.system() == "Linux"):
@@ -1076,10 +1076,10 @@ class MCsquareIOTestCase(unittest.TestCase):
         """
         Test the write function.
         """
-        from opentps.core.data.plan._planProtonBeam import PlanProtonBeam
-        from opentps.core.data.plan._planProtonLayer import PlanProtonLayer
+        from quangstation.core.data.plan._planProtonBeam import PlanProtonBeam
+        from quangstation.core.data.plan._planProtonLayer import PlanProtonLayer
 
-        import opentps.core.processing.doseCalculation.MCsquare.BDL as BDLModule
+        import quangstation.core.processing.doseCalculation.MCsquare.BDL as BDLModule
 
         bdl = readBDL(os.path.join(str(BDLModule.__path__[0]), 'BDL_default_DN_RangeShifter.txt'))
 

@@ -4,7 +4,7 @@ import re
 import logging
 logger = logging.getLogger(__name__)
 
-import opentps.core.processing.doseCalculation.protons.MCsquare as MCsquare
+import quangstation.core.processing.doseCalculation.protons.MCsquare as MCsquare
 
 class MCsquareMaterial:
     """
@@ -230,8 +230,8 @@ class MCsquareMaterial:
         self : MCsquareElement
             The loaded element.
         """
-        from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareElement import MCsquareElement
-        from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareMolecule import MCsquareMolecule
+        from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareElement import MCsquareElement
+        from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareMolecule import MCsquareMolecule
 
         if isinstance(materialNbOrName, int):
             materialNb = materialNbOrName

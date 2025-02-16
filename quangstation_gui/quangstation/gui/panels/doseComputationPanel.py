@@ -3,17 +3,17 @@ logger = logging.getLogger(__name__)
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QComboBox, QLabel, QLineEdit, QPushButton, QDoubleSpinBox, \
     QHBoxLayout, QCheckBox, QSpinBox
 from PyQt5.QtCore import Qt
-from opentps.core.data.images import CTImage
-from opentps.core.data._patient import Patient
-from opentps.core.data._roiContour import ROIContour
-from opentps.core.data._rtStruct import RTStruct
-from opentps.core.data.plan import RTPlan
-from opentps.core.io import mcsquareIO
-from opentps.core.io.scannerReader import readScanner
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.core.processing.doseCalculation.photons.cccDoseCalculator import CCCDoseCalculator
-from opentps.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
-from opentps.gui.panels.patientDataWidgets import PatientDataComboBox
+from quangstation.core.data.images import CTImage
+from quangstation.core.data._patient import Patient
+from quangstation.core.data._roiContour import ROIContour
+from quangstation.core.data._rtStruct import RTStruct
+from quangstation.core.data.plan import RTPlan
+from quangstation.core.io import mcsquareIO
+from quangstation.core.io.scannerReader import readScanner
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.core.processing.doseCalculation.photons.cccDoseCalculator import CCCDoseCalculator
+from quangstation.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
+from quangstation.gui.panels.patientDataWidgets import PatientDataComboBox
 
 
 class DoseComputationPanel(QWidget):
@@ -111,7 +111,7 @@ class DoseComputationPanel(QWidget):
         self._batchSize.hide()
 
 
-        from opentps.gui.programSettingEditor import MCsquareConfigEditor
+        from quangstation.gui.programSettingEditor import MCsquareConfigEditor
         self._mcsquareConfigWidget = MCsquareConfigEditor(self)
         self.layout.addWidget(self._mcsquareConfigWidget)
 

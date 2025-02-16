@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 import logging
 import os
 
-from opentps.core.data.images import CTImage
-from opentps.core.processing.segmentation.segmentation3D import applyThreshold
-from opentps.core.processing.segmentation.segmentationCT import SegmentationCT
-from opentps.core.examples.syntheticData import *
+from quangstation.core.data.images import CTImage
+from quangstation.core.processing.segmentation.segmentation3D import applyThreshold
+from quangstation.core.processing.segmentation.segmentationCT import SegmentationCT
+from quangstation.core.examples.syntheticData import *
 
 logger = logging.getLogger(__name__)
 

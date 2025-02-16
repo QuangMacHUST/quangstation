@@ -3,8 +3,8 @@ import time
 import concurrent
 import logging 
 
-from opentps.core.processing.imageSimulation.DRRToolBox import forwardProjection
-from opentps.core.processing.imageProcessing.image2DManip import getBinaryMaskFromROIDRR, get2DMaskCenterOfMass
+from quangstation.core.processing.imageSimulation.DRRToolBox import forwardProjection
+from quangstation.core.processing.imageProcessing.image2DManip import getBinaryMaskFromROIDRR, get2DMaskCenterOfMass
 
 logger = logging.getLogger(__name__)
 def multiProcDRRs(dataList, projAngle, projAxis, outputSize, ncore=None):

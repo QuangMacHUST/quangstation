@@ -5,11 +5,11 @@ from typing import Union, Optional
 
 import numpy as np
 
-from opentps.core.data.images._doseImage import DoseImage
-from opentps.core.data.images._roiMask import ROIMask
-from opentps.core.data._roiContour import ROIContour
-from opentps.core.processing.imageProcessing import resampler3D
-from opentps.core import Event
+from quangstation.core.data.images._doseImage import DoseImage
+from quangstation.core.data.images._roiMask import ROIMask
+from quangstation.core.data._roiContour import ROIContour
+from quangstation.core.processing.imageProcessing import resampler3D
+from quangstation.core import Event
 
 
 class DVH:

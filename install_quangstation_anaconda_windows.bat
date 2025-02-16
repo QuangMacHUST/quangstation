@@ -12,7 +12,7 @@ if %errorlevel% == 1 (
     call conda create --name quangstation python=3.9
 )
 
-call conda activate OpenTPS
+call conda activate quangstation
 
 pip3 install --upgrade pip
 pip3 install pydicom

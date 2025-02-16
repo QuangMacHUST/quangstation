@@ -6,9 +6,9 @@ import numpy as np
 import copy
 import pydicom
 
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.data.images._ctImage import CTImage
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.data.images._ctImage import CTImage
 
 class DoseImage(Image3D):
     """

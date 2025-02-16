@@ -2,7 +2,7 @@
 import numpy as np
 from vtkmodules.vtkIOImage import vtkImageImport
 
-from opentps.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
+from quangstation.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
 
 
 class Image3DForViewer(GenericImageForViewer):

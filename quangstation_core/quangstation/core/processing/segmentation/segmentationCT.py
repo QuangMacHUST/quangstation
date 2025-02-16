@@ -1,8 +1,8 @@
 import numpy as np
 import logging
 
-import opentps.core.processing.segmentation.segmentation3D as seg
-import opentps.core.processing.imageProcessing.sitkImageProcessing as stik
+import quangstation.core.processing.segmentation.segmentation3D as seg
+import quangstation.core.processing.imageProcessing.sitkImageProcessing as stik
 
 logger = logging.getLogger(__name__)
 

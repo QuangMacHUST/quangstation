@@ -4,28 +4,28 @@ import sys
 
 from matplotlib import pyplot as plt
 
-from opentps.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
-from opentps.core.processing.planOptimization.tools import evaluateClinical
+from quangstation.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
+from quangstation.core.processing.planOptimization.tools import evaluateClinical
 sys.path.append('..')
 import numpy as np
 
-from opentps.core.data.plan import ProtonPlan, RTPlan
-from opentps.core.io.scannerReader import readScanner
-from opentps.core.io.serializedObjectIO import loadRTPlan, saveRTPlan
-from opentps.core.io.dicomIO import readDicomDose, readDicomPlan
-from opentps.core.io.dataLoader import readData
-from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareCTCalibration import MCsquareCTCalibration
-from opentps.core.io import mcsquareIO
-from opentps.core.data._dvh import DVH
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
-from opentps.core.io.mhdIO import exportImageMHD
-from opentps.core.data.plan import PlanProtonBeam
-from opentps.core.data.plan import PlanProtonLayer
-from opentps.core.data.images import CTImage, DoseImage
-from opentps.core.data import RTStruct
-from opentps.core.data import Patient
-from opentps.core.data.images import ROIMask
+from quangstation.core.data.plan import ProtonPlan, RTPlan
+from quangstation.core.io.scannerReader import readScanner
+from quangstation.core.io.serializedObjectIO import loadRTPlan, saveRTPlan
+from quangstation.core.io.dicomIO import readDicomDose, readDicomPlan
+from quangstation.core.io.dataLoader import readData
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareCTCalibration import MCsquareCTCalibration
+from quangstation.core.io import mcsquareIO
+from quangstation.core.data._dvh import DVH
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
+from quangstation.core.io.mhdIO import exportImageMHD
+from quangstation.core.data.plan import PlanProtonBeam
+from quangstation.core.data.plan import PlanProtonLayer
+from quangstation.core.data.images import CTImage, DoseImage
+from quangstation.core.data import RTStruct
+from quangstation.core.data import Patient
+from quangstation.core.data.images import ROIMask
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
@@ -53,18 +53,18 @@ def run(output_path=""):
     # Save plan
     saveRTPlan(plan,os.path.join(output_path,'dummy_plan.tps'))
 
-    # Load plan in OpenTPS format (serialized)
+    # Load plan in quangstation format (serialized)
     plan2 = loadRTPlan(os.path.join(output_path,'dummy_plan.tps'))
     print(plan2[0].layers[1].spotWeights)
     print(plan[0].layers[1].spotWeights)
 
     # Load DICOM plan
-    dicomPath = os.path.join(Path(os.getcwd()).parent.absolute(),'opentps','testData','Phantom')
+    dicomPath = os.path.join(Path(os.getcwd()).parent.absolute(),'quangstation','testData','Phantom')
     print(dicomPath)
     dataList = readData(dicomPath, maxDepth=1)
     plan3 = [d for d in dataList if isinstance(d, RTPlan)][0]
     # or provide path to RTPlan and read it
-    # plan_path = os.path.join(Path(os.getcwd()).parent.absolute(),'opentps/testData/Phantom/Plan_SmallWaterPhantom_cropped_resampled_optimized.dcm')
+    # plan_path = os.path.join(Path(os.getcwd()).parent.absolute(),'quangstation/testData/Phantom/Plan_SmallWaterPhantom_cropped_resampled_optimized.dcm')
     # plan3 = readDicomPlan(plan_path)
 
     ## Dose computation from plan
@@ -75,8 +75,8 @@ def run(output_path=""):
     doseCalculator.nbPrimaries = 1e7
 
     # Manually specify Scanner and BDL
-    #openTPS_path = os.path.join(Path(os.getcwd()).parent.absolute(),'opentps','opentps_core','opentps')
-    #MCSquarePath = os.path.join(openTPS_path, 'core', 'processing', 'doseCalculation', 'MCsquare')
+    #quangstation_path = os.path.join(Path(os.getcwd()).parent.absolute(),'quangstation','quangstation_core','quangstation')
+    #MCSquarePath = os.path.join(quangstation_path, 'core', 'processing', 'doseCalculation', 'MCsquare')
     # doseCalculator = MCsquareDoseCalculator()
     #beamModel = mcsquareIO.readBDL(os.path.join(MCSquarePath, 'BDL', 'UMCG_P1_v2_RangeShifter.txt'))
     #doseCalculator.beamModel = beamModel
@@ -179,4 +179,4 @@ def run(output_path=""):
     plt.show()
 
 if __name__ == "__main__":
-    run(os.path.join(Path(os.getcwd()).parent.absolute(), 'opentps', 'testData','Phantom'))
+    run(os.path.join(Path(os.getcwd()).parent.absolute(), 'quangstation', 'testData','Phantom'))

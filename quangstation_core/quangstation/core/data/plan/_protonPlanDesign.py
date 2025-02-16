@@ -7,12 +7,12 @@ from typing import  Sequence
 
 import numpy as np
 
-from opentps.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
-from opentps.core.data.plan._rangeShifter import RangeShifter
-from opentps.core.data.plan._robustnessProton import RobustnessProton
-from opentps.core.processing.planEvaluation.robustnessEvaluation import RobustnessEvalProton
-from opentps.core.processing.planOptimization.planInitializer import PlanInitializer
-from opentps.core.data.plan._rtPlanDesign import RTPlanDesign
+from quangstation.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
+from quangstation.core.data.plan._rangeShifter import RangeShifter
+from quangstation.core.data.plan._robustnessProton import RobustnessProton
+from quangstation.core.processing.planEvaluation.robustnessEvaluation import RobustnessEvalProton
+from quangstation.core.processing.planOptimization.planInitializer import PlanInitializer
+from quangstation.core.data.plan._rtPlanDesign import RTPlanDesign
 
 logger = logging.getLogger(__name__)
 
@@ -69,7 +69,7 @@ class ProtonPlanDesign(RTPlanDesign):
         """
         start = time.time()
         # Spot placement
-        from opentps.core.data.plan import ProtonPlan
+        from quangstation.core.data.plan import ProtonPlan
         plan = ProtonPlan("NewPlan")
         plan.seriesInstanceUID = "1.2.840.10008.5.1.4.1.1.481.8"
         plan.modality = "RT Ion Plan IOD"
@@ -102,7 +102,7 @@ class ProtonPlanDesign(RTPlanDesign):
         for beam in plan:
             plan.removeBeam(beam)
 
-        from opentps.core.data.plan import PlanProtonBeam
+        from quangstation.core.data.plan import PlanProtonBeam
         for i, gantryAngle in enumerate(self.gantryAngles):
             beam = PlanProtonBeam()
             beam.gantryAngle = gantryAngle

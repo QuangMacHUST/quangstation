@@ -6,14 +6,14 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QLabel, QLineEdit, QPushButton, QDoubleSpinBox, QListWidget, \
     QHBoxLayout, QMenu, QAction, QComboBox
 
-from opentps.core.data.plan._protonPlanDesign import ProtonPlanDesign
-from opentps.core.data._patient import Patient
-from opentps.core.data.plan._photonPlanDesign import PhotonPlanDesign
-from opentps.core.io import mcsquareIO
-from opentps.core.io.mcsquareIO import readBDL
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.gui.panels.planDesignPanel.beamDialog import BeamDialog
-from opentps.gui.panels.planDesignPanel.robustnessSettings import RobustnessSettings
+from quangstation.core.data.plan._protonPlanDesign import ProtonPlanDesign
+from quangstation.core.data._patient import Patient
+from quangstation.core.data.plan._photonPlanDesign import PhotonPlanDesign
+from quangstation.core.io import mcsquareIO
+from quangstation.core.io.mcsquareIO import readBDL
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.gui.panels.planDesignPanel.beamDialog import BeamDialog
+from quangstation.gui.panels.planDesignPanel.robustnessSettings import RobustnessSettings
 
 logger = logging.getLogger(__name__)
 
@@ -46,7 +46,7 @@ class PlanDesignPanel(QWidget):
         self.layout.addWidget(self._planIMRTNameEdit)
         self._planIMRTNameEdit.hide()
 
-        from opentps.gui.programSettingEditor import MCsquareConfigEditor
+        from quangstation.gui.programSettingEditor import MCsquareConfigEditor
         self._mcsquareConfigWidget = MCsquareConfigEditor(self)
         self._mcsquareConfigWidget.setContentsMargins(0, 0, 0, 0)
         self.layout.addWidget(self._mcsquareConfigWidget)

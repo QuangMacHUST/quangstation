@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from opentps.core.data.images._roiMask import ROIMask
-from opentps.core.processing.imageProcessing.roiMasksProcessing import buildStructElem, dilateMaskScipy
+from quangstation.core.data.images._roiMask import ROIMask
+from quangstation.core.processing.imageProcessing.roiMasksProcessing import buildStructElem, dilateMaskScipy
 import os
 import logging
 

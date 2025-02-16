@@ -1,4 +1,4 @@
-from opentps.core.processing.registration.registrationRigid import RegistrationRigid
+from quangstation.core.processing.registration.registrationRigid import RegistrationRigid
 
 
 def getTranslationAndRotation(fixed, moving, transform=None):

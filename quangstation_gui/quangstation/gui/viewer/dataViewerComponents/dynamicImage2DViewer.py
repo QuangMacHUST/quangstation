@@ -1,5 +1,5 @@
-from opentps.gui.viewer.dataViewerComponents.image2DViewer import Image2DViewer
-from opentps.gui.viewer.dataForViewer.dyn2DSeqForViewer import Dyn2DSeqForViewer
+from quangstation.gui.viewer.dataViewerComponents.image2DViewer import Image2DViewer
+from quangstation.gui.viewer.dataForViewer.dyn2DSeqForViewer import Dyn2DSeqForViewer
 
 
 class DynamicImage2DViewer(Image2DViewer):

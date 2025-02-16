@@ -5,7 +5,7 @@ import pydicom
 import copy
 import numpy as np
 
-from opentps.core.data.images._image3D import Image3D
+from quangstation.core.data.images._image3D import Image3D
 
 
 class CTImage(Image3D):

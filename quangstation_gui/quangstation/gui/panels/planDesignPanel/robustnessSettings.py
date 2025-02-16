@@ -1,9 +1,9 @@
 
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import Qt
-from opentps.core.data.plan import Robustness
-from opentps.core.data.plan._robustnessProton import RobustnessProton
-from opentps.core.data.plan._robustnessPhoton import RobustnessPhoton
+from quangstation.core.data.plan import Robustness
+from quangstation.core.data.plan._robustnessProton import RobustnessProton
+from quangstation.core.data.plan._robustnessPhoton import RobustnessPhoton
 
 class RobustnessSettings(QWidget):
     def __init__(self, viewController, planEvaluation=False, parent=None):

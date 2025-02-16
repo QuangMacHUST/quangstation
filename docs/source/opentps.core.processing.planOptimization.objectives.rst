@@ -1,53 +1,53 @@
-opentps.core.processing.planOptimization.objectives package
+quangstation.core.processing.planOptimization.objectives package
 ===========================================================
 
 Submodules
 ----------
 
-opentps.core.processing.planOptimization.objectives.baseFunction module
+quangstation.core.processing.planOptimization.objectives.baseFunction module
 -----------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.objectives.baseFunction
+.. automodule:: quangstation.core.processing.planOptimization.objectives.baseFunction
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.planOptimization.objectives.doseFidelity module
+quangstation.core.processing.planOptimization.objectives.doseFidelity module
 -----------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.objectives.doseFidelity
+.. automodule:: quangstation.core.processing.planOptimization.objectives.doseFidelity
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.planOptimization.objectives.energySequencing module
+quangstation.core.processing.planOptimization.objectives.energySequencing module
 ---------------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.objectives.energySequencing
+.. automodule:: quangstation.core.processing.planOptimization.objectives.energySequencing
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.planOptimization.objectives.logBarrier module
+quangstation.core.processing.planOptimization.objectives.logBarrier module
 ---------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.objectives.logBarrier
+.. automodule:: quangstation.core.processing.planOptimization.objectives.logBarrier
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.planOptimization.objectives.norms module
+quangstation.core.processing.planOptimization.objectives.norms module
 ----------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.objectives.norms
+.. automodule:: quangstation.core.processing.planOptimization.objectives.norms
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.planOptimization.objectives.projections module
+quangstation.core.processing.planOptimization.objectives.projections module
 ----------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.objectives.projections
+.. automodule:: quangstation.core.processing.planOptimization.objectives.projections
    :members:
    :undoc-members:
    :show-inheritance:
@@ -55,7 +55,7 @@ opentps.core.processing.planOptimization.objectives.projections module
 Module contents
 ---------------
 
-.. automodule:: opentps.core.processing.planOptimization.objectives
+.. automodule:: quangstation.core.processing.planOptimization.objectives
    :members:
    :undoc-members:
    :show-inheritance:

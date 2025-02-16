@@ -1,29 +1,29 @@
-opentps.core.processing.imageSimulation package
+quangstation.core.processing.imageSimulation package
 ===============================================
 
 Submodules
 ----------
 
-opentps.core.processing.imageSimulation.DRRToolBox module
+quangstation.core.processing.imageSimulation.DRRToolBox module
 ---------------------------------------------------------
 
-.. automodule:: opentps.core.processing.imageSimulation.DRRToolBox
+.. automodule:: quangstation.core.processing.imageSimulation.DRRToolBox
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.imageSimulation.ForwardProjectorTigre module
+quangstation.core.processing.imageSimulation.ForwardProjectorTigre module
 --------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.imageSimulation.ForwardProjectorTigre
+.. automodule:: quangstation.core.processing.imageSimulation.ForwardProjectorTigre
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.imageSimulation.multiProcForkMethods module
+quangstation.core.processing.imageSimulation.multiProcForkMethods module
 -------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.imageSimulation.multiProcForkMethods
+.. automodule:: quangstation.core.processing.imageSimulation.multiProcForkMethods
    :members:
    :undoc-members:
    :show-inheritance:
@@ -31,7 +31,7 @@ opentps.core.processing.imageSimulation.multiProcForkMethods module
 Module contents
 ---------------
 
-.. automodule:: opentps.core.processing.imageSimulation
+.. automodule:: quangstation.core.processing.imageSimulation
    :members:
    :undoc-members:
    :show-inheritance:

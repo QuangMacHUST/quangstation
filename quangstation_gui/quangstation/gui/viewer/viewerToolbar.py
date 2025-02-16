@@ -6,15 +6,15 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QToolBar, QAction, QDialog, QPushButton, QLineEdit, QVBoxLayout, QFileDialog, \
     QStackedWidget, QListView, QComboBox, QWidgetAction
 
-from opentps.core.io import dataLoader
-from opentps.core import Event
-from opentps.gui.viewer.dataViewer import DataViewer
-from opentps.gui.viewer.exportWindow import ExportWindow
-from opentps.gui.tools._cropTool import CropWidget
-from opentps.gui.tools._resampleTool import ResampleWidget
-from opentps.gui.programSettingEditor import ProgramSettingEditor
+from quangstation.core.io import dataLoader
+from quangstation.core import Event
+from quangstation.gui.viewer.dataViewer import DataViewer
+from quangstation.gui.viewer.exportWindow import ExportWindow
+from quangstation.gui.tools._cropTool import CropWidget
+from quangstation.gui.tools._resampleTool import ResampleWidget
+from quangstation.gui.programSettingEditor import ProgramSettingEditor
 
-import opentps.gui.res.icons as IconModule
+import quangstation.gui.res.icons as IconModule
 
 class ViewerToolbar(QToolBar):
 

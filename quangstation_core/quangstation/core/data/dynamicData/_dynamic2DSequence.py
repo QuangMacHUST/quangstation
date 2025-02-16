@@ -1,6 +1,6 @@
 import numpy as np
 
-from opentps.core.data._patientData import PatientData
+from quangstation.core.data._patientData import PatientData
 
 class Dynamic2DSequence(PatientData):
     """

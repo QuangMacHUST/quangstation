@@ -5,20 +5,20 @@ from PyQt5.QtCore import QMimeData, Qt
 from PyQt5.QtGui import QStandardItemModel, QDrag, QFont, QStandardItem, QColor
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QComboBox, QTreeView, QAbstractItemView
 
-from opentps.core.data.dynamicData._dynamic2DSequence import Dynamic2DSequence
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.data.dynamicData._dynamic2DSequence import Dynamic2DSequence
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
 
-from opentps.core.data.images import CTImage
-from opentps.core.data.images import DoseImage
-from opentps.core.data.images import Image2D
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.data.images import VectorField3D
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.data import PatientData
+from quangstation.core.data.images import CTImage
+from quangstation.core.data.images import DoseImage
+from quangstation.core.data.images import Image2D
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data.images import VectorField3D
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.data import PatientData
 
-from opentps.gui.panels.patientDataPanel.patientDataMenu import PatientDataMenu
-from opentps.gui.viewer.dataViewer import DroppedObject
+from quangstation.gui.panels.patientDataPanel.patientDataMenu import PatientDataMenu
+from quangstation.gui.viewer.dataViewer import DroppedObject
 
 
 class PatientDataSelection(QWidget):
@@ -214,8 +214,8 @@ class PatientDataTree(QTreeView):
             self._currentPatient.patientDataAddedSignal.disconnect(self._appendData)
             self._currentPatient.patientDataRemovedSignal.disconnect(self._removeData)
             # Delete the open ROI by simulate a unselected clic 
-            from opentps.gui.panels.roiPanel import ROIItem
-            from opentps.gui.viewer.dataForViewer.ROIContourForViewer import ROIContourForViewer
+            from quangstation.gui.panels.roiPanel import ROIItem
+            from quangstation.gui.viewer.dataForViewer.ROIContourForViewer import ROIContourForViewer
             for i in range(len(self._currentPatient.rtStructs)):
                 for j in range(len(self._currentPatient.rtStructs[i]._contours)):
                     contour = ROIContourForViewer(self._currentPatient.rtStructs[i]._contours[j])

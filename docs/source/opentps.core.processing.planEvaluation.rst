@@ -1,13 +1,13 @@
-opentps.core.processing.planEvaluation package
+quangstation.core.processing.planEvaluation package
 ==============================================
 
 Submodules
 ----------
 
-opentps.core.processing.planEvaluation.robustnessEvaluation module
+quangstation.core.processing.planEvaluation.robustnessEvaluation module
 ------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planEvaluation.robustnessEvaluation
+.. automodule:: quangstation.core.processing.planEvaluation.robustnessEvaluation
    :members:
    :undoc-members:
    :show-inheritance:
@@ -15,7 +15,7 @@ opentps.core.processing.planEvaluation.robustnessEvaluation module
 Module contents
 ---------------
 
-.. automodule:: opentps.core.processing.planEvaluation
+.. automodule:: quangstation.core.processing.planEvaluation
    :members:
    :undoc-members:
    :show-inheritance:

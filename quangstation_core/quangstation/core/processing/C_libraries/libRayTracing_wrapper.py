@@ -8,8 +8,8 @@ import math
 import ctypes
 import platform
 
-from opentps.core.processing.rangeEnergy import rangeToEnergy
-import opentps.core.processing.C_libraries as clibraries
+from quangstation.core.processing.rangeEnergy import rangeToEnergy
+import quangstation.core.processing.C_libraries as clibraries
 
 logger = logging.getLogger(__name__)
 currentWorkingDir = os.getcwd()

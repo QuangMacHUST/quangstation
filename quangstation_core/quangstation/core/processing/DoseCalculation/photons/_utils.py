@@ -1,17 +1,17 @@
 import numpy as np
-import opentps.core.io.CCCdoseEngineIO as CCCdoseEngineIO
+import quangstation.core.io.CCCdoseEngineIO as CCCdoseEngineIO
 import scipy.sparse as sp
 import logging
 logger = logging.getLogger(__name__)
 from scipy.ndimage import shift, gaussian_filter
 import scipy.sparse as sp
 from scipy.sparse import csc_matrix
-from opentps.core.data.images import DoseImage
+from quangstation.core.data.images import DoseImage
 import ctypes
 import os
 import psutil
 import os
-from opentps.core.data.plan import PhotonPlan
+from quangstation.core.data.plan import PhotonPlan
 
 
 def correctShift(setup, angle):

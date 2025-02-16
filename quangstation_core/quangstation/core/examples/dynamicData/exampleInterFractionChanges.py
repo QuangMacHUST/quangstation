@@ -21,14 +21,14 @@ print('currentWorkingDir :', currentWorkingDir)
 # while not os.path.isfile(currentWorkingDir + '/main.py'): currentWorkingDir = os.path.dirname(currentWorkingDir)
 sys.path.append(os.path.dirname(currentWorkingDir))
 
-from opentps.core.io.serializedObjectIO import loadDataStructure
-from opentps.core.processing.imageProcessing.syntheticDeformation import applyBaselineShift, shrinkOrgan
-from opentps.core.processing.imageProcessing.resampler3D import crop3DDataAroundBox
-from opentps.core.processing.segmentation.segmentation3D import getBoxAroundROI
-from opentps.core.processing.deformableDataAugmentationToolBox.modelManipFunctions import *
-from opentps.core.processing.imageProcessing.imageTransform3D import rotateData, translateData, applyTransform3D
-from opentps.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
-from opentps.core.examples.syntheticData import createSynthetic4DCT
+from quangstation.core.io.serializedObjectIO import loadDataStructure
+from quangstation.core.processing.imageProcessing.syntheticDeformation import applyBaselineShift, shrinkOrgan
+from quangstation.core.processing.imageProcessing.resampler3D import crop3DDataAroundBox
+from quangstation.core.processing.segmentation.segmentation3D import getBoxAroundROI
+from quangstation.core.processing.deformableDataAugmentationToolBox.modelManipFunctions import *
+from quangstation.core.processing.imageProcessing.imageTransform3D import rotateData, translateData, applyTransform3D
+from quangstation.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
+from quangstation.core.examples.syntheticData import createSynthetic4DCT
 
 logger = logging.getLogger(__name__)
 

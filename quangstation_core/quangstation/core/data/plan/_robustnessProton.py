@@ -1,4 +1,4 @@
-from opentps.core.data.plan._robustness import Robustness
+from quangstation.core.data.plan._robustness import Robustness
 
 
 class RobustnessProton(Robustness):

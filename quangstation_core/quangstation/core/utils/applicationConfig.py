@@ -4,7 +4,7 @@ import logging
 import os
 from typing import Any
 
-from opentps.core.utils.programSettings import Singleton, ProgramSettings
+from quangstation.core.utils.programSettings import Singleton, ProgramSettings
 from pathlib import Path
 
 logger = logging.getLogger(__name__)

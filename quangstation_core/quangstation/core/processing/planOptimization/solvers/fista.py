@@ -5,9 +5,9 @@ import logging
 
 import numpy as np
 
-from opentps.core.processing.planOptimization.acceleration.fistaAccel import FistaAccel
-from opentps.core.processing.planOptimization.solvers.solver import ConvexSolver
-from opentps.core.processing.planOptimization.objectives.projections import PositiveProj
+from quangstation.core.processing.planOptimization.acceleration.fistaAccel import FistaAccel
+from quangstation.core.processing.planOptimization.solvers.solver import ConvexSolver
+from quangstation.core.processing.planOptimization.objectives.projections import PositiveProj
 
 logger = logging.getLogger(__name__)
 

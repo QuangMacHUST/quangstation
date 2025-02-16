@@ -2,8 +2,8 @@ from numpy import matlib as mb
 import numpy as np
 from scipy.special import logsumexp
 
-from opentps.core.processing.planOptimization import tools
-from opentps.core.processing.planOptimization.objectives.baseFunction import BaseFunc
+from quangstation.core.processing.planOptimization import tools
+from quangstation.core.processing.planOptimization.objectives.baseFunction import BaseFunc
 
 
 class EnergySeq(BaseFunc):

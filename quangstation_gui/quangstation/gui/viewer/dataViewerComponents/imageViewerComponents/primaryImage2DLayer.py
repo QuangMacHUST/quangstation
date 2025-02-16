@@ -6,9 +6,9 @@ from vtkmodules.vtkCommonColor import vtkNamedColors
 from vtkmodules.vtkIOGeometry import vtkSTLReader
 import vtk
 
-from opentps.core import Event
-from opentps.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
-from opentps.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
+from quangstation.core import Event
+from quangstation.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
+from quangstation.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
 
 
 class PrimaryImage2DLayer:

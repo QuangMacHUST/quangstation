@@ -8,16 +8,16 @@ try:
 except:
     print('No module SimpleITK found')
 
-from opentps.core.processing.imageProcessing import resampler3D
-from opentps.core.data.images._image2D import Image2D
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.data.images._vectorField3D import VectorField3D
+from quangstation.core.processing.imageProcessing import resampler3D
+from quangstation.core.data.images._image2D import Image2D
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data.images._vectorField3D import VectorField3D
 
-from opentps.core.data._roiContour import ROIContour
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
-from opentps.core.data._transform3D import Transform3D
-from opentps.core.processing.imageProcessing.imageTransform3D import \
+from quangstation.core.data._roiContour import ROIContour
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+from quangstation.core.data._transform3D import Transform3D
+from quangstation.core.processing.imageProcessing.imageTransform3D import \
     transform3DMatrixFromTranslationAndRotationsVectors, parseRotCenter, rotateVectorsInPlace
 
 
@@ -329,7 +329,7 @@ def applyTransform3D(data, tformMatrix: np.ndarray, fillValue: float = 0.,
 
     if isinstance(data, Image3D):
 
-        from opentps.core.data.images._roiMask import ROIMask
+        from quangstation.core.data.images._roiMask import ROIMask
 
         if isinstance(data, VectorField3D):
             applyTransform3DToVectorField3D(data, tformMatrix, fillValue=0, outputBox=outputBox, rotCenter=rotCenter,

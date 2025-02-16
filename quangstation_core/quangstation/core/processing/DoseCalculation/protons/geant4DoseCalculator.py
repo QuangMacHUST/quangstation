@@ -1,4 +1,4 @@
-from opentps.core.processing.doseCalculation import AbstractMCDoseCalculator
+from quangstation.core.processing.doseCalculation import AbstractMCDoseCalculator
 
 __all__ = ['Geant4DoseCalculator']
 

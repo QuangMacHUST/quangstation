@@ -2,9 +2,9 @@ from typing import Optional
 
 import vtkmodules.vtkRenderingCore as vtkRenderingCore
 
-from opentps.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.lookupTables import fusionLTTo3DLT
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.primaryImage3DLayer_3D import PrimaryImage3DLayer_3D
+from quangstation.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.lookupTables import fusionLTTo3DLT
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.primaryImage3DLayer_3D import PrimaryImage3DLayer_3D
 
 
 class SecondaryImage3DLayer_3D(PrimaryImage3DLayer_3D):

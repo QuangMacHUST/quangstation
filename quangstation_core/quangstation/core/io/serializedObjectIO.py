@@ -8,13 +8,13 @@ import os
 import logging
 import matplotlib.pyplot as plt
 
-from opentps.core.data.plan._protonPlan import ProtonPlan
-from opentps.core.data.plan._photonPlan import PhotonPlan
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.data.images._ctImage import CTImage
-from opentps.core.data.images._vectorField3D import VectorField3D
+from quangstation.core.data.plan._protonPlan import ProtonPlan
+from quangstation.core.data.plan._photonPlan import PhotonPlan
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.data.images._ctImage import CTImage
+from quangstation.core.data.images._vectorField3D import VectorField3D
 
 
 
@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------------------------------
 def saveDataStructure(patientList, savingPath, compressedBool=False, splitPatientsBool=False):
     """
-    Save OpenTPS data structures of a list of patient in the hard drive
+    Save quangstation data structures of a list of patient in the hard drive
 
     Parameters
     ----------
@@ -50,12 +50,12 @@ def saveDataStructure(patientList, savingPath, compressedBool=False, splitPatien
 def saveSerializedObjects(dataList, savingPath, compressedBool=False, dictionarized=False):
 
     """
-    Save a list of OpenTPS objects in the hard drive
+    Save a list of quangstation objects in the hard drive
 
     Parameters
     ----------
     dataList : list
-        List of OpenTPS objects to save
+        List of quangstation objects to save
     savingPath : str
         Path where to save the data structures
     compressedBool : bool, optional
@@ -95,7 +95,7 @@ def saveSerializedObjects(dataList, savingPath, compressedBool=False, dictionari
 def loadDataStructure(filePath):
 
     """
-    Load a OpenTPS data structure from the hard drive
+    Load a quangstation data structure from the hard drive
 
     Parameters
     ----------
@@ -105,7 +105,7 @@ def loadDataStructure(filePath):
     Returns
     -------
     dataList : list
-        List of OpenTPS objects loaded.
+        List of quangstation objects loaded.
     """
 
     if filePath.endswith('.p') or filePath.endswith('.pkl') or filePath.endswith('.pickle'):
@@ -123,7 +123,7 @@ def loadDataStructure(filePath):
         try:
             dataList = pickle.loads(bytes_in)
         except:
-            from opentps.core.utils import pickel2 as pickle2
+            from quangstation.core.utils import pickel2 as pickle2
             dataList = pickle2.loads(bytes_in)
 
     elif filePath.endswith('.pbz2'):
@@ -167,7 +167,7 @@ def saveRTPlan(plan, file_path, unloadBeamlets=True):
     if plan.planDesign and unloadBeamlets:
         if plan.planDesign.beamlets:
             plan.planDesign.beamlets.unload()
-        from opentps.core.data.plan._protonPlanDesign import ProtonPlanDesign
+        from quangstation.core.data.plan._protonPlanDesign import ProtonPlanDesign
         if isinstance(plan.planDesign, ProtonPlanDesign) and plan.planDesign.beamletsLET:
             plan.planDesign.beamletsLET.unload()
 
@@ -232,7 +232,7 @@ def loadBeamlets(file_path):
     beamlets:SparseBeamlets
         The beamlets object loaded from the file
     """
-    from opentps.core.data._sparseBeamlets import SparseBeamlets
+    from quangstation.core.data._sparseBeamlets import SparseBeamlets
     return loadData(file_path, SparseBeamlets)
 
 def saveData(data, file_path):
@@ -269,22 +269,22 @@ def loadData(file_path, cls):
 
 def dictionarizeData(data):
     """
-    Convert an OpenTPS object into a dictionary
+    Convert an quangstation object into a dictionary
 
     Parameters
     ----------
     data : object
-        The OpenTPS object to convert
+        The quangstation object to convert
 
     Returns
     -------
     newDict : dict
-        The dictionary containing the data of the OpenTPS object
+        The dictionary containing the data of the quangstation object
     """
 
     print('Dictionarize data -', data.getTypeAsString())
     newDict = {}
-    from opentps.core.data._patient import Patient
+    from quangstation.core.data._patient import Patient
     if isinstance(data, Patient):
 
         patientDataDictList = []
@@ -342,17 +342,17 @@ def dictionarizeData(data):
 
 def unDictionarize(dataDict):
     """
-    Convert a dictionary into an OpenTPS object
+    Convert a dictionary into an quangstation object
 
     Parameters
     ----------
     dataDict : dict
-        The dictionary containing the data of the OpenTPS object
+        The dictionary containing the data of the quangstation object
 
     Returns
     -------
     data : object
-        The OpenTPS object
+        The quangstation object
     """
 
     print('Read data under dict Format -', dataDict['dataType'])

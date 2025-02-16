@@ -3,10 +3,10 @@ from enum import Enum
 
 import numpy as np
 
-from opentps.core.data.images import DoseImage
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.processing.imageProcessing import resampler3D
-from opentps.core import Event
+from quangstation.core.data.images import DoseImage
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.processing.imageProcessing import resampler3D
+from quangstation.core import Event
 
 
 class DoseComparisonImageProvider:

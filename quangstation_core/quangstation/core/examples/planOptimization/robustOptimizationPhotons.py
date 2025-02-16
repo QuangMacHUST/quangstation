@@ -5,24 +5,24 @@ import numpy as np
 import sys
 import scipy as sp
 
-from opentps.core.processing.planOptimization.planOptimization import IntensityModulationOptimizer
+from quangstation.core.processing.planOptimization.planOptimization import IntensityModulationOptimizer
 from matplotlib import pyplot as plt
-from opentps.core.data.images import CTImage
-from opentps.core.data.images import ROIMask
-from opentps.core.data import DVH
-from opentps.core.data import Patient
-from opentps.core.data.plan import FidObjective
-from opentps.core.data.plan import RobustnessPhoton
-from opentps.core.io import mcsquareIO
-from opentps.core.io.scannerReader import readScanner
-from opentps.core.io.serializedObjectIO import loadRTPlan, saveRTPlan
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
-from opentps.core.processing.doseCalculation.photons.cccDoseCalculator import CCCDoseCalculator
-from opentps.core.data.plan import PhotonPlanDesign
+from quangstation.core.data.images import CTImage
+from quangstation.core.data.images import ROIMask
+from quangstation.core.data import DVH
+from quangstation.core.data import Patient
+from quangstation.core.data.plan import FidObjective
+from quangstation.core.data.plan import RobustnessPhoton
+from quangstation.core.io import mcsquareIO
+from quangstation.core.io.scannerReader import readScanner
+from quangstation.core.io.serializedObjectIO import loadRTPlan, saveRTPlan
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
+from quangstation.core.processing.doseCalculation.photons.cccDoseCalculator import CCCDoseCalculator
+from quangstation.core.data.plan import PhotonPlanDesign
 import copy
 from scipy.sparse import csc_matrix
-from opentps.core.io.dicomIO import writeRTDose
+from quangstation.core.io.dicomIO import writeRTDose
 sys.path.append('..')
 
 logger = logging.getLogger(__name__)

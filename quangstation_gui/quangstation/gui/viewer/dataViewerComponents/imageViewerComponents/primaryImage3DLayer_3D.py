@@ -3,10 +3,10 @@ from typing import Optional
 import vtkmodules.vtkRenderingCore as vtkRenderingCore
 from vtkmodules.vtkRenderingVolumeOpenGL2 import vtkSmartVolumeMapper
 
-from opentps.core import Event
-from opentps.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
-from opentps.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.lookupTables import ct3DLT
+from quangstation.core import Event
+from quangstation.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
+from quangstation.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.lookupTables import ct3DLT
 
 
 class PrimaryImage3DLayer_3D:

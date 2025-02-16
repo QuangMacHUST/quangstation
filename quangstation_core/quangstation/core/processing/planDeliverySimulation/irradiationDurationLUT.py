@@ -3,8 +3,8 @@ import logging
 import os
 import numpy as np
 
-from opentps.core.utils.applicationConfig import AbstractApplicationConfig
-from opentps.core.processing import planDeliverySimulation
+from quangstation.core.utils.applicationConfig import AbstractApplicationConfig
+from quangstation.core.processing import planDeliverySimulation
 
 logger = logging.getLogger(__name__)
 

@@ -1,8 +1,8 @@
 from PyQt5.QtWidgets import QWidget, QSplitter, QHBoxLayout, QPushButton, QTextEdit, QStatusBar
 from PyQt5.QtCore import Qt
 
-from opentps.core import APIInterpreter
-from opentps.gui.panels.scriptingPanel.pythonHighlighter import PythonHighlighter
+from quangstation.core import APIInterpreter
+from quangstation.gui.panels.scriptingPanel.pythonHighlighter import PythonHighlighter
 
 
 class ScriptingWindow(QWidget):

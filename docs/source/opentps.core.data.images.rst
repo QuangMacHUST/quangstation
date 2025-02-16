@@ -1,10 +1,10 @@
-opentps.core.data.images package
+quangstation.core.data.images package
 ================================
 
 Module contents
 ---------------
 
-.. automodule:: opentps.core.data.images
+.. automodule:: quangstation.core.data.images
    :members:
    :undoc-members:
    :show-inheritance:

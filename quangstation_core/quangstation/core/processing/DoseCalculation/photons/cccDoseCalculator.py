@@ -14,19 +14,19 @@ from pathlib import Path
 from typing import Optional, Sequence, Union
 from typing import Optional, Sequence, Union, Dict, Any
 
-from opentps.core.data.images import DoseImage
-from opentps.core.data import SparseBeamlets
-from opentps.core.processing.doseCalculation.abstractDoseCalculator import AbstractDoseCalculator
-from opentps.core.utils.programSettings import ProgramSettings
-from opentps.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
-from opentps.core.data.images import CTImage
-from opentps.core.data.images import Image3D
-from opentps.core.data.images import ROIMask
-from opentps.core.data import ROIContour
-from opentps.core.data.plan._photonPlan import PhotonPlan
-import opentps.core.io.CCCdoseEngineIO as CCCdoseEngineIO
-from opentps.core.processing.doseCalculation.photons._utils import shiftBeamlets, adjustDoseToScenario
-from opentps.core.data.plan._robustnessPhoton import RobustScenario
+from quangstation.core.data.images import DoseImage
+from quangstation.core.data import SparseBeamlets
+from quangstation.core.processing.doseCalculation.abstractDoseCalculator import AbstractDoseCalculator
+from quangstation.core.utils.programSettings import ProgramSettings
+from quangstation.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
+from quangstation.core.data.images import CTImage
+from quangstation.core.data.images import Image3D
+from quangstation.core.data.images import ROIMask
+from quangstation.core.data import ROIContour
+from quangstation.core.data.plan._photonPlan import PhotonPlan
+import quangstation.core.io.CCCdoseEngineIO as CCCdoseEngineIO
+from quangstation.core.processing.doseCalculation.photons._utils import shiftBeamlets, adjustDoseToScenario
+from quangstation.core.data.plan._robustnessPhoton import RobustScenario
 from scipy.ndimage import gaussian_filter
 
 
@@ -64,7 +64,7 @@ class CCCDoseCalculator(AbstractDoseCalculator):
     overwriteOutsideROI : bool
         if true, set to air all the region in the CT outside the ROI
     self.WorkSpaceDir : str
-        Path to the directory where the opentps code was cloned
+        Path to the directory where the quangstation code was cloned
     self.ROFolder : str
         Name of the folder where robust scenarios are stored
         
@@ -124,7 +124,7 @@ class CCCDoseCalculator(AbstractDoseCalculator):
     
     @property
     def _CCCexecutablePath(self):
-        return os.path.join(self.WorkSpaceDir,'opentps','core','processing','doseCalculation','photons','CCC_DoseEngine', 'CCC_DoseEngine')
+        return os.path.join(self.WorkSpaceDir,'quangstation','core','processing','doseCalculation','photons','CCC_DoseEngine', 'CCC_DoseEngine')
     
     @property
     def ctCalibration(self) -> Optional[AbstractCTCalibration]:
@@ -138,7 +138,7 @@ class CCCDoseCalculator(AbstractDoseCalculator):
         """
         Write the kernel file paths into a txt file which is stored into the simulation folder. This is required for the CCC dose calculation.
         """
-        kernelsDir = os.path.join(self.WorkSpaceDir,'opentps','core','processing','doseCalculation','photons','Kernels_differentFluence')
+        kernelsDir = os.path.join(self.WorkSpaceDir,'quangstation','core','processing','doseCalculation','photons','Kernels_differentFluence')
         f = open(os.path.join(self._CCCSimuDir, 'kernelPaths.txt'),'w')
         for fileName in os.listdir(kernelsDir):
             split = fileName.split('.')

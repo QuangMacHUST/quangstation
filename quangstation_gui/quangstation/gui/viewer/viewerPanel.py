@@ -2,9 +2,9 @@ from enum import Enum
 
 from PyQt5.QtWidgets import QWidget, QVBoxLayout
 
-from opentps.gui.viewer.dataViewer import DroppedObject
-from opentps.gui.viewer.gridFourElements import GridFourElements
-from opentps.gui.viewer.viewerToolbar import ViewerToolbar
+from quangstation.gui.viewer.dataViewer import DroppedObject
+from quangstation.gui.viewer.gridFourElements import GridFourElements
+from quangstation.gui.viewer.viewerToolbar import ViewerToolbar
 
 class ViewerPanel(QWidget):
     class LayoutTypes(Enum):

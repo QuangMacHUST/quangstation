@@ -4,17 +4,17 @@ from abc import abstractmethod
 from enum import Enum
 from typing import Optional
 
-from opentps.core import Event
+from quangstation.core import Event
 
 __all__ = ['AbstractDoseCalculator']
 
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from opentps.core.data.images._doseImage import DoseImage
-    from opentps.core.data.CTCalibrations import AbstractCTCalibration
-    from opentps.core.data.images._ctImage import CTImage
-    from opentps.core.data.plan._rtPlan import RTPlan
+    from quangstation.core.data.images._doseImage import DoseImage
+    from quangstation.core.data.CTCalibrations import AbstractCTCalibration
+    from quangstation.core.data.images._ctImage import CTImage
+    from quangstation.core.data.plan._rtPlan import RTPlan
 
 class AbstractDoseCalculator:
     """

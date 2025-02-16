@@ -25,21 +25,21 @@ before_script:
   - source venv/bin/activate
   #- pip3 install poetry
   - $POETRY_HOME/bin/poetry --version
-  - cd $CI_PROJECT_DIR/opentps_core
+  - cd $CI_PROJECT_DIR/quangstation_core
   - $POETRY_HOME/bin/poetry install --no-root # install dependencies
   - apt-get update && apt-get install -y libgl1 # For PyQt5
   #- apt-get install -y '^libxcb.*-dev' # For PyQt5
-  - cd $CI_PROJECT_DIR/opentps_gui
+  - cd $CI_PROJECT_DIR/quangstation_gui
   - $POETRY_HOME/bin/poetry install --no-root # install dependencies
 
 build:
   image: python:3.11
   stage: build
   script:
-    - export PYTHONPATH="$PWD/opentps_core:$PWD/opentps_gui"
-    - cd $CI_PROJECT_DIR/opentps_core
+    - export PYTHONPATH="$PWD/quangstation_core:$PWD/quangstation_gui"
+    - cd $CI_PROJECT_DIR/quangstation_core
     - $POETRY_HOME/bin/poetry build
-    - cd $CI_PROJECT_DIR/opentps_gui
+    - cd $CI_PROJECT_DIR/quangstation_gui
     - $POETRY_HOME/bin/poetry build
     #- pip install dist/*
   artifacts:
@@ -53,7 +53,7 @@ test_core:
   script:
     - pip show SimpleITK
     - cd $CI_PROJECT_DIR/
-    - export PYTHONPATH="$CI_PROJECT_DIR/opentps_core:$CI_PROJECT_DIR/opentps_gui"
+    - export PYTHONPATH="$CI_PROJECT_DIR/quangstation_core:$CI_PROJECT_DIR/quangstation_gui"
     - python3 CI/tests.py
 
 test_gui:
@@ -63,9 +63,9 @@ test_gui:
     - pip show SimpleITK
     - pip show vtk
     - cd $CI_PROJECT_DIR/
-    - export PYTHONPATH="$CI_PROJECT_DIR/opentps_core:$CI_PROJECT_DIR/opentps_gui"
+    - export PYTHONPATH="$CI_PROJECT_DIR/quangstation_core:$CI_PROJECT_DIR/quangstation_gui"
     - export QT_QPA_PLATFORM=offscreen
-    - python -m unittest discover opentps_gui/opentps/gui
+    - python -m unittest discover quangstation_gui/quangstation/gui
 
 docs:
   image: python:3.11
@@ -84,7 +84,7 @@ unittest_core:
   stage: unittest_core
   image: python:3.11
   script:
-    - cd $CI_PROJECT_DIR/opentps_core/
-    - touch opentps/__init__.py # because unittests does not work on namespace package
+    - cd $CI_PROJECT_DIR/quangstation_core/
+    - touch quangstation/__init__.py # because unittests does not work on namespace package
     - touch __init__.py # because unittests does not work on namespace package
-    - python3 -m unittest discover -s ./opentps -p '[!example]*.py' -v
+    - python3 -m unittest discover -s ./quangstation -p '[!example]*.py' -v

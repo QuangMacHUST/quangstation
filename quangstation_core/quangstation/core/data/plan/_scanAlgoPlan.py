@@ -1,6 +1,6 @@
 import json
 import logging
-from opentps.core.data.plan._rtPlan import RTPlan
+from quangstation.core.data.plan._rtPlan import RTPlan
 
 class ScanAlgoPlan:
     """
@@ -50,7 +50,7 @@ class ScanAlgoPlan:
             self.actualTemperature = "20.0"
             self.referenceTemperature = "20.0"
             self.actualPressure = "101.325"
-#file_path = "data/Phantoms/phantom_3mm/OpenTPS/Plan_phantom_1mm_9Beams_LS5_SS5_RTV7-5_Mai-26-2021_09-48-33.tps"
+#file_path = "data/Phantoms/phantom_3mm/quangstation/Plan_phantom_1mm_9Beams_LS5_SS5_RTV7-5_Mai-26-2021_09-48-33.tps"
             self.referencePressure = "101.325"
             self.doseCorrectionFactor = "1"
             self.icOffsetX = "0"

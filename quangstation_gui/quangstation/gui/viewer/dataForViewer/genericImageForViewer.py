@@ -2,10 +2,10 @@
 import typing
 from math import isclose
 
-from opentps.core import Event
+from quangstation.core import Event
 
-from opentps.gui.viewer.dataForViewer.dataMultiton import DataMultiton
-import opentps.gui.viewer.dataViewerComponents.imageViewerComponents.lookupTables as lookupTables
+from quangstation.gui.viewer.dataForViewer.dataMultiton import DataMultiton
+import quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.lookupTables as lookupTables
 
 
 class GenericImageForViewer(DataMultiton):

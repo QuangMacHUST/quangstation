@@ -1,29 +1,29 @@
-opentps.core.processing.planDeliverySimulation package
+quangstation.core.processing.planDeliverySimulation package
 ======================================================
 
 Submodules
 ----------
 
-opentps.core.processing.planDeliverySimulation.beamDeliveryTimings module
+quangstation.core.processing.planDeliverySimulation.beamDeliveryTimings module
 -------------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planDeliverySimulation.beamDeliveryTimings
+.. automodule:: quangstation.core.processing.planDeliverySimulation.beamDeliveryTimings
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.planDeliverySimulation.deliverySimulationConfig module
+quangstation.core.processing.planDeliverySimulation.deliverySimulationConfig module
 ------------------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planDeliverySimulation.deliverySimulationConfig
+.. automodule:: quangstation.core.processing.planDeliverySimulation.deliverySimulationConfig
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.planDeliverySimulation.planDeliverySimulation module
+quangstation.core.processing.planDeliverySimulation.planDeliverySimulation module
 ----------------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planDeliverySimulation.planDeliverySimulation
+.. automodule:: quangstation.core.processing.planDeliverySimulation.planDeliverySimulation
    :members:
    :undoc-members:
    :show-inheritance:
@@ -31,7 +31,7 @@ opentps.core.processing.planDeliverySimulation.planDeliverySimulation module
 Module contents
 ---------------
 
-.. automodule:: opentps.core.processing.planDeliverySimulation
+.. automodule:: quangstation.core.processing.planDeliverySimulation
    :members:
    :undoc-members:
    :show-inheritance:

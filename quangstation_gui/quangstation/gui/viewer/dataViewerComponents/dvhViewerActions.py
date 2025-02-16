@@ -1,8 +1,8 @@
 
 from PyQt5.QtWidgets import QWidgetAction, QLabel
 
-from opentps.gui.viewer.dataViewerComponents.dataViewerToolbar import DataViewerToolbar
-from opentps.gui.viewer.dataViewerComponents.dvhPlot import DVHViewer
+from quangstation.gui.viewer.dataViewerComponents.dataViewerToolbar import DataViewerToolbar
+from quangstation.gui.viewer.dataViewerComponents.dvhPlot import DVHViewer
 
 
 class DVHViewerActions:

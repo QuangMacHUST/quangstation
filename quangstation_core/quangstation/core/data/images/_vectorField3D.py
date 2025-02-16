@@ -7,15 +7,15 @@ import math
 import copy
 import logging
 
-from opentps.core.data.images._image3D import Image3D
-import opentps.core.processing.imageProcessing.resampler3D as resampler3D
+from quangstation.core.data.images._image3D import Image3D
+import quangstation.core.processing.imageProcessing.resampler3D as resampler3D
 
 logger = logging.getLogger(__name__)
 
 try:
     import cupy
     import cupyx.scipy.signal
-    import opentps.core.processing.registration.morphonsCupy as morphonsCupy
+    import quangstation.core.processing.registration.morphonsCupy as morphonsCupy
 except:
     logger.warning('cupy not found.')
     pass

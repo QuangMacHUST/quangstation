@@ -1,8 +1,8 @@
 import numpy as np
 import logging
 
-from opentps.core.data._transform3D import Transform3D
-from opentps.core.processing.registration.registration import Registration
+from quangstation.core.data._transform3D import Transform3D
+from quangstation.core.processing.registration.registration import Registration
 
 logger = logging.getLogger(__name__)
 

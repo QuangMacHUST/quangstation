@@ -6,11 +6,11 @@ from typing import Sequence, Optional
 
 import numpy as np
 
-from opentps.core.io.serializedObjectIO import saveData
+from quangstation.core.io.serializedObjectIO import saveData
 from scipy.sparse import csc_matrix
 
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.data._patientData import PatientData
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data._patientData import PatientData
 
 logger = logging.getLogger(__name__)
 try:
@@ -141,7 +141,7 @@ class SparseBeamlets(PatientData):
         totalDose = np.reshape(totalDose, self._gridSize, order='F')
         totalDose = np.flip(totalDose, 0)
         totalDose = np.flip(totalDose, 1)
-        from opentps.core.data.images._doseImage import DoseImage
+        from quangstation.core.data.images._doseImage import DoseImage
         doseImage = DoseImage(imageArray=totalDose, origin=self._origin, spacing=self._spacing,
                               angles=self._orientation)
         doseImage.patient = self.patient

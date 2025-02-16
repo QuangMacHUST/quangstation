@@ -4,16 +4,16 @@ __all__ = ['Patient']
 import unittest
 from typing import Union, Sequence
 
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.data.images._roiMask import ROIMask
-from opentps.core.data.plan._rtPlanDesign import RTPlanDesign
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.data.dynamicData._dynamic2DSequence import Dynamic2DSequence
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.data._patientData import PatientData
-from opentps.core.data._rtStruct import RTStruct
-from opentps.core import Event
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data.images._roiMask import ROIMask
+from quangstation.core.data.plan._rtPlanDesign import RTPlanDesign
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.data.dynamicData._dynamic2DSequence import Dynamic2DSequence
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.data._patientData import PatientData
+from quangstation.core.data._rtStruct import RTStruct
+from quangstation.core import Event
 
 
 class Patient:
@@ -283,7 +283,7 @@ class EventTestCase(unittest.TestCase):
         obj.name = name
         self.assertEqual(obj.name, name)
 
-        from opentps.core.data import PatientData
+        from quangstation.core.data import PatientData
         data1 = PatientData()
         data2 = PatientData()
         obj.appendPatientData(data1)

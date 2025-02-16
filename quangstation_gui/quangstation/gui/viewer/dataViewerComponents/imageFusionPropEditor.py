@@ -3,8 +3,8 @@ from matplotlib import pyplot as plt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg
 from matplotlib.widgets import RangeSlider
 
-from opentps.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
-from opentps.gui.viewer.dataViewerComponents.patientDataPropertyEditor import PatientDataPropertyEditor
+from quangstation.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
+from quangstation.gui.viewer.dataViewerComponents.patientDataPropertyEditor import PatientDataPropertyEditor
 
 
 class ImageFusionPropEditor(QMainWindow):

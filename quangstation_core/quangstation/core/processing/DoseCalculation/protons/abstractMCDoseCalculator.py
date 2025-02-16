@@ -1,5 +1,5 @@
 
-from opentps.core.processing.doseCalculation.abstractDoseCalculator import AbstractDoseCalculator
+from quangstation.core.processing.doseCalculation.abstractDoseCalculator import AbstractDoseCalculator
 
 __all__ = ['AbstractMCDoseCalculator']
 

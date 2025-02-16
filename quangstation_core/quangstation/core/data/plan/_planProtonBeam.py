@@ -11,8 +11,8 @@ import numpy as np
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from opentps.core.data.plan._planProtonLayer import PlanProtonLayer
-    from opentps.core.data.plan._rangeShifter import RangeShifter
+    from quangstation.core.data.plan._planProtonLayer import PlanProtonLayer
+    from quangstation.core.data.plan._rangeShifter import RangeShifter
 
 
 class PlanProtonBeam:
@@ -313,7 +313,7 @@ class PlanProtonBeam:
 
 class PlanIonLayerBeamCase(unittest.TestCase):
     def testFusionDuplicates(self):
-        from opentps.core.data.plan import PlanProtonLayer
+        from quangstation.core.data.plan import PlanProtonLayer
 
         beam = PlanProtonBeam()
         beam.gantryAngle = 0

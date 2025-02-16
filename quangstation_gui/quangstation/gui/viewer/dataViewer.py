@@ -3,25 +3,25 @@ from typing import Union, Optional
 
 from PyQt5.QtWidgets import QWidget, QVBoxLayout
 
-from opentps.core.data.images import DoseImage
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.data.images import Image2D
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
-from opentps.core.data.dynamicData._dynamic2DSequence import Dynamic2DSequence
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core import Event
-from opentps.gui.viewer.dataViewerComponents.dvhViewerActions import DVHViewerActions
-from opentps.gui.viewer.dataViewerComponents.image3DViewer import Image3DViewer
-from opentps.gui.viewer.dataViewerComponents.dynamicImage3DViewer import DynamicImage3DViewer
-from opentps.gui.viewer.dataViewerComponents.image2DViewer import Image2DViewer
-from opentps.gui.viewer.dataViewerComponents.dynamicImage2DViewer import DynamicImage2DViewer
-from opentps.gui.viewer.dataViewerComponents.image3DViewer_3D import Image3DViewer_3D
-from opentps.gui.viewer.dataViewerComponents.imageViewerActions import ImageViewerActions
-from opentps.gui.viewer.dataViewerComponents.dataViewerToolbar import DataViewerToolbar
-from opentps.gui.viewer.dataViewerComponents.blackEmptyPlot import BlackEmptyPlot
-from opentps.gui.viewer.dataViewerComponents.dvhPlot import DVHViewer
-from opentps.gui.viewer.dataViewerComponents.profileViewer import ProfileViewer
+from quangstation.core.data.images import DoseImage
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data.images import Image2D
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+from quangstation.core.data.dynamicData._dynamic2DSequence import Dynamic2DSequence
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core import Event
+from quangstation.gui.viewer.dataViewerComponents.dvhViewerActions import DVHViewerActions
+from quangstation.gui.viewer.dataViewerComponents.image3DViewer import Image3DViewer
+from quangstation.gui.viewer.dataViewerComponents.dynamicImage3DViewer import DynamicImage3DViewer
+from quangstation.gui.viewer.dataViewerComponents.image2DViewer import Image2DViewer
+from quangstation.gui.viewer.dataViewerComponents.dynamicImage2DViewer import DynamicImage2DViewer
+from quangstation.gui.viewer.dataViewerComponents.image3DViewer_3D import Image3DViewer_3D
+from quangstation.gui.viewer.dataViewerComponents.imageViewerActions import ImageViewerActions
+from quangstation.gui.viewer.dataViewerComponents.dataViewerToolbar import DataViewerToolbar
+from quangstation.gui.viewer.dataViewerComponents.blackEmptyPlot import BlackEmptyPlot
+from quangstation.gui.viewer.dataViewerComponents.dvhPlot import DVHViewer
+from quangstation.gui.viewer.dataViewerComponents.profileViewer import ProfileViewer
 
 
 class DroppedObject:

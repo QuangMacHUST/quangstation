@@ -7,13 +7,13 @@ from PyQt5.QtWidgets import QLineEdit, QMenu, QAction, QInputDialog, QMessageBox
 
 from pydicom.uid import generate_uid
 
-from opentps.core.data.images import CTImage
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
-from opentps.core.data import PatientData
-from opentps.core.io.serializedObjectIO import saveSerializedObjects
-from opentps.gui.viewer.dataViewerComponents.patientDataPropertyEditor import PatientDataPropertyEditor
+from quangstation.core.data.images import CTImage
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+from quangstation.core.data import PatientData
+from quangstation.core.io.serializedObjectIO import saveSerializedObjects
+from quangstation.gui.viewer.dataViewerComponents.patientDataPropertyEditor import PatientDataPropertyEditor
 
 
 class PatientDataMenu:
@@ -144,7 +144,7 @@ class PatientDataMenu:
         w.show()
 
     def _exportSerializedData(self, selectedData):
-        from opentps.gui.panels.patientDataPanel.patientDataPanel import SaveData_dialog
+        from quangstation.gui.panels.patientDataPanel.patientDataPanel import SaveData_dialog
         fileDialog = SaveData_dialog()
         savingPath, compressedBool, splitPatientsBool = fileDialog.getSaveFileName(None, dir=self.dataPath)
 

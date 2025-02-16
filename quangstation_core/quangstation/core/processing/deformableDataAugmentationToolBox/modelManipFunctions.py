@@ -1,6 +1,6 @@
 import numpy as np
 
-from opentps.core.processing.imageProcessing.imageTransform3D import getVoxelIndexFromPosition
+from quangstation.core.processing.imageProcessing.imageTransform3D import getVoxelIndexFromPosition
 
 
 ## ---------------------------------------------------------------------------------------------

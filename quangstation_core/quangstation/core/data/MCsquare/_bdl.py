@@ -7,7 +7,7 @@ from typing import Tuple, Optional, Sequence
 import numpy as np
 from scipy import interpolate
 
-from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareMaterial import MCsquareMaterial
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareMaterial import MCsquareMaterial
 
 
 class BDL:

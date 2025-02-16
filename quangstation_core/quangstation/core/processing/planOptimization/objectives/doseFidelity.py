@@ -4,8 +4,8 @@ from copy import copy
 import logging
 logger = logging.getLogger(__name__)
 
-from opentps.core.processing.planOptimization.objectives.baseFunction import BaseFunc
-from opentps.core.data._dvh import DVH
+from quangstation.core.processing.planOptimization.objectives.baseFunction import BaseFunc
+from quangstation.core.data._dvh import DVH
 
 try:
     import sparse_dot_mkl

@@ -3,7 +3,7 @@
 import logging
 import numpy as np
 
-from opentps.core.processing.planOptimization.solvers.solver import ConvexSolver
+from quangstation.core.processing.planOptimization.solvers.solver import ConvexSolver
 
 logger = logging.getLogger(__name__)
 

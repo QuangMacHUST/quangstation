@@ -6,13 +6,13 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout
 from pyqtgraph import PlotWidget, mkPen, PlotCurveItem, SignalProxy, TextItem
 
-from opentps.core.data.images import DoseImage
-from opentps.core.data.images import ROIMask
-from opentps.core.data import DVH
-from opentps.core.data._roiContour import ROIContour
-from opentps.core import Event
-from opentps.gui.viewer.dataForViewer.ROIContourForViewer import ROIContourForViewer
-from opentps.gui.viewer.dataForViewer.ROIMaskForViewer import ROIMaskForViewer
+from quangstation.core.data.images import DoseImage
+from quangstation.core.data.images import ROIMask
+from quangstation.core.data import DVH
+from quangstation.core.data._roiContour import ROIContour
+from quangstation.core import Event
+from quangstation.gui.viewer.dataForViewer.ROIContourForViewer import ROIContourForViewer
+from quangstation.gui.viewer.dataForViewer.ROIMaskForViewer import ROIMaskForViewer
 
 
 class DVHViewer(QWidget):

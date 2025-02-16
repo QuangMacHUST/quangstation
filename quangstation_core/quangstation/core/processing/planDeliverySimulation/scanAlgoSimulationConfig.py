@@ -1,7 +1,7 @@
 
 import logging
 
-from opentps.core.utils.applicationConfig import AbstractApplicationConfig
+from quangstation.core.utils.applicationConfig import AbstractApplicationConfig
 
 
 logger = logging.getLogger(__name__)

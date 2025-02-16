@@ -5,8 +5,8 @@ __all__ = ['Deformation3D']
 import logging
 import numpy as np
 import copy
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.data.images._vectorField3D import VectorField3D
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data.images._vectorField3D import VectorField3D
 
 logger = logging.getLogger(__name__)
 
@@ -230,7 +230,7 @@ class Deformation3D(Image3D):
             type of the output.
         """
 
-        from opentps.core.processing.imageProcessing.resampler3D import resample
+        from quangstation.core.processing.imageProcessing.resampler3D import resample
         resample(self, spacing=spacing, gridSize=gridSize, origin=origin, fillValue=fillValue, tryGPU=tryGPU, outputType=outputType, inPlace=True)
 
         # if not(self.velocity is None):

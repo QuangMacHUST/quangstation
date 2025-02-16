@@ -5,18 +5,18 @@ import logging
 
 from matplotlib import pyplot as plt
 
-from opentps.core.data.images import CTImage
-from opentps.core.data.images import ROIMask
-from opentps.core.data.plan import ObjectivesList
-from opentps.core.data.plan._protonPlanDesign import ProtonPlanDesign
-from opentps.core.data import DVH
-from opentps.core.data import Patient
-from opentps.core.data.plan import FidObjective
-from opentps.core.io import mcsquareIO
-from opentps.core.io.scannerReader import readScanner
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
-from opentps.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
+from quangstation.core.data.images import CTImage
+from quangstation.core.data.images import ROIMask
+from quangstation.core.data.plan import ObjectivesList
+from quangstation.core.data.plan._protonPlanDesign import ProtonPlanDesign
+from quangstation.core.data import DVH
+from quangstation.core.data import Patient
+from quangstation.core.data.plan import FidObjective
+from quangstation.core.io import mcsquareIO
+from quangstation.core.io.scannerReader import readScanner
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
+from quangstation.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
 
 """
 In this example, we optimize a ion plan (Proton) using the optimizeBeamletFree function.

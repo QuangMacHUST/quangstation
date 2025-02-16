@@ -1,6 +1,6 @@
 import numpy as np
 
-from opentps.core.data.MCsquare._bdl import BDL
+from quangstation.core.data.MCsquare._bdl import BDL
 
 
 class BDLWithSpotTilt(BDL):

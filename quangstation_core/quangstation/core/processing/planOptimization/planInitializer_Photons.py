@@ -1,12 +1,12 @@
 import logging
 import math
 import numpy as np
-from opentps.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
-from opentps.core.data.images._ctImage import CTImage
-from opentps.core.data.images._roiMask import ROIMask
-from opentps.core.data.plan._planPhotonBeam import PlanPhotonBeam
-from opentps.core.data.plan._photonPlan import PhotonPlan
-from opentps.core.data.plan._planPhotonBeam import PlanPhotonBeam
+from quangstation.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
+from quangstation.core.data.images._ctImage import CTImage
+from quangstation.core.data.images._roiMask import ROIMask
+from quangstation.core.data.plan._planPhotonBeam import PlanPhotonBeam
+from quangstation.core.data.plan._photonPlan import PhotonPlan
+from quangstation.core.data.plan._planPhotonBeam import PlanPhotonBeam
 
 logger = logging.getLogger(__name__)
 

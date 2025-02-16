@@ -1,5 +1,5 @@
-from opentps.core.processing.planOptimization.solvers.lp import LP
-from opentps.core.data.plan._rtPlan import RTPlan
+from quangstation.core.processing.planOptimization.solvers.lp import LP
+from quangstation.core.data.plan._rtPlan import RTPlan
 
 import logging
 
@@ -8,7 +8,7 @@ try:
     import gurobipy as gp
     from gurobipy import GRB
 except ModuleNotFoundError:
-    logger.warning("Ignore the following warning if not using Gurobi linear optimizer. Gurobi not required for most features provided in OpenTPS")
+    logger.warning("Ignore the following warning if not using Gurobi linear optimizer. Gurobi not required for most features provided in quangstation")
     logger.warning('No module Gurobi found\n!Licence required!\nGet free Academic license on '
                 'https://www.gurobi.com/academia/academic-program-and-licenses/ ')
 import numpy as np

@@ -5,13 +5,13 @@ from PyQt5.QtWidgets import QApplication
 from PyQt5.QtWidgets import QMessageBox
 from PyQt5.QtGui import QFont
 
-from opentps.core.data import PatientList
-from opentps.core.utils.programSettings import ProgramSettings
-from opentps.gui.viewController import ViewController
+from quangstation.core.data import PatientList
+from quangstation.core.utils.programSettings import ProgramSettings
+from quangstation.gui.viewController import ViewController
 
 
 def viewController():
-    # instantiate the main opentps_core window
+    # instantiate the main quangstation_core window
     _viewController = ViewController(patientList)
     _viewController.mainConfig = mainConfig
 
@@ -23,20 +23,20 @@ patientList = PatientList()
 
 mainConfig = ProgramSettings()
 
-logger.info("Instantiate opentps gui")
+logger.info("Instantiate quangstation gui")
 app = QApplication.instance()
 if not app:
     app = QApplication([])
 
 def runWithMainWindow(mainWindow):
     # options = parseArgs(sys.argv[1:])
-    logger.info("Start opentps gui")
+    logger.info("Start quangstation gui")
 
     mainWindow.show()
     #display a message box
     msg = QMessageBox()
     msg.setIcon(QMessageBox.Warning)
-    msg.setText(" ------------------------------DISCLAIMER------------------------------ \nOpenTPS is not a medical device, it is purely intended for research purposes and should only be used as such. It is neither FDA or CE approved. The authors of OpenTPS are not responsible for any misuse of the software.")
+    msg.setText(" ------------------------------DISCLAIMER------------------------------ \nquangstation is not a medical device, it is purely intended for research purposes and should only be used as such. It is neither FDA or CE approved.")
     msg.setFont(QFont("Arial", 12))
     msg.setWindowTitle("Disclaimer")
     msg.setStandardButtons(QMessageBox.Ok)

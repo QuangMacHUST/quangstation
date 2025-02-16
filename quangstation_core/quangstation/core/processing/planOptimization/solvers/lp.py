@@ -5,16 +5,16 @@ try:
     import gurobipy as gp
     from gurobipy import GRB
 except ModuleNotFoundError:
-    logger.warning("Ignore the following warning if not using Gurobi linear optimizer. Gurobi not required for most features provided in OpenTPS")
+    logger.warning("Ignore the following warning if not using Gurobi linear optimizer. Gurobi not required for most features provided in quangstation")
     logger.warning('No module Gurobi found\n!Licence required!\nGet free Academic license on '
                 'https://www.gurobi.com/academia/academic-program-and-licenses/ ')
     gp = None
 import numpy as np
 import time
 from random import choice
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.data.plan import FidObjective
-from opentps.core.processing.planOptimization.tools import WeightStructure
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.data.plan import FidObjective
+from quangstation.core.processing.planOptimization.tools import WeightStructure
 
 
 class LP:
@@ -160,7 +160,7 @@ class LP:
             # model.setParam('CrossoverBasis', 0)
             # model.setParam('LogFile', "brain_mipfocus1.log")
             # model.write("brain_small.lp")
-            # model.setParam('SolFiles', '/home/sophie/opentps_core/MCO/solutions/sol')
+            # model.setParam('SolFiles', '/home/sophie/quangstation_core/MCO/solutions/sol')
 
             try:
                 addedConstraints = []

@@ -13,11 +13,11 @@ try:
 except:
     logger.warning('cupy not found.')
 
-from opentps.core.data.images._deformation3D import Deformation3D
-from opentps.core.data.images._vectorField3D import VectorField3D
-from opentps.core.processing.registration.registration import Registration
-import opentps.core.processing.imageProcessing.filter3D as imageFilter3D
-import opentps.core.processing.registration.morphonsCupy as morphonsCupy
+from quangstation.core.data.images._deformation3D import Deformation3D
+from quangstation.core.data.images._vectorField3D import VectorField3D
+from quangstation.core.processing.registration.registration import Registration
+import quangstation.core.processing.imageProcessing.filter3D as imageFilter3D
+import quangstation.core.processing.registration.morphonsCupy as morphonsCupy
 
 
 

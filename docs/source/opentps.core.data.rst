@@ -1,4 +1,4 @@
-opentps.core.data package
+quangstation.core.data package
 =========================
 
 Subpackages
@@ -7,16 +7,16 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   opentps.core.data.CTCalibrations
-   opentps.core.data.MCsquare
-   opentps.core.data.dynamicData
-   opentps.core.data.images
-   opentps.core.data.plan
+   quangstation.core.data.CTCalibrations
+   quangstation.core.data.MCsquare
+   quangstation.core.data.dynamicData
+   quangstation.core.data.images
+   quangstation.core.data.plan
 
 Module contents
 ---------------
 
-.. automodule:: opentps.core.data
+.. automodule:: quangstation.core.data
    :members:
    :undoc-members:
    :show-inheritance:

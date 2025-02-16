@@ -5,10 +5,10 @@ __all__ = ['RayStationCTCalibration']
 import numpy as np
 from scipy.interpolate import interpolate
 
-from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareCTCalibration import MCsquareCTCalibration
-from opentps.core.data.CTCalibrations.RayStationCalibration._rayStationDensity2Material import RayStationDensity2Material
-from opentps.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
-from opentps.core.data.CTCalibrations._piecewiseHU2Density import PiecewiseHU2Density
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareCTCalibration import MCsquareCTCalibration
+from quangstation.core.data.CTCalibrations.RayStationCalibration._rayStationDensity2Material import RayStationDensity2Material
+from quangstation.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
+from quangstation.core.data.CTCalibrations._piecewiseHU2Density import PiecewiseHU2Density
 
 
 class RayStationCTCalibration(AbstractCTCalibration, PiecewiseHU2Density, RayStationDensity2Material):

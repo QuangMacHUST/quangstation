@@ -1,9 +1,9 @@
 import numpy as np
 from vtkmodules.vtkIOImage import vtkImageImport
 
-from opentps.core import Event
-from opentps.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents import lookupTables
+from quangstation.core import Event
+from quangstation.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents import lookupTables
 
 
 class ROIMaskForViewer(GenericImageForViewer):

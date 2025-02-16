@@ -1,12 +1,12 @@
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QColor, QPixmap, QIcon
 
-from opentps.core.data.images import ROIMask
-from opentps.core.data._patient import Patient
-from opentps.core.data._roiContour import ROIContour
-from opentps.core.data._rtStruct import RTStruct
-from opentps.gui.viewer.dataForViewer.ROIContourForViewer import ROIContourForViewer
-from opentps.gui.viewer.dataForViewer.ROIMaskForViewer import ROIMaskForViewer
+from quangstation.core.data.images import ROIMask
+from quangstation.core.data._patient import Patient
+from quangstation.core.data._roiContour import ROIContour
+from quangstation.core.data._rtStruct import RTStruct
+from quangstation.gui.viewer.dataForViewer.ROIContourForViewer import ROIContourForViewer
+from quangstation.gui.viewer.dataForViewer.ROIMaskForViewer import ROIMaskForViewer
 
 
 class ROIPanel(QWidget):

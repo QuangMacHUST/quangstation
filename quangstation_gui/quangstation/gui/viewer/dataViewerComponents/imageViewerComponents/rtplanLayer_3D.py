@@ -5,10 +5,10 @@ from vtkmodules.vtkCommonTransforms import vtkTransform
 from vtkmodules.vtkFiltersGeneral import vtkTransformPolyDataFilter
 from vtkmodules.vtkIOGeometry import vtkSTLReader
 
-from opentps.core.data.plan import RTPlan, PlanProtonBeam
-from opentps.gui.viewer.dataForViewer.polyDataForViewer import PolyDataForViewer
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.polyData3DLayer_3D import PolyData3DLayer_3D
-import opentps.gui.res.icons as iconModule
+from quangstation.core.data.plan import RTPlan, PlanProtonBeam
+from quangstation.gui.viewer.dataForViewer.polyDataForViewer import PolyDataForViewer
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.polyData3DLayer_3D import PolyData3DLayer_3D
+import quangstation.gui.res.icons as iconModule
 
 class BeamLayer_3D:
     def __init__(self, renderer, renderWindow):

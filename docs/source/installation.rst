@@ -1,4 +1,4 @@
 
-.. mdinclude:: ../../opentps_core/README.md
-.. mdinclude:: ../../opentps_gui/README.md
+.. mdinclude:: ../../quangstation_core/README.md
+.. mdinclude:: ../../quangstation_gui/README.md
 

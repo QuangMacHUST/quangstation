@@ -5,7 +5,7 @@ import logging
 
 import numpy as np
 
-from opentps.core.processing.planOptimization.acceleration.baseAccel import Dummy
+from quangstation.core.processing.planOptimization.acceleration.baseAccel import Dummy
 logger = logging.getLogger(__name__)
 
 class Backtracking(Dummy):

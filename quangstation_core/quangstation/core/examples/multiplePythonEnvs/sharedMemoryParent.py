@@ -13,7 +13,7 @@ import numpy as np
 import subprocess
 from multiprocessing import shared_memory
 
-from opentps.core.examples.syntheticData import createSynthetic3DCT
+from quangstation.core.examples.syntheticData import createSynthetic3DCT
 
 ## set the child script environnement path and child scrip file path
 script2EnvPath = 'python.exe'  ## example: 'C:/Users/johnsmith/anaconda3/envs/myEnv/python.exe

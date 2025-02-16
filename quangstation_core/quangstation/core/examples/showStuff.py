@@ -3,13 +3,13 @@ from matplotlib.animation import FuncAnimation
 from scipy.ndimage.morphology import binary_dilation
 import numpy as np
 
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
-from opentps.core.io import mcsquareIO
-from opentps.core.io.scannerReader import readScanner
-from opentps.core.data import DVH
-from opentps.core.processing.planOptimization.tools import evaluateClinical
-from opentps.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D, resampleImage3D
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
+from quangstation.core.io import mcsquareIO
+from quangstation.core.io.scannerReader import readScanner
+from quangstation.core.data import DVH
+from quangstation.core.processing.planOptimization.tools import evaluateClinical
+from quangstation.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D, resampleImage3D
 
 def showModelWithAnimatedFields(model):
 

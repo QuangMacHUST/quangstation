@@ -1,4 +1,4 @@
-opentps.core.processing.planOptimization package
+quangstation.core.processing.planOptimization package
 ================================================
 
 Subpackages
@@ -7,57 +7,57 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   opentps.core.processing.planOptimization.acceleration
-   opentps.core.processing.planOptimization.objectives
-   opentps.core.processing.planOptimization.solvers
+   quangstation.core.processing.planOptimization.acceleration
+   quangstation.core.processing.planOptimization.objectives
+   quangstation.core.processing.planOptimization.solvers
 
 Submodules
 ----------
 
-opentps.core.processing.planOptimization.optimizationWorkflows module
+quangstation.core.processing.planOptimization.optimizationWorkflows module
 ---------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.optimizationWorkflows
+.. automodule:: quangstation.core.processing.planOptimization.optimizationWorkflows
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.planOptimization.planInitializer module
+quangstation.core.processing.planOptimization.planInitializer module
 ---------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.planInitializer
+.. automodule:: quangstation.core.processing.planOptimization.planInitializer
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.planOptimization.planOptimization module
+quangstation.core.processing.planOptimization.planOptimization module
 ----------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.planOptimization
+.. automodule:: quangstation.core.processing.planOptimization.planOptimization
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.planOptimization.planOptimizationConfig module
+quangstation.core.processing.planOptimization.planOptimizationConfig module
 ----------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.planOptimizationConfig
+.. automodule:: quangstation.core.processing.planOptimization.planOptimizationConfig
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.planOptimization.planPreprocessing module
+quangstation.core.processing.planOptimization.planPreprocessing module
 -----------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.planPreprocessing
+.. automodule:: quangstation.core.processing.planOptimization.planPreprocessing
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.planOptimization.tools module
+quangstation.core.processing.planOptimization.tools module
 -----------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.tools
+.. automodule:: quangstation.core.processing.planOptimization.tools
    :members:
    :undoc-members:
    :show-inheritance:
@@ -65,7 +65,7 @@ opentps.core.processing.planOptimization.tools module
 Module contents
 ---------------
 
-.. automodule:: opentps.core.processing.planOptimization
+.. automodule:: quangstation.core.processing.planOptimization
    :members:
    :undoc-members:
    :show-inheritance:

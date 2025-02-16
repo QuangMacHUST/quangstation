@@ -1,37 +1,37 @@
-opentps.core.processing.planOptimization.acceleration package
+quangstation.core.processing.planOptimization.acceleration package
 =============================================================
 
 Submodules
 ----------
 
-opentps.core.processing.planOptimization.acceleration.backtracking module
+quangstation.core.processing.planOptimization.acceleration.backtracking module
 -------------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.acceleration.backtracking
+.. automodule:: quangstation.core.processing.planOptimization.acceleration.backtracking
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.planOptimization.acceleration.baseAccel module
+quangstation.core.processing.planOptimization.acceleration.baseAccel module
 ----------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.acceleration.baseAccel
+.. automodule:: quangstation.core.processing.planOptimization.acceleration.baseAccel
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.planOptimization.acceleration.fistaAccel module
+quangstation.core.processing.planOptimization.acceleration.fistaAccel module
 -----------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.acceleration.fistaAccel
+.. automodule:: quangstation.core.processing.planOptimization.acceleration.fistaAccel
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.planOptimization.acceleration.linesearch module
+quangstation.core.processing.planOptimization.acceleration.linesearch module
 -----------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.planOptimization.acceleration.linesearch
+.. automodule:: quangstation.core.processing.planOptimization.acceleration.linesearch
    :members:
    :undoc-members:
    :show-inheritance:
@@ -39,7 +39,7 @@ opentps.core.processing.planOptimization.acceleration.linesearch module
 Module contents
 ---------------
 
-.. automodule:: opentps.core.processing.planOptimization.acceleration
+.. automodule:: quangstation.core.processing.planOptimization.acceleration
    :members:
    :undoc-members:
    :show-inheritance:

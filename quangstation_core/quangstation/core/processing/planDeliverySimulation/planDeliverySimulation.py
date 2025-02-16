@@ -5,25 +5,25 @@ import numpy as np
 np.random.seed(42)
 import random
 random.seed(42)
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.data.images._ctImage import CTImage
-from opentps.core.io import mcsquareIO
-from opentps.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
-from opentps.core.utils.programSettings import ProgramSettings
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.data.images._ctImage import CTImage
+from quangstation.core.io import mcsquareIO
+from quangstation.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
+from quangstation.core.utils.programSettings import ProgramSettings
 from pydicom.uid import generate_uid
-from opentps.core.data._rtStruct import ROIContour
-from opentps.core.data.images._doseImage import DoseImage
-from opentps.core.io.dicomIO import readDicomDose, writeRTDose
-from opentps.core.processing.planDeliverySimulation.scanAlgoBeamDeliveryTimings import ScanAlgoBeamDeliveryTimings
-from opentps.core.processing.planDeliverySimulation.simpleBeamDeliveryTimings import SimpleBeamDeliveryTimings
-from opentps.core.io.scannerReader import readScanner
-from opentps.core.io.dataLoader import readSingleData
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.core.data.images._deformation3D import Deformation3D
-from opentps.core.data._dvh import DVH
-from opentps.core.data._dvhBand import DVHBand
+from quangstation.core.data._rtStruct import ROIContour
+from quangstation.core.data.images._doseImage import DoseImage
+from quangstation.core.io.dicomIO import readDicomDose, writeRTDose
+from quangstation.core.processing.planDeliverySimulation.scanAlgoBeamDeliveryTimings import ScanAlgoBeamDeliveryTimings
+from quangstation.core.processing.planDeliverySimulation.simpleBeamDeliveryTimings import SimpleBeamDeliveryTimings
+from quangstation.core.io.scannerReader import readScanner
+from quangstation.core.io.dataLoader import readSingleData
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.core.data.images._deformation3D import Deformation3D
+from quangstation.core.data._dvh import DVH
+from quangstation.core.data._dvhBand import DVHBand
 import time
 
 class PlanDeliverySimulation():

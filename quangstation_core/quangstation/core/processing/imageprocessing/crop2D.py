@@ -2,7 +2,7 @@ from typing import Sequence
 
 import numpy as np
 
-from opentps.core.data.images._image2D import Image2D
+from quangstation.core.data.images._image2D import Image2D
 
 
 def crop2DDataAroundBox(data:Image2D, box, marginInMM=[0, 0, 0]):

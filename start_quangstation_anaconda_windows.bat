@@ -6,7 +6,7 @@ if not defined CONDA_PREFIX (
      exit /b
 )
 
-call conda activate OpenTPS
+call conda activate quangstation
 
 set "PYTHONPATH=%~dp0core;%~dp0gui"
 

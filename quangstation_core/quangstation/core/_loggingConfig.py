@@ -4,7 +4,7 @@ import logging.config
 import os
 import json
 
-from opentps.core.utils.programSettings import ProgramSettings
+from quangstation.core.utils.programSettings import ProgramSettings
 
 
 class loggerConfig:

@@ -1,29 +1,29 @@
-opentps.core.utils package
+quangstation.core.utils package
 ==========================
 
 Submodules
 ----------
 
-opentps.core.utils.applicationConfig module
+quangstation.core.utils.applicationConfig module
 -------------------------------------------
 
-.. automodule:: opentps.core.utils.applicationConfig
+.. automodule:: quangstation.core.utils.applicationConfig
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.utils.pickel2 module
+quangstation.core.utils.pickel2 module
 ---------------------------------
 
-.. automodule:: opentps.core.utils.pickel2
+.. automodule:: quangstation.core.utils.pickel2
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.utils.programSettings module
+quangstation.core.utils.programSettings module
 -----------------------------------------
 
-.. automodule:: opentps.core.utils.programSettings
+.. automodule:: quangstation.core.utils.programSettings
    :members:
    :undoc-members:
    :show-inheritance:
@@ -31,7 +31,7 @@ opentps.core.utils.programSettings module
 Module contents
 ---------------
 
-.. automodule:: opentps.core.utils
+.. automodule:: quangstation.core.utils
    :members:
    :undoc-members:
    :show-inheritance:

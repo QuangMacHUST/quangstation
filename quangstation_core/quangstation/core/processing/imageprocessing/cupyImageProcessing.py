@@ -13,12 +13,12 @@ except:
     logger.warning("Cannot import Cupy module")
     pass
     
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.data.images._vectorField3D import VectorField3D
-from opentps.core.data._roiContour import ROIContour
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
-from opentps.core.processing.imageProcessing.roiMasksProcessing import buildStructElem
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data.images._vectorField3D import VectorField3D
+from quangstation.core.data._roiContour import ROIContour
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+from quangstation.core.processing.imageProcessing.roiMasksProcessing import buildStructElem
 
 ## ------------------------------------------------------------------------------------------------
 def translateData(data, translationInMM, fillValue=0, outputBox='keepAll', interpOrder=1, mode='constant'):
@@ -35,7 +35,7 @@ def translateData(data, translationInMM, fillValue=0, outputBox='keepAll', inter
     """
 
     if not np.array(translationInMM == np.array([0, 0, 0])).all():
-        from opentps.core.processing.imageProcessing.imageTransform3D import \
+        from quangstation.core.processing.imageProcessing.imageTransform3D import \
             transform3DMatrixFromTranslationAndRotationsVectors
         affTransformMatrix = transform3DMatrixFromTranslationAndRotationsVectors(transVec=translationInMM)
         applyTransform3D(data, affTransformMatrix, fillValue=fillValue, outputBox=outputBox, interpOrder=interpOrder, mode=mode)
@@ -86,7 +86,7 @@ def rotateData(data, rotAnglesInDeg, fillValue=0, outputBox='keepAll', interpOrd
 
         if isinstance(data, Image3D):
 
-            from opentps.core.data.images._roiMask import ROIMask
+            from quangstation.core.data.images._roiMask import ROIMask
 
             if isinstance(data, VectorField3D):
                 logger.info(f'Rotate VectorField3D of {rotAnglesInDeg} degrees')
@@ -129,7 +129,7 @@ def rotateImage3D(image, rotAnglesInDeg=[0, 0, 0], fillValue=0, outputBox='keepA
         initialGridSize = copy.copy(image.gridSize)
         initialOrigin = copy.copy(image.origin)
         resampled = True
-        from opentps.core.processing.imageProcessing.resampler3D import resample
+        from quangstation.core.processing.imageProcessing.resampler3D import resample
         resample(image, spacing=[min(initialSpacing), min(initialSpacing), min(initialSpacing)], inPlace=True)
         logger.info("The rotation of data using Cupy does not take into account heterogeneous spacing. Resampling in homogeneous spacing is done.")
 
@@ -194,7 +194,7 @@ def rotate3DVectorFields(vectorField, rotAnglesInDeg=[0, 0, 0], fillValue=0, out
     rotateImage3D(vectorField, rotAnglesInDeg=rotAnglesInDeg, fillValue=fillValue, outputBox=outputBox, interpOrder=interpOrder, mode=mode)
 
     logger.info(f'Apply rotation of {rotAnglesInDeg} degrees to field vectors')
-    from opentps.core.processing.imageProcessing.imageTransform3D import rotateVectorsInPlace
+    from quangstation.core.processing.imageProcessing.imageTransform3D import rotateVectorsInPlace
     rotateVectorsInPlace(vectorField, -rotAnglesInDeg)
 
 ## ------------------------------------------------------------------------------------------------
@@ -226,14 +226,14 @@ def applyTransform3D(data, tformMatrix: np.ndarray, fillValue: float = 0.,
         the mode of the interpolation ('constant', 'nearest', 'reflect', 'wrap'). Default is 'constant'
     """
 
-    from opentps.core.data._transform3D import Transform3D
+    from quangstation.core.data._transform3D import Transform3D
 
     if isinstance(tformMatrix, Transform3D):
         tformMatrix = tformMatrix.tformMatrix
 
     if isinstance(data, Image3D):
 
-        from opentps.core.data.images._roiMask import ROIMask
+        from quangstation.core.data.images._roiMask import ROIMask
 
         if isinstance(data, VectorField3D):
             applyTransform3DToVectorField3D(data, tformMatrix, fillValue=0, outputBox=outputBox, rotCenter=rotCenter,
@@ -308,14 +308,14 @@ def applyTransform3DToImage3D(image: Image3D, tformMatrix: np.ndarray, fillValue
         completeMatrix[3, 3] = 1
         tformMatrix = completeMatrix
 
-    from opentps.core.processing.imageProcessing.imageTransform3D import getTtransformMatrixInPixels
+    from quangstation.core.processing.imageProcessing.imageTransform3D import getTtransformMatrixInPixels
     tformMatrix = getTtransformMatrixInPixels(tformMatrix, image.spacing)
 
     cupyTformMatrix = cupy.asarray(tformMatrix)
 
     cupyImg = cupy.asarray(image.imageArray)
 
-    from opentps.core.processing.imageProcessing.imageTransform3D import parseRotCenter
+    from quangstation.core.processing.imageProcessing.imageTransform3D import parseRotCenter
     rotCenter = parseRotCenter(rotCenter, image)
 
     cupyImg = cupyx.scipy.ndimage.affine_transform(cupyImg, cupyTformMatrix, order=interpOrder, mode=mode, cval=fillValue)

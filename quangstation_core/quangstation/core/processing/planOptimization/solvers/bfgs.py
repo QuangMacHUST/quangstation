@@ -1,8 +1,8 @@
 import logging
 import numpy as np
 
-from opentps.core.processing.planOptimization.acceleration.linesearch import LineSearch
-from opentps.core.processing.planOptimization.solvers.gradientDescent import GradientDescent
+from quangstation.core.processing.planOptimization.acceleration.linesearch import LineSearch
+from quangstation.core.processing.planOptimization.solvers.gradientDescent import GradientDescent
 
 logger = logging.getLogger(__name__)
 

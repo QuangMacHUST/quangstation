@@ -4,11 +4,11 @@ from typing import Sequence
 import matplotlib
 from PyQt5.QtWidgets import QComboBox, QWidgetAction, QMenu, QAction
 
-from opentps.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
-from opentps.gui.viewer.dataViewerComponents.dataViewerToolbar import DataViewerToolbar
-from opentps.gui.viewer.dataViewerComponents.doseComparisonImageProvider import DoseComparisonImageProvider
-from opentps.gui.viewer.dataViewerComponents.image3DViewer import Image3DViewer
-from opentps.gui.viewer.dataViewerComponents.imageFusionPropEditor import ImageFusionPropEditor
+from quangstation.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
+from quangstation.gui.viewer.dataViewerComponents.dataViewerToolbar import DataViewerToolbar
+from quangstation.gui.viewer.dataViewerComponents.doseComparisonImageProvider import DoseComparisonImageProvider
+from quangstation.gui.viewer.dataViewerComponents.image3DViewer import Image3DViewer
+from quangstation.gui.viewer.dataViewerComponents.imageFusionPropEditor import ImageFusionPropEditor
 
 
 class ImageViewerActions:

@@ -5,16 +5,16 @@ import logging
 from typing import Optional, Sequence, Union, Iterable
 import numpy as np
 
-from opentps.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
-from opentps.core.data._roiContour import ROIContour
-from opentps.core.data.images import CTImage
-from opentps.core.data.images._roiMask import ROIMask
-from opentps.core.data.plan._rangeShifter import RangeShifter
-from opentps.core.data.plan._robustness import Robustness
-from opentps.core.processing.imageProcessing import resampler3D
-from opentps.core.data._patientData import PatientData
-from opentps.core.data.plan import ObjectivesList
-from opentps.core.processing.planEvaluation.robustnessEvaluation import RobustnessEval
+from quangstation.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
+from quangstation.core.data._roiContour import ROIContour
+from quangstation.core.data.images import CTImage
+from quangstation.core.data.images._roiMask import ROIMask
+from quangstation.core.data.plan._rangeShifter import RangeShifter
+from quangstation.core.data.plan._robustness import Robustness
+from quangstation.core.processing.imageProcessing import resampler3D
+from quangstation.core.data._patientData import PatientData
+from quangstation.core.data.plan import ObjectivesList
+from quangstation.core.processing.planEvaluation.robustnessEvaluation import RobustnessEval
 
 logger = logging.getLogger(__name__)
 
@@ -112,7 +112,7 @@ class RTPlanDesign(PatientData):
         Works even if no objectives have been set (at the plan design stage)
         Call required before spot placement.
         """
-        from opentps.core.data._roiContour import ROIContour
+        from quangstation.core.data._roiContour import ROIContour
         targetMask = None
         if isinstance(target,Iterable):
             Targets_to_merge = []

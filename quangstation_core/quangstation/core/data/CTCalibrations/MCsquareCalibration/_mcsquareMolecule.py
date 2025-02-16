@@ -6,9 +6,9 @@ import numpy as np
 import logging
 logger = logging.getLogger(__name__)
 
-from opentps.core.data.CTCalibrations.MCsquareCalibration._G4StopPow import G4StopPow
-from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareElement import MCsquareElement
-from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareMaterial import MCsquareMaterial
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._G4StopPow import G4StopPow
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareElement import MCsquareElement
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareMaterial import MCsquareMaterial
 
 
 class MCsquareMolecule(MCsquareMaterial):
@@ -109,7 +109,7 @@ class MCsquareMolecule(MCsquareMaterial):
 
         if moleculePath == None : 
             logger.error("The MCsquare material ID indicated in the BDL does not yet exist. Please add the molecule properties to the folder core/processing/doseCalculation/protons/MCsquare/Materials/." +
-                        " Next, create your range shifter from the opentps.core.io.mcsquareIO.RangeShifter class. The terminal will then print you an ID.")
+                        " Next, create your range shifter from the quangstation.core.io.mcsquareIO.RangeShifter class. The terminal will then print you an ID.")
 
         self = cls()
         self.number = materialNb

@@ -1,5 +1,5 @@
-from opentps.core.processing.dataComparison.dynamic3DModelComparison import compareModels
-from opentps.core.io.serializedObjectIO import loadDataStructure
+from quangstation.core.processing.dataComparison.dynamic3DModelComparison import compareModels
+from quangstation.core.io.serializedObjectIO import loadDataStructure
 
 organ = 'lung'
 study = 'FDGorFAZA_study'

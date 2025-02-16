@@ -6,12 +6,12 @@ from typing import Optional
 
 import numpy as np
 
-from opentps.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
-from opentps.core.data.images._ctImage import CTImage
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.data.plan._planProtonBeam import PlanProtonBeam
-import opentps.core.processing.imageProcessing.imageTransform3D as imageTransform3D
-from opentps.core.processing.imageProcessing import resampler3D
+from quangstation.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
+from quangstation.core.data.images._ctImage import CTImage
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data.plan._planProtonBeam import PlanProtonBeam
+import quangstation.core.processing.imageProcessing.imageTransform3D as imageTransform3D
+from quangstation.core.processing.imageProcessing import resampler3D
 
 
 class RSPImage(Image3D):

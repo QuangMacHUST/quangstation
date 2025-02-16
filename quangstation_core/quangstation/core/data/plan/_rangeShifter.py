@@ -1,7 +1,7 @@
 
 __all__ = ['RangeShifter']
 
-from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareMolecule import MCsquareMolecule
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareMolecule import MCsquareMolecule
 
 
 class RangeShifter:

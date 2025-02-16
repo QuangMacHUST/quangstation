@@ -1,4 +1,4 @@
-opentps.gui package
+quangstation.gui package
 ===================
 
 Subpackages
@@ -7,49 +7,49 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   opentps.gui.panels
-   opentps.gui.tools
-   opentps.gui.viewer
+   quangstation.gui.panels
+   quangstation.gui.tools
+   quangstation.gui.viewer
 
 Submodules
 ----------
 
-opentps.gui.main module
+quangstation.gui.main module
 -----------------------
 
-.. automodule:: opentps.gui.main
+.. automodule:: quangstation.gui.main
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.mainWindow module
+quangstation.gui.mainWindow module
 -----------------------------
 
-.. automodule:: opentps.gui.mainWindow
+.. automodule:: quangstation.gui.mainWindow
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.programSettingEditor module
+quangstation.gui.programSettingEditor module
 ---------------------------------------
 
-.. automodule:: opentps.gui.programSettingEditor
+.. automodule:: quangstation.gui.programSettingEditor
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.statusBar module
+quangstation.gui.statusBar module
 ----------------------------
 
-.. automodule:: opentps.gui.statusBar
+.. automodule:: quangstation.gui.statusBar
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewController module
+quangstation.gui.viewController module
 ---------------------------------
 
-.. automodule:: opentps.gui.viewController
+.. automodule:: quangstation.gui.viewController
    :members:
    :undoc-members:
    :show-inheritance:
@@ -57,7 +57,7 @@ opentps.gui.viewController module
 Module contents
 ---------------
 
-.. automodule:: opentps.gui
+.. automodule:: quangstation.gui
    :members:
    :undoc-members:
    :show-inheritance:

@@ -1,4 +1,4 @@
-opentps.gui.panels package
+quangstation.gui.panels package
 ==========================
 
 Subpackages
@@ -7,82 +7,82 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   opentps.gui.panels.patientDataPanel
-   opentps.gui.panels.planDesignPanel
-   opentps.gui.panels.planOptimizationPanel
-   opentps.gui.panels.scriptingPanel
+   quangstation.gui.panels.patientDataPanel
+   quangstation.gui.panels.planDesignPanel
+   quangstation.gui.panels.planOptimizationPanel
+   quangstation.gui.panels.scriptingPanel
 
 Submodules
 ----------
 
-opentps.gui.panels.breathingSignalPanel module
+quangstation.gui.panels.breathingSignalPanel module
 ----------------------------------------------
 
-.. automodule:: opentps.gui.panels.breathingSignalPanel
+.. automodule:: quangstation.gui.panels.breathingSignalPanel
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.panels.doseComparisonPanel module
+quangstation.gui.panels.doseComparisonPanel module
 ---------------------------------------------
 
-.. automodule:: opentps.gui.panels.doseComparisonPanel
+.. automodule:: quangstation.gui.panels.doseComparisonPanel
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.panels.doseComputationPanel module
+quangstation.gui.panels.doseComputationPanel module
 ----------------------------------------------
 
-.. automodule:: opentps.gui.panels.doseComputationPanel
+.. automodule:: quangstation.gui.panels.doseComputationPanel
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.panels.drrPanel module
+quangstation.gui.panels.drrPanel module
 ----------------------------------
 
-.. automodule:: opentps.gui.panels.drrPanel
+.. automodule:: quangstation.gui.panels.drrPanel
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.panels.mainToolbar module
+quangstation.gui.panels.mainToolbar module
 -------------------------------------
 
-.. automodule:: opentps.gui.panels.mainToolbar
+.. automodule:: quangstation.gui.panels.mainToolbar
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.panels.patientDataWidgets module
+quangstation.gui.panels.patientDataWidgets module
 --------------------------------------------
 
-.. automodule:: opentps.gui.panels.patientDataWidgets
+.. automodule:: quangstation.gui.panels.patientDataWidgets
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.panels.planEvaluationPanel module
+quangstation.gui.panels.planEvaluationPanel module
 ---------------------------------------------
 
-.. automodule:: opentps.gui.panels.planEvaluationPanel
+.. automodule:: quangstation.gui.panels.planEvaluationPanel
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.panels.registrationPanel module
+quangstation.gui.panels.registrationPanel module
 -------------------------------------------
 
-.. automodule:: opentps.gui.panels.registrationPanel
+.. automodule:: quangstation.gui.panels.registrationPanel
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.panels.roiPanel module
+quangstation.gui.panels.roiPanel module
 ----------------------------------
 
-.. automodule:: opentps.gui.panels.roiPanel
+.. automodule:: quangstation.gui.panels.roiPanel
    :members:
    :undoc-members:
    :show-inheritance:
@@ -90,7 +90,7 @@ opentps.gui.panels.roiPanel module
 Module contents
 ---------------
 
-.. automodule:: opentps.gui.panels
+.. automodule:: quangstation.gui.panels
    :members:
    :undoc-members:
    :show-inheritance:

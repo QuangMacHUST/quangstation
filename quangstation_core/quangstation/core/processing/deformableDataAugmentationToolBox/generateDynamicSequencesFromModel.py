@@ -1,7 +1,7 @@
 import numpy as np
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.processing.deformableDataAugmentationToolBox.weightMaps import generateDeformationFromTrackers
-from opentps.core.processing.deformableDataAugmentationToolBox.modelManipFunctions import *
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.processing.deformableDataAugmentationToolBox.weightMaps import generateDeformationFromTrackers
+from quangstation.core.processing.deformableDataAugmentationToolBox.modelManipFunctions import *
 
 ## -------------------------------------------------------------------------------
 def generateDynSeqFromBreathingSignalsAndModel(model, signalList, ROIList, signalIdxUsed=[0, 0], dimensionUsed='Z', outputType=np.float32, tryGPU=True):

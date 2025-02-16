@@ -4,11 +4,11 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-from opentps.core.data.dynamicData._dynamic2DSequence import Dynamic2DSequence
-from opentps.core.data.images._projections import DRR
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.processing.imageSimulation.ForwardProjectorTigre import forwardProjectionTigre
-from opentps.core.processing.imageSimulation.ForwardProjectorTomopy import forwardProjectionTomopy
+from quangstation.core.data.dynamicData._dynamic2DSequence import Dynamic2DSequence
+from quangstation.core.data.images._projections import DRR
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.processing.imageSimulation.ForwardProjectorTigre import forwardProjectionTigre
+from quangstation.core.processing.imageSimulation.ForwardProjectorTomopy import forwardProjectionTomopy
 
 def getImageInCorrectOrientation(imageArray, orientation):
     """

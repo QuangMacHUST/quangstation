@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 import os
 
 from pathlib import Path
-from opentps.core.io.dataLoader import readData
-from opentps.core.processing.imageProcessing.resampler3D import resample, resampleOnImage3D
+from quangstation.core.io.dataLoader import readData
+from quangstation.core.processing.imageProcessing.resampler3D import resample, resampleOnImage3D
 
 
 if __name__ == '__main__':

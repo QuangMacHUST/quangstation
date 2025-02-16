@@ -1,10 +1,10 @@
-opentps.gui.tools package
+quangstation.gui.tools package
 =========================
 
 Module contents
 ---------------
 
-.. automodule:: opentps.gui.tools
+.. automodule:: quangstation.gui.tools
    :members:
    :undoc-members:
    :show-inheritance:

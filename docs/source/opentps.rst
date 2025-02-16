@@ -1,7 +1,7 @@
-opentps namespace
+quangstation namespace
 =================
 
-.. py:module:: opentps
+.. py:module:: quangstation
 
 Subpackages
 -----------
@@ -9,15 +9,15 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   opentps.core
+   quangstation.core
 
 Submodules
 ----------
 
-opentps.version module
+quangstation.version module
 ----------------------
 
-.. automodule:: opentps.version
+.. automodule:: quangstation.version
    :members:
    :undoc-members:
    :show-inheritance:

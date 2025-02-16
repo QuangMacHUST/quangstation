@@ -3,18 +3,18 @@ import os
 from PyQt5.QtWidgets import QMainWindow, QHBoxLayout, QWidget
 from PyQt5.QtGui import QIcon
 
-from opentps.gui.panels.mainToolbar import MainToolbar
-from opentps.gui.viewer.viewerPanel import ViewerPanel
-from opentps.gui.programSettingEditor import ProgramSettingEditor
-from opentps.gui.statusBar import StatusBar
-from opentps.core.utils.programSettings import ProgramSettings
-import opentps.gui.res.icons as IconModule
+from quangstation.gui.panels.mainToolbar import MainToolbar
+from quangstation.gui.viewer.viewerPanel import ViewerPanel
+from quangstation.gui.programSettingEditor import ProgramSettingEditor
+from quangstation.gui.statusBar import StatusBar
+from quangstation.core.utils.programSettings import ProgramSettings
+import quangstation.gui.res.icons as IconModule
 
 class MainWindow(QMainWindow):
     def __init__(self, viewControler):
         QMainWindow.__init__(self)
 
-        self.setWindowTitle('OpenTPS')
+        self.setWindowTitle('quangstation')
         self.setWindowIcon(QIcon(IconModule.__path__[0] + os.path.sep + 'OpenTPS_icon.png'))
         self.resize(1400, 920)
 

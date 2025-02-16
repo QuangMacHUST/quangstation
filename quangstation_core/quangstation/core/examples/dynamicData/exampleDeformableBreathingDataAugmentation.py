@@ -7,15 +7,15 @@ from pathlib import Path
 import math
 import logging
 
-# from opentps.core.io.serializedObjectIO import loadDataStructure
+from quangstation.core.io.serializedObjectIO import loadDataStructure
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
-from opentps.core.data.dynamicData._breathingSignals import SyntheticBreathingSignal
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
-from opentps.core.processing.deformableDataAugmentationToolBox.generateDynamicSequencesFromModel import generateDynSeqFromBreathingSignalsAndModel
-from opentps.core.processing.imageProcessing.imageTransform3D import getVoxelIndexFromPosition
-from opentps.core.processing.imageProcessing.resampler3D import resample
-from opentps.core.examples.syntheticData import*
+from quangstation.core.data.dynamicData._breathingSignals import SyntheticBreathingSignal
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+from quangstation.core.processing.deformableDataAugmentationToolBox.generateDynamicSequencesFromModel import generateDynSeqFromBreathingSignalsAndModel
+from quangstation.core.processing.imageProcessing.imageTransform3D import getVoxelIndexFromPosition
+from quangstation.core.processing.imageProcessing.resampler3D import resample
+from quangstation.core.examples.syntheticData import*
 
 logger = logging.getLogger(__name__)
 

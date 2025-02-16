@@ -1,5 +1,5 @@
-from opentps.gui import run
-import opentps.gui.examples.extension.extension.utils as extensionExampleUtils
+from quangstation.gui import run
+import quangstation.gui.examples.extension.extension.utils as extensionExampleUtils
 
 extensionExampleUtils.addToGUI()
 run()

@@ -5,7 +5,7 @@ import numpy as np
 from numpy.matlib import repmat
 from scipy.interpolate import interpolate
 
-from opentps.core.data.CTCalibrations.RayStationCalibration._rayStationMaterial import RayStationMaterial
+from quangstation.core.data.CTCalibrations.RayStationCalibration._rayStationMaterial import RayStationMaterial
 
 
 class RayStationDensity2Material:

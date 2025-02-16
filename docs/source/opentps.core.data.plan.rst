@@ -1,10 +1,10 @@
-opentps.core.data.plan package
+quangstation.core.data.plan package
 ==============================
 
 Module contents
 ---------------
 
-.. automodule:: opentps.core.data.plan
+.. automodule:: quangstation.core.data.plan
    :members:
    :undoc-members:
    :show-inheritance:

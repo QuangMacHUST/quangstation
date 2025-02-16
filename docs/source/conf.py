@@ -17,15 +17,15 @@ sys.path.insert(0, os.path.abspath('../..')) # root directory
 
 # -- Project information -----------------------------------------------------
 
-project = 'OpenTPS'
+project = 'quangstation'
 copyright = '2021, Kevin Souris, Guillaume Janssens, Sophie Wuyckens, Margerie Huet, Damien Dasnoy, Sylvain Deffet, Valentin Hamaide'
 author = 'Kevin Souris, Guillaume Janssens, Sophie Wuyckens, Margerie Huet, Damien Dasnoy, Sylvain Deffet, Valentin Hamaide'
 
 # The full version, including alpha/beta/rc tags
-import opentps.core
-import opentps.gui
+import quangstation.core
+import quangstation.gui
 #TODO
-#release = opentps_core.version
+#release = quangstation_core.version
 
 
 # -- General configuration ---------------------------------------------------
@@ -59,7 +59,7 @@ master_doc = 'index'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ["../opentps_core/opentps/core/examples","../opentps_gui/opentps/gui/examples"]
+exclude_patterns = ["../quangstation_core/quangstation/core/examples","../opentpquangstation_gui/quangstation/gui/examples"]
 
 
 # -- Options for HTML output -------------------------------------------------

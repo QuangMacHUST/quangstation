@@ -4,12 +4,12 @@ import typing
 
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QMainWindow
 
-from opentps.core.data.plan import PlanProtonBeam
-from opentps.core.data.plan import PlanProtonLayer
-from opentps.core.data.plan import PlanProtonSpot
-from opentps.core.data.plan import RangeShifter
-from opentps.core.data import PatientData
-from opentps.core import Event
+from quangstation.core.data.plan import PlanProtonBeam
+from quangstation.core.data.plan import PlanProtonLayer
+from quangstation.core.data.plan import PlanProtonSpot
+from quangstation.core.data.plan import RangeShifter
+from quangstation.core.data import PatientData
+from quangstation.core import Event
 
 class PatientDataPropertyEditor(QWidget):
     def __init__(self, image, parent=None):

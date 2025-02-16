@@ -4,11 +4,11 @@ __all__ = ['RTStruct']
 import numpy as np
 from typing import Sequence
 
-from opentps.core.data._patientData import PatientData
-from opentps.core.data._roiContour import ROIContour
-from opentps.core.data.images._roiMask import ROIMask
-from opentps.core import Event
-from opentps.core.data.images._ctImage import CTImage
+from quangstation.core.data._patientData import PatientData
+from quangstation.core.data._roiContour import ROIContour
+from quangstation.core.data.images._roiMask import ROIMask
+from quangstation.core import Event
+from quangstation.core.data.images._ctImage import CTImage
 
 
 class RTStruct(PatientData):

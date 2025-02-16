@@ -5,8 +5,8 @@ import logging
 import time
 
 import numpy as np
-import opentps.core.processing.planOptimization.objectives.baseFunction as baseFunction
-import opentps.core.processing.planOptimization.acceleration.baseAccel as baseAccel
+import quangstation.core.processing.planOptimization.objectives.baseFunction as baseFunction
+import quangstation.core.processing.planOptimization.acceleration.baseAccel as baseAccel
 
 logger = logging.getLogger(__name__)
 

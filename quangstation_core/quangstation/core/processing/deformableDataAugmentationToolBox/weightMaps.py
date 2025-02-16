@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from scipy.interpolate import LinearNDInterpolator
 import copy
 import logging
-from opentps.core.data.images._image3D import Image3D
+from quangstation.core.data.images._image3D import Image3D
 
 logger = logging.getLogger(__name__)
 

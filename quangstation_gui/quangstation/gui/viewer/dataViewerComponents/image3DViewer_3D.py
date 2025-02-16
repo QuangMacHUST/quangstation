@@ -6,18 +6,18 @@ import vtkmodules.vtkRenderingCore as vtkRenderingCore
 from vtkmodules import vtkInteractionStyle
 from vtkmodules.qt.QVTKRenderWindowInteractor import QVTKRenderWindowInteractor
 
-from opentps.core.data import ROIContour
-from opentps.core.data.images import ROIMask
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.data.plan import RTPlan
-from opentps.core import Event
-from opentps.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
-from opentps.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.contourLayer_3D import ContourLayer_3D
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.primaryImage3DLayer_3D import PrimaryImage3DLayer_3D
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.rtplanLayer_3D import RTPlanLayer_3D
-from opentps.gui.viewer.dataViewerComponents.imageViewerComponents.secondaryImage3DLayer_3D import SecondaryImage3DLayer_3D
-from opentps.gui.viewer.dataViewerComponents.blackEmptyPlot import BlackEmptyPlot
+from quangstation.core.data import ROIContour
+from quangstation.core.data.images import ROIMask
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data.plan import RTPlan
+from quangstation.core import Event
+from quangstation.gui.viewer.dataForViewer.genericImageForViewer import GenericImageForViewer
+from quangstation.gui.viewer.dataForViewer.image3DForViewer import Image3DForViewer
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.contourLayer_3D import ContourLayer_3D
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.primaryImage3DLayer_3D import PrimaryImage3DLayer_3D
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.rtplanLayer_3D import RTPlanLayer_3D
+from quangstation.gui.viewer.dataViewerComponents.imageViewerComponents.secondaryImage3DLayer_3D import SecondaryImage3DLayer_3D
+from quangstation.gui.viewer.dataViewerComponents.blackEmptyPlot import BlackEmptyPlot
 
 
 class Image3DViewer_3D(QWidget):

@@ -2,8 +2,8 @@ import os
 import re
 import numpy as np
 
-from opentps.core.data.CTCalibrations.MCsquareCalibration._G4StopPow import G4StopPow
-from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareMaterial import MCsquareMaterial
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._G4StopPow import G4StopPow
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareMaterial import MCsquareMaterial
 
 
 class MCsquareElement(MCsquareMaterial):

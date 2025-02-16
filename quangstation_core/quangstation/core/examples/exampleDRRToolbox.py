@@ -2,12 +2,12 @@ import os
 import sys
 import matplotlib.pyplot as plt
 
-from opentps.core.processing.imageSimulation.DRRToolBox import computeDRRSet, computeDRRSequence, forwardProjection, createDRRDynamic2DSequences
-from opentps.core.io.serializedObjectIO import saveSerializedObjects
-from opentps.core.io.dataLoader import readData
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.data._patient import Patient
-from opentps.core.examples.syntheticData import createSynthetic4DCT
+from quangstation.core.processing.imageSimulation.DRRToolBox import computeDRRSet, computeDRRSequence, forwardProjection, createDRRDynamic2DSequences
+from quangstation.core.io.serializedObjectIO import saveSerializedObjects
+from quangstation.core.io.dataLoader import readData
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.data._patient import Patient
+from quangstation.core.examples.syntheticData import createSynthetic4DCT
 
 if __name__ == '__main__':
 

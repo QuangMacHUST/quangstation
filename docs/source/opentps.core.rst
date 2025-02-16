@@ -1,4 +1,4 @@
-opentps.core package
+quangstation.core package
 ====================
 
 Subpackages
@@ -7,20 +7,20 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   opentps.core.config
-   opentps.core.data
-   opentps.core.examples
-   opentps.core.io
-   opentps.core.processing
-   opentps.core.utils
+   quangstation.core.config
+   quangstation.core.data
+   quangstation.core.examples
+   quangstation.core.io
+   quangstation.core.processing
+   quangstation.core.utils
 
 Submodules
 ----------
 
-opentps.core.version module
+quangstation.core.version module
 ---------------------------
 
-.. automodule:: opentps.core.version
+.. automodule:: quangstation.core.version
    :members:
    :undoc-members:
    :show-inheritance:
@@ -28,7 +28,7 @@ opentps.core.version module
 Module contents
 ---------------
 
-.. automodule:: opentps.core
+.. automodule:: quangstation.core
    :members:
    :undoc-members:
    :show-inheritance:

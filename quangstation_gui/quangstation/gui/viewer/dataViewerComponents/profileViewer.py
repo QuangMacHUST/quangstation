@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QFil
 from pyqtgraph import PlotWidget, PlotCurveItem, mkPen
 from pyqtgraph.exporters import ImageExporter
 
-import opentps.gui.res.icons as IconModule
+import quangstation.gui.res.icons as IconModule
 
 class ProfileViewer(QWidget):
     def __init__(self, viewController, nbProfiles=10):

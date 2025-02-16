@@ -5,22 +5,22 @@ import pydicom
 import numpy as np
 import logging
 
-from opentps.core.data import Patient
-from opentps.core.data.plan._rangeShifter import RangeShifter
+from quangstation.core.data import Patient
+from quangstation.core.data.plan._rangeShifter import RangeShifter
 
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.data.plan._protonPlan import ProtonPlan
-from opentps.core.data.plan._planProtonBeam import PlanProtonBeam
-from opentps.core.data.plan._planProtonLayer import PlanProtonLayer
-from opentps.core.data.images._ctImage import CTImage
-from opentps.core.data.images._mrImage import MRImage
-from opentps.core.data.images._doseImage import DoseImage
-from opentps.core.data._rtStruct import RTStruct
-from opentps.core.data._roiContour import ROIContour
-from opentps.core.data.images._vectorField3D import VectorField3D
-from opentps.core.data._transform3D import Transform3D
-from opentps.core.data.plan import PhotonPlan
-from opentps.core.data.plan._planPhotonBeam import PlanPhotonBeam
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.data.plan._protonPlan import ProtonPlan
+from quangstation.core.data.plan._planProtonBeam import PlanProtonBeam
+from quangstation.core.data.plan._planProtonLayer import PlanProtonLayer
+from quangstation.core.data.images._ctImage import CTImage
+from quangstation.core.data.images._mrImage import MRImage
+from quangstation.core.data.images._doseImage import DoseImage
+from quangstation.core.data._rtStruct import RTStruct
+from quangstation.core.data._roiContour import ROIContour
+from quangstation.core.data.images._vectorField3D import VectorField3D
+from quangstation.core.data._transform3D import Transform3D
+from quangstation.core.data.plan import PhotonPlan
+from quangstation.core.data.plan._planPhotonBeam import PlanPhotonBeam
 import pydicom
 from pydicom.dataset import Dataset, FileDataset
 
@@ -216,12 +216,12 @@ def writeDicomCT(ct: CTImage, outputFolderPath:str, outputFileName:str=None):
     dcm_file.InstanceCreationDate = dt.strftime('%Y%m%d')
     dcm_file.InstanceCreationTime = dt.strftime('%H%M%S.%f')
     dcm_file.Modality = ct.modality if hasattr(ct, 'modality') else 'CT'
-    dcm_file.Manufacturer = 'OpenTPS'
+    dcm_file.Manufacturer = 'quangstation'
     # dcm_file.InstitutionName = ''
     dcm_file.ReferringPhysicianName = ct.referringPhysicianName if hasattr(ct, 'referringPhysicianName') else ""
-    dcm_file.StudyDescription = 'OpenTPS simulation'
-    dcm_file.SeriesDescription = 'OpenTPS created image'
-    dcm_file.ManufacturerModelName = 'OpenTPS'
+    dcm_file.StudyDescription = 'quangstation simulation'
+    dcm_file.SeriesDescription = 'quangstation created image'
+    dcm_file.ManufacturerModelName = 'quangstation'
     # dcm_file.ManufacturerModelName = ''
     # dcm_file.ScanOptions = 'HELICAL_CT'
     dcm_file.SliceThickness = floatToDS(ct.spacing[2])
@@ -697,7 +697,7 @@ def writeRTDose(dose:DoseImage, outputFolder:str, outputFilename:str = None):
     dcm_file.InstanceCreationTime = dt.strftime('%H%M%S.%f')
     dcm_file.Modality = dose.modality if hasattr(dose, 'modality') else "RTDOSE"
     dcm_file.Manufacturer = 'OpenMCsquare'
-    dcm_file.ManufacturerModelName = 'OpenTPS'
+    dcm_file.ManufacturerModelName = 'quangstation'
     dcm_file.SeriesDescription = dose.name if hasattr(dose, 'name') else ""
     
     dcm_file.StudyInstanceUID = dose.studyInstanceUID if hasattr(dose, 'studyInstanceUID') else pydicom.uid.generate_uid()
@@ -896,7 +896,7 @@ def readDicomStruct(dcmFile):
     struct.structureSetTime = dcm.StructureSetTime if hasattr(dcm, 'StructureSetTime') else dt.strftime('%H%M%S.%f')
     struct.seriesTime = dcm.SeriesTime if hasattr(dcm, 'SeriesTime') else dt.strftime('%H%M%S.%f')
     struct.sopClassUID = dcm.SOPClassUID if hasattr(dcm, 'SOPClassUID') else "1.2.840.10008.5.1.4.1.1.481.3"
-    struct.structureSetLabel = dcm.StructureSetLabel if hasattr(dcm, 'StructureSetLabel') else 'OpenTPS Created'
+    struct.structureSetLabel = dcm.StructureSetLabel if hasattr(dcm, 'StructureSetLabel') else 'quangstation Created'
     struct.rtROIObservationsSequence = dcm.RTROIObservationsSequence if hasattr(dcm, 'RTROIObservationsSequence') else []
     if (hasattr(dcm, 'ReferencedFrameOfReferenceSequence')):
         struct.referencedFrameOfReferenceSequence = dcm.ReferencedFrameOfReferenceSequence
@@ -965,7 +965,7 @@ def writeRTStruct(struct: RTStruct, outputFolder: str, outputFilename:str = None
     dcm_file.InstanceCreationTime = dt.strftime('%H%M%S.%f')
     dcm_file.Modality = struct.modality if hasattr(struct, 'modality') else 'RTDOSE'
     dcm_file.Manufacturer = 'OpenMCsquare'
-    dcm_file.ManufacturerModelName = 'OpenTPS'
+    dcm_file.ManufacturerModelName = 'quangstation'
     dcm_file.SeriesDescription = struct.name if hasattr(struct, 'name') else ""
     dcm_file.ReferringPhysicianName = struct.referringPhysicianName if hasattr(struct, 'referringPhysicianName') else ""
     dcm_file.OperatorsName = struct.OperatorsName if hasattr(struct, 'OperatorsName') else ""
@@ -1139,8 +1139,8 @@ def readDicomPlan(dcmFile) -> RTPlan:
             beam.beamType = dcm_beam.BeamType
             beam.isocenterPosition_mm = [float(first_beamSegment.IsocenterPosition[0]), float(first_beamSegment.IsocenterPosition[1]),
                                     float(first_beamSegment.IsocenterPosition[2])] ## LPS
-            beam.gantryAngle_degree = float(first_beamSegment.GantryAngle) * -1 + 360 ### This is done to match the coordinate system used in OpenTPS
-            beam.couchAngle_degree = float(first_beamSegment.PatientSupportAngle) * -1 + 360### This is done to match the coordinate system used in OpenTPS
+            beam.gantryAngle_degree = float(first_beamSegment.GantryAngle) * -1 + 360 ### This is done to match the coordinate system used in quangstation
+            beam.couchAngle_degree = float(first_beamSegment.PatientSupportAngle) * -1 + 360### This is done to match the coordinate system used in quangstation
 
             finalCumulativeMetersetWeight = float(dcm_beam.FinalCumulativeMetersetWeight)
 
@@ -1173,8 +1173,8 @@ def readDicomPlan(dcmFile) -> RTPlan:
                 if (plan.scanMode == "MODULATED"):
                     beamSegment = beam.createBeamSegment()
 
-                    if dcm_beamSegment.get('PatientSupportAngle') != None: couchAngle = float(dcm_beamSegment.PatientSupportAngle) * -1 ### This is done to match the coordinate system used in OpenTPS
-                    if dcm_beamSegment.get('GantryAngle') != None: gantryAngle = float(dcm_beamSegment.GantryAngle) * -1 + 360### This is done to match the coordinate system used in OpenTPS
+                    if dcm_beamSegment.get('PatientSupportAngle') != None: couchAngle = float(dcm_beamSegment.PatientSupportAngle) * -1 ### This is done to match the coordinate system used in quangstation
+                    if dcm_beamSegment.get('GantryAngle') != None: gantryAngle = float(dcm_beamSegment.GantryAngle) * -1 + 360### This is done to match the coordinate system used in quangstation
                     if dcm_beamSegment.get('BeamLimitingDeviceAngle') != None: beamLimitingDeviceAngle = float(dcm_beamSegment.BeamLimitingDeviceAngle)
 
                     beamSegment.couchAngle_degree = couchAngle 
@@ -1417,7 +1417,7 @@ def readDicomPlan(dcmFile) -> RTPlan:
     plan.prescriptionDescription = dcm.PrescriptionDescription if hasattr(dcm, 'PrescriptionDescription') else ""
     plan.sopClassUID = dcm.SOPClassUID if hasattr(dcm, 'SOPClassUID') else "1.2.840.10008.5.1.4.1.1.481.8"
     
-    # TODO: one should not mix dicom objects with openTPS objects
+    # TODO: one should not mix dicom objects with quangstation objects
     plan.doseReferenceSequence=dcm.DoseReferenceSequence if hasattr(dcm, 'DoseReferenceSequence') else []
     plan.fractionGroupSequence = dcm.FractionGroupSequence if hasattr(dcm, 'FractionGroupSequence') else []
     plan.referencedStructureSetSequence = dcm.ReferencedStructureSetSequence if hasattr(dcm, 'ReferencedStructureSetSequence') else []
@@ -1428,7 +1428,7 @@ def readDicomPlan(dcmFile) -> RTPlan:
     plan.accessionNumber = dcm.AccessionNumber if hasattr(dcm, 'AccessionNumber') else ""
     plan.operatorsName = dcm.OperatorsName if hasattr(dcm, 'OperatorsName') else ""
     plan.positionReferenceIndicator = dcm.PositionReferenceIndicator if hasattr(dcm, 'PositionReferenceIndicator') else ""
-    plan.privateCreator = dcm.PrivateCreator if hasattr(plan, 'PrivateCreator') else "OpenTPS"
+    plan.privateCreator = dcm.PrivateCreator if hasattr(plan, 'PrivateCreator') else "quangstation"
     plan.approvalStatus = dcm.ApprovalStatus if hasattr(plan, 'ApprovalStatus') else "UNAPPROVED"
                 
     return plan
@@ -1592,7 +1592,7 @@ def writeRTPlan(plan: RTPlan, outputFolder:str, outputFilename:str=None, struct:
             dcm_file.Modality = 'RTPLAN'
             
         dcm_file.Manufacturer = 'OpenMCsquare'
-        dcm_file.ManufacturerModelName = 'OpenTPS'
+        dcm_file.ManufacturerModelName = 'quangstation'
         dcm_file.SeriesDescription = plan.seriesDescription if hasattr(plan, 'seriesDescription') else ""
         dcm_file.StudyInstanceUID = plan.studyInstanceUID if hasattr(plan, 'studyInstanceUID') else pydicom.uid.generate_uid()
             
@@ -1647,7 +1647,7 @@ def writeRTPlan(plan: RTPlan, outputFolder:str, outputFilename:str=None, struct:
             doseRef.DoseReferenceNumber = '1'
             doseRef.DoseReferenceUID = pydicom.uid.generate_uid()
             doseRef.DoseReferenceStructureType = 'VOLUME'
-            doseRef.DoseReferenceDescription = 'OpenTPS created'
+            doseRef.DoseReferenceDescription = 'quangstation created'
             doseRef.DoseReferenceType = 'TARGET'
             doseRef.TargetUnderdoseVolumeFraction = 0
             dcm_file.DoseReferenceSequence.append(doseRef)
@@ -1799,7 +1799,7 @@ def writeRTPlan(plan: RTPlan, outputFolder:str, outputFilename:str=None, struct:
                         
                 dcm_file.IonBeamSequence.append(bm)  
         
-        # TODO: one should not mix dicom objects with openTPS objects
+        # TODO: one should not mix dicom objects with quangstation objects
         if hasattr(plan, 'ionBeamSequence') and len(plan.ionBeamSequence)>0:
             for beamNumber, beam in enumerate(plan.ionBeamSequence):
                 referencedBeam = pydicom.dataset.Dataset()
@@ -2080,7 +2080,7 @@ def writeRTPlan(plan: RTPlan, outputFolder:str, outputFilename:str=None, struct:
         logger.error("ERROR: Could not identify plan type")
         
     dcm_file.ApprovalStatus = plan.approvalStatus if hasattr(plan, 'approvalStatus') else ""
-    dcm_file.PrivateCreator = plan.privateCreator if hasattr(plan, 'privateCreator') else "OpenTPS"
+    dcm_file.PrivateCreator = plan.privateCreator if hasattr(plan, 'privateCreator') else "quangstation"
     
     # save dicom file
     if outputFilename:

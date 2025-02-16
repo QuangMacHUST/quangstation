@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QButtonGroup, QRadioButton, QTableWidget, \
     QFileDialog, QPushButton
 
-from opentps.core.io.dataExporter import ExportTypes, ExportConfig, exportPatient
+from quangstation.core.io.dataExporter import ExportTypes, ExportConfig, exportPatient
 
 
 class ExportWindow(QMainWindow):

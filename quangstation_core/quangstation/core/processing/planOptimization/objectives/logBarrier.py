@@ -1,7 +1,7 @@
 import numpy as np
 from numpy import matlib as mb
-from opentps.core.processing.planOptimization.tools import WeightStructure
-from opentps.core.processing.planOptimization.objectives.baseFunction import BaseFunc
+from quangstation.core.processing.planOptimization.tools import WeightStructure
+from quangstation.core.processing.planOptimization.objectives.baseFunction import BaseFunc
 
 
 class LogBarrier(BaseFunc):

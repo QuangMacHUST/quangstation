@@ -19,8 +19,8 @@ pip install sphinx-pyreverse
 4. Build the API (only required if new files were added)
 ```
 cd docs
-sphinx-apidoc --implicit-namespaces -o source/ ../opentps_core/opentps/
-sphinx-apidoc --implicit-namespaces -o source/ ../opentps_gui/opentps/
+sphinx-apidoc --implicit-namespaces -o source/ ../quangstation_core/quangstation/
+sphinx-apidoc --implicit-namespaces -o source/ ../quangstation_gui/quangstation/
 ```
 
 5. Build the html

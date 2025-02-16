@@ -9,7 +9,7 @@ import numpy as np
 
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
-    from opentps.core.data.plan._planProtonSpot import PlanProtonSpot
+    from quangstation.core.data.plan._planProtonSpot import PlanProtonSpot
 
 
 class PlanProtonLayer:

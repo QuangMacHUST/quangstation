@@ -6,8 +6,8 @@ from pathlib import Path
 
 from pip._internal.utils import appdirs
 
-import opentps.core.config as configModule
-import opentps.core.config.logger as loggingModule
+import quangstation.core.config as configModule
+import quangstation.core.config.logger as loggingModule
 
 
 class Singleton(type):
@@ -45,7 +45,7 @@ class ProgramSettings(metaclass=Singleton):
         The folder where the examples are located.
     """
     def __init__(self):
-        self._config_dir = Path(appdirs.user_config_dir("openTPS"))
+        self._config_dir = Path(appdirs.user_config_dir("quangstation"))
         self._configFile = self._config_dir / "mainConfig.cfg"
         self._loggingConfigFilePath = loggingModule.__path__[0] + os.sep + 'logging_config.json'
 
@@ -56,7 +56,7 @@ class ProgramSettings(metaclass=Singleton):
 
             self._config = configparser.ConfigParser()
             self._config.read(self._configFile)
-            self.workspace = str(Path.home() / "openTPS_workspace")  # Will also write config
+            self.workspace = str(Path.home() / "quangstation_workspace")  # Will also write config
 
         self._config = configparser.ConfigParser()
         self._config.read(self._configFile)

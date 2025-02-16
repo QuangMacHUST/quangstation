@@ -1,4 +1,4 @@
-from opentps.core.io.dataLoader import listAllFiles
+from quangstation.core.io.dataLoader import listAllFiles
 import pydicom
 
 def anonymiseDicom(dataPath, patientName):

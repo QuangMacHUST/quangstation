@@ -1,7 +1,7 @@
-opentps.core.processing.doseCalculation namespace
+quangstation.core.processing.doseCalculation namespace
 =================================================
 
-.. py:module:: opentps.core.processing.doseCalculation
+.. py:module:: quangstation.core.processing.doseCalculation
 
 Subpackages
 -----------
@@ -9,55 +9,55 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   opentps.core.processing.doseCalculation.MCsquare
+   quangstation.core.processing.doseCalculation.MCsquare
 
 Submodules
 ----------
 
-opentps.core.processing.doseCalculation.abstractDoseCalculator module
+quangstation.core.processing.doseCalculation.abstractDoseCalculator module
 ---------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.doseCalculation.abstractDoseCalculator
+.. automodule:: quangstation.core.processing.doseCalculation.abstractDoseCalculator
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.doseCalculation.abstractDoseInfluenceCalculator module
+quangstation.core.processing.doseCalculation.abstractDoseInfluenceCalculator module
 ------------------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.doseCalculation.abstractDoseInfluenceCalculator
+.. automodule:: quangstation.core.processing.doseCalculation.abstractDoseInfluenceCalculator
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.doseCalculation.abstractMCDoseCalculator module
+quangstation.core.processing.doseCalculation.abstractMCDoseCalculator module
 -----------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.doseCalculation.abstractMCDoseCalculator
+.. automodule:: quangstation.core.processing.doseCalculation.abstractMCDoseCalculator
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.doseCalculation.doseCalculationConfig module
+quangstation.core.processing.doseCalculation.doseCalculationConfig module
 --------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.doseCalculation.doseCalculationConfig
+.. automodule:: quangstation.core.processing.doseCalculation.doseCalculationConfig
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.doseCalculation.geant4DoseCalculator module
+quangstation.core.processing.doseCalculation.geant4DoseCalculator module
 -------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.doseCalculation.geant4DoseCalculator
+.. automodule:: quangstation.core.processing.doseCalculation.geant4DoseCalculator
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.processing.doseCalculation.mcsquareDoseCalculator module
+quangstation.core.processing.doseCalculation.mcsquareDoseCalculator module
 ---------------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.doseCalculation.mcsquareDoseCalculator
+.. automodule:: quangstation.core.processing.doseCalculation.mcsquareDoseCalculator
    :members:
    :undoc-members:
    :show-inheritance:

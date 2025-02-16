@@ -13,27 +13,27 @@ import matplotlib.pyplot as plt
 
 import numpy as np
 
-from opentps.core.data.MCsquare import MCsquareConfig
-from opentps.core.data import SparseBeamlets
-from opentps.core.processing.planEvaluation.robustnessEvaluation import RobustnessEvalProton
-from opentps.core.processing.doseCalculation.abstractDoseInfluenceCalculator import AbstractDoseInfluenceCalculator
-from opentps.core.processing.doseCalculation.protons.abstractMCDoseCalculator import AbstractMCDoseCalculator
-from opentps.core.processing.imageProcessing import resampler3D
-from opentps.core.utils.programSettings import ProgramSettings
-from opentps.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
-from opentps.core.data.images import CTImage
-from opentps.core.data.images import DoseImage
-from opentps.core.data.images import LETImage
-from opentps.core.data.images import ROIMask
-from opentps.core.data.MCsquare import BDL
-from opentps.core.data.plan import ProtonPlan,ProtonPlanDesign
-from opentps.core.data import ROIContour
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.processing.registration.midPosition import compute
-from opentps.core.io import mcsquareIO
+from quangstation.core.data.MCsquare import MCsquareConfig
+from quangstation.core.data import SparseBeamlets
+from quangstation.core.processing.planEvaluation.robustnessEvaluation import RobustnessEvalProton
+from quangstation.core.processing.doseCalculation.abstractDoseInfluenceCalculator import AbstractDoseInfluenceCalculator
+from quangstation.core.processing.doseCalculation.protons.abstractMCDoseCalculator import AbstractMCDoseCalculator
+from quangstation.core.processing.imageProcessing import resampler3D
+from quangstation.core.utils.programSettings import ProgramSettings
+from quangstation.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
+from quangstation.core.data.images import CTImage
+from quangstation.core.data.images import DoseImage
+from quangstation.core.data.images import LETImage
+from quangstation.core.data.images import ROIMask
+from quangstation.core.data.MCsquare import BDL
+from quangstation.core.data.plan import ProtonPlan,ProtonPlanDesign
+from quangstation.core.data import ROIContour
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.processing.registration.midPosition import compute
+from quangstation.core.io import mcsquareIO
 from scipy.sparse import csc_matrix
-from opentps.core.processing.planDeliverySimulation.simpleBeamDeliveryTimings import SimpleBeamDeliveryTimings
-from opentps.core.data.images._deformation3D import Deformation3D
+from quangstation.core.processing.planDeliverySimulation.simpleBeamDeliveryTimings import SimpleBeamDeliveryTimings
+from quangstation.core.data.images._deformation3D import Deformation3D
 
 __all__ = ['MCsquareDoseCalculator']
 
@@ -493,7 +493,7 @@ class MCsquareDoseCalculator(AbstractMCDoseCalculator, AbstractDoseInfluenceCalc
         os.environ['MCsquare_Materials_Dir'] = self._materialFolder
         nVoxels = self.scoringGridSize[0]*self.scoringGridSize[1]*self.scoringGridSize[2]
 
-        from opentps.core.processing.doseCalculation.protons._utils import MCsquareSharedLib
+        from quangstation.core.processing.doseCalculation.protons._utils import MCsquareSharedLib
         self._mc2Lib = MCsquareSharedLib(mcsquarePath=self._mcsquareSimuDir)
         sparseBeamlets = self._mc2Lib.computeBeamletsSharedLib(self._configFilePath, nVoxels, self._plan.numberOfSpots)
 
@@ -769,7 +769,7 @@ class MCsquareDoseCalculator(AbstractMCDoseCalculator, AbstractDoseInfluenceCalc
         LETImage
             LET image computed by MCsquare
         """
-        from opentps.core.data.images import LETImage
+        from quangstation.core.data.images import LETImage
         return LETImage.fromImage3D(mcsquareIO.readMCsquareMHD(self._letFilePath))
 
     def _deliveredProtons(self) -> float:

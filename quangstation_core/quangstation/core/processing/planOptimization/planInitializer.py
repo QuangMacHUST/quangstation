@@ -3,14 +3,14 @@ import math
 import warnings
 
 import numpy as np
-from opentps.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
-from opentps.core.data.images._ctImage import CTImage
-from opentps.core.data.images._roiMask import ROIMask
-from opentps.core.data.plan._planProtonLayer import PlanProtonLayer
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.processing.C_libraries.libRayTracing_wrapper import transport_spots_to_target, \
+from quangstation.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
+from quangstation.core.data.images._ctImage import CTImage
+from quangstation.core.data.images._roiMask import ROIMask
+from quangstation.core.data.plan._planProtonLayer import PlanProtonLayer
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.processing.C_libraries.libRayTracing_wrapper import transport_spots_to_target, \
     transport_spots_inside_target
-from opentps.core.processing.rangeEnergy import energyToRange, rangeToEnergy
+from quangstation.core.processing.rangeEnergy import energyToRange, rangeToEnergy
 
 logger = logging.getLogger(__name__)
 
@@ -229,7 +229,7 @@ class PlanInitializer:
         self._beamInitializer.proximalLayers = proximalLayers
         self._beamInitializer.distalLayers = distalLayers
 
-        from opentps.core.data.images._rspImage import RSPImage
+        from quangstation.core.data.images._rspImage import RSPImage
         logger.info('Target is dilated using a margin of {} mm. This process might take some time.'.format(targetMargin))
         roiDilated = ROIMask.fromImage3D(self.targetMask, patient=None)
         roiDilated.dilateMask(radius=targetMargin)

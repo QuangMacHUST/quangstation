@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 import logging
 import os
 
-from opentps.core.processing.imageProcessing import resampler3D
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
-from opentps.core.examples.syntheticData import createSynthetic4DCT
-from opentps.core.processing.deformableDataAugmentationToolBox.weightMaps import generateDeformationFromTrackers, generateDeformationFromTrackersAndWeightMaps
+from quangstation.core.processing.imageProcessing import resampler3D
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+from quangstation.core.examples.syntheticData import createSynthetic4DCT
+from quangstation.core.processing.deformableDataAugmentationToolBox.weightMaps import generateDeformationFromTrackers, generateDeformationFromTrackersAndWeightMaps
 
 logger = logging.getLogger(__name__)
 

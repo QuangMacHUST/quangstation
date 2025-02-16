@@ -1,4 +1,4 @@
-opentps.gui.viewer package
+quangstation.gui.viewer package
 ==========================
 
 Subpackages
@@ -7,80 +7,80 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   opentps.gui.viewer.dataForViewer
-   opentps.gui.viewer.dataViewerComponents
+   quangstation.gui.viewer.dataForViewer
+   quangstation.gui.viewer.dataViewerComponents
 
 Submodules
 ----------
 
-opentps.gui.viewer.dataExplorer module
+quangstation.gui.viewer.dataExplorer module
 --------------------------------------
 
-.. automodule:: opentps.gui.viewer.dataExplorer
+.. automodule:: quangstation.gui.viewer.dataExplorer
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.dataViewer module
+quangstation.gui.viewer.dataViewer module
 ------------------------------------
 
-.. automodule:: opentps.gui.viewer.dataViewer
+.. automodule:: quangstation.gui.viewer.dataViewer
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.doseComparisonDataViewer module
+quangstation.gui.viewer.doseComparisonDataViewer module
 --------------------------------------------------
 
-.. automodule:: opentps.gui.viewer.doseComparisonDataViewer
+.. automodule:: quangstation.gui.viewer.doseComparisonDataViewer
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.dynamicDisplayController module
+quangstation.gui.viewer.dynamicDisplayController module
 --------------------------------------------------
 
-.. automodule:: opentps.gui.viewer.dynamicDisplayController
+.. automodule:: quangstation.gui.viewer.dynamicDisplayController
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.exportWindow module
+quangstation.gui.viewer.exportWindow module
 --------------------------------------
 
-.. automodule:: opentps.gui.viewer.exportWindow
+.. automodule:: quangstation.gui.viewer.exportWindow
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.grid module
+quangstation.gui.viewer.grid module
 ------------------------------
 
-.. automodule:: opentps.gui.viewer.grid
+.. automodule:: quangstation.gui.viewer.grid
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.gridFourElements module
+quangstation.gui.viewer.gridFourElements module
 ------------------------------------------
 
-.. automodule:: opentps.gui.viewer.gridFourElements
+.. automodule:: quangstation.gui.viewer.gridFourElements
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.viewerPanel module
+quangstation.gui.viewer.viewerPanel module
 -------------------------------------
 
-.. automodule:: opentps.gui.viewer.viewerPanel
+.. automodule:: quangstation.gui.viewer.viewerPanel
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.viewer.viewerToolbar module
+quangstation.gui.viewer.viewerToolbar module
 ---------------------------------------
 
-.. automodule:: opentps.gui.viewer.viewerToolbar
+.. automodule:: quangstation.gui.viewer.viewerToolbar
    :members:
    :undoc-members:
    :show-inheritance:
@@ -88,7 +88,7 @@ opentps.gui.viewer.viewerToolbar module
 Module contents
 ---------------
 
-.. automodule:: opentps.gui.viewer
+.. automodule:: quangstation.gui.viewer
    :members:
    :undoc-members:
    :show-inheritance:

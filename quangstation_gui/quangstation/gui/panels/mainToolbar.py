@@ -5,16 +5,16 @@ import os
 
 from PyQt5.QtWidgets import QToolBox, QWidget
 
-from opentps.core import Event
-from opentps.gui.panels.doseComparisonPanel import DoseComparisonPanel
-from opentps.gui.panels.doseComputationPanel import DoseComputationPanel
-from opentps.gui.panels.patientDataPanel.patientDataPanel import PatientDataPanel
-from opentps.gui.panels.planDesignPanel.planDesignPanel import PlanDesignPanel
-from opentps.gui.panels.planEvaluationPanel import PlanEvaluationPanel
-from opentps.gui.panels.planOptimizationPanel.planOptiPanel import PlanOptiPanel
-from opentps.gui.panels.roiPanel import ROIPanel
-from opentps.gui.panels.scriptingPanel.scriptingPanel import ScriptingPanel
-from opentps.gui.panels.registrationPanel import RegistrationPanel
+from quangstation.core import Event
+from quangstation.gui.panels.doseComparisonPanel import DoseComparisonPanel
+from quangstation.gui.panels.doseComputationPanel import DoseComputationPanel
+from quangstation.gui.panels.patientDataPanel.patientDataPanel import PatientDataPanel
+from quangstation.gui.panels.planDesignPanel.planDesignPanel import PlanDesignPanel
+from quangstation.gui.panels.planEvaluationPanel import PlanEvaluationPanel
+from quangstation.gui.panels.planOptimizationPanel.planOptiPanel import PlanOptiPanel
+from quangstation.gui.panels.roiPanel import ROIPanel
+from quangstation.gui.panels.scriptingPanel.scriptingPanel import ScriptingPanel
+from quangstation.gui.panels.registrationPanel import RegistrationPanel
 
 logger = logging.getLogger(__name__)
 

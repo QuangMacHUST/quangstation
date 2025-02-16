@@ -5,13 +5,13 @@ __all__ = ['RTPlan']
 import logging
 import numpy as np
 from typing import TYPE_CHECKING, Union, Sequence
-from opentps.core.data._patientData import PatientData
+from quangstation.core.data._patientData import PatientData
 
 if TYPE_CHECKING:
-    from opentps.core.data.plan._planProtonBeam import PlanProtonBeam
-    from opentps.core.data.plan._planPhotonBeam import PlanPhotonBeam
-    from opentps.core.data.plan._protonPlan import ProtonPlan
-    from opentps.core.data.plan._photonPlan import PhotonPlan   
+    from quangstation.core.data.plan._planProtonBeam import PlanProtonBeam
+    from quangstation.core.data.plan._planPhotonBeam import PlanPhotonBeam
+    from quangstation.core.data.plan._protonPlan import ProtonPlan
+    from quangstation.core.data.plan._photonPlan import PhotonPlan   
 
 logger = logging.getLogger(__name__)
 

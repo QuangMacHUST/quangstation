@@ -8,15 +8,15 @@ import numpy as np
 import pickle
 import os
 
-from opentps.core.data._dvhBand import DVHBand
-from opentps.core.processing.imageProcessing import resampler3D
-from opentps.core.data.plan._robustnessPhoton import RobustnessPhoton
+from quangstation.core.data._dvhBand import DVHBand
+from quangstation.core.processing.imageProcessing import resampler3D
+from quangstation.core.data.plan._robustnessPhoton import RobustnessPhoton
 
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from opentps.core.data import ROIContour
-    from opentps.core.data.images import ROIMask, DoseImage
+    from quangstation.core.data import ROIContour
+    from quangstation.core.data.images import ROIMask, DoseImage
 
 logger = logging.getLogger(__name__)
 
@@ -103,7 +103,7 @@ class RobustnessEval:
         contours : list[ROIContour]
             The list of contours.
         """
-        from opentps.core.data._dvh import DVH
+        from quangstation.core.data._dvh import DVH
         self.nominal.dose = dose
         self.nominal.dvh.clear()
         for contour in contours:
@@ -122,7 +122,7 @@ class RobustnessEval:
         contours : list[ROIContour]
             The list of contours.
         """
-        from opentps.core.data._dvh import DVH
+        from quangstation.core.data._dvh import DVH
         scenario = RobustnessScenario()
         scenario.dose = dose
         scenario.sse = self.setupSystematicError
@@ -152,7 +152,7 @@ class RobustnessEval:
         targetPrescription : float
             The target prescription in Gy.
         """
-        from opentps.core.data import ROIContour
+        from quangstation.core.data import ROIContour
         if isinstance(target, ROIContour):
             targetContour = target.getBinaryMask(origin=ct.origin, gridSize=ct.gridSize,
                                                               spacing=ct.spacing)
@@ -186,7 +186,7 @@ class RobustnessEval:
         contours : list[ROIContour]
             The list of contours.
         """
-        from opentps.core.data._dvh import DVH
+        from quangstation.core.data._dvh import DVH
         self.nominal.dvh.clear()
         for contour in contours:
             myDVH = DVH(contour, self.nominal.dose)
@@ -514,7 +514,7 @@ class RobustnessEvalPhoton(RobustnessEval,RobustnessPhoton):
         contours : list[ROIContour]
             The list of contours.
         """
-        from opentps.core.data._dvh import DVH
+        from quangstation.core.data._dvh import DVH
         scenario = RobustnessScenario()
         scenario.dose = dose
         scenario.sse = self.scenariosConfig[scenarioIdx].sse

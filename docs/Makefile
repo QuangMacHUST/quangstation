@@ -45,7 +45,7 @@ clean:
 # - Different versions of easy_install install to different directories (!)
 #
 
-OPENTPSVER:=$(shell cd '..' ; $(PYTHON) -c "import version; print(version.git_revision[:10])" 2>/dev/null)
+quangstationver:=$(shell cd '..' ; $(PYTHON) -c "import version; print(version.git_revision[:10])" 2>/dev/null)
 
 dist:
 	install -d build

@@ -3,7 +3,7 @@ __all__ = ['MRImage']
 import pydicom
 import copy
 
-from opentps.core.data.images._image3D import Image3D
+from quangstation.core.data.images._image3D import Image3D
 
 
 class MRImage(Image3D):

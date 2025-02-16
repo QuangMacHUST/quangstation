@@ -9,8 +9,8 @@ import numpy as np
 import logging
 # from core.data.images.vectorField3D import VectorField3D
 
-from opentps.core.data._patientData import PatientData
-from opentps.core import Event
+from quangstation.core.data._patientData import PatientData
+from quangstation.core import Event
 import pydicom
 
 logger = logging.getLogger(__name__)
@@ -244,7 +244,7 @@ class Image3D(PatientData):
                 type of the output.
             """
 
-        from opentps.core.processing.imageProcessing.resampler3D import resampleImage3D
+        from quangstation.core.processing.imageProcessing.resampler3D import resampleImage3D
         resampleImage3D(self, spacing=spacing, gridSize=gridSize, origin=origin, fillValue=fillValue, tryGPU=tryGPU, inPlace=True, outputType=outputType)
 
     def getDataAtPosition(self, position: Sequence):

@@ -4,7 +4,7 @@ __all__ = ['DVHBand']
 
 import numpy as np
 
-from opentps.core import Event
+from quangstation.core import Event
 
 
 class DVHBand():

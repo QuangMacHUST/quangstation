@@ -3,16 +3,16 @@ import numpy as np
 import logging
 logger = logging.getLogger(__name__)
 
-from opentps.core.data.images._roiMask import ROIMask
-from opentps.core.data._roiContour import ROIContour
-from opentps.core.data.images._deformation3D import Deformation3D
-from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
-import opentps.core.processing.imageProcessing.filter3D as imageFilter3D
-from opentps.core.processing.imageProcessing import resampler3D
-from opentps.core.processing.imageProcessing.imageTransform3D import getVoxelIndexFromPosition
-from opentps.core.processing.segmentation.segmentationCT import compute3DStructuralElement
-from opentps.core.processing.imageProcessing.roiMasksProcessing import buildStructElem
-from opentps.core.processing.imageProcessing.filter3D import gaussConv
+from quangstation.core.data.images._roiMask import ROIMask
+from quangstation.core.data._roiContour import ROIContour
+from quangstation.core.data.images._deformation3D import Deformation3D
+from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+import quangstation.core.processing.imageProcessing.filter3D as imageFilter3D
+from quangstation.core.processing.imageProcessing import resampler3D
+from quangstation.core.processing.imageProcessing.imageTransform3D import getVoxelIndexFromPosition
+from quangstation.core.processing.segmentation.segmentationCT import compute3DStructuralElement
+from quangstation.core.processing.imageProcessing.roiMasksProcessing import buildStructElem
+from quangstation.core.processing.imageProcessing.filter3D import gaussConv
 
 
 def applyBaselineShift(inputData, ROI, shift, sigma=2, tryGPU=True):

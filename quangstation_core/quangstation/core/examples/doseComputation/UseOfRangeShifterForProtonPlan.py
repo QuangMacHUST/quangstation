@@ -4,29 +4,29 @@ import sys
 
 from matplotlib import pyplot as plt
 
-from opentps.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
+from quangstation.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
 sys.path.append('..')
 import numpy as np
 from pathlib import Path
-from opentps.core.data.plan._planProtonBeam import PlanProtonBeam
-from opentps.core.data.plan._planProtonLayer import PlanProtonLayer
-from opentps.core.data.plan._protonPlan import ProtonPlan
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.io.scannerReader import readScanner
-from opentps.core.io.serializedObjectIO import loadRTPlan, saveRTPlan
-from opentps.core.io import mcsquareIO
-from opentps.core.data._dvh import DVH
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.core.io.dataLoader import readData
-from opentps.core.io.mhdIO import exportImageMHD
-from opentps.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
-from opentps.core.data.images import CTImage, DoseImage
-from opentps.core.data.images import ROIMask
-from opentps.core.io.dicomIO import writeDicomCT, writeRTPlan, writeRTDose, readDicomDose, writeRTStruct
-from opentps.core.io.mcsquareIO import RangeShifter
-from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareMolecule import MCsquareMolecule
-from opentps.core.data._rtStruct import RTStruct
-from opentps.core.data import Patient
+from quangstation.core.data.plan._planProtonBeam import PlanProtonBeam
+from quangstation.core.data.plan._planProtonLayer import PlanProtonLayer
+from quangstation.core.data.plan._protonPlan import ProtonPlan
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.io.scannerReader import readScanner
+from quangstation.core.io.serializedObjectIO import loadRTPlan, saveRTPlan
+from quangstation.core.io import mcsquareIO
+from quangstation.core.data._dvh import DVH
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.core.io.dataLoader import readData
+from quangstation.core.io.mhdIO import exportImageMHD
+from quangstation.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
+from quangstation.core.data.images import CTImage, DoseImage
+from quangstation.core.data.images import ROIMask
+from quangstation.core.io.dicomIO import writeDicomCT, writeRTPlan, writeRTDose, readDicomDose, writeRTStruct
+from quangstation.core.io.mcsquareIO import RangeShifter
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareMolecule import MCsquareMolecule
+from quangstation.core.data._rtStruct import RTStruct
+from quangstation.core.data import Patient
 
 
 logger = logging.getLogger(__name__)
@@ -55,7 +55,7 @@ def run(output_path=""):
     doseCalculator = MCsquareDoseCalculator()
     doseCalculator.ctCalibration = readScanner(DoseCalculationConfig().scannerFolder)
     # Or a specific one if you do have
-    # MCSquarePath = os.path.join(openTPS_path, 'core', 'processing', 'doseCalculation', 'MCsquare')
+    # MCSquarePath = os.path.join(quangstation_path, 'core', 'processing', 'doseCalculation', 'MCsquare')
     # scannerPath = os.path.join(MCSquarePath, 'Scanners', 'UCL_Toshiba')
     # doseCalculator.ctCalibration = MCsquareCTCalibration(fromFiles=(os.path.join(scannerPath, 'HU_Density_Conversion.txt'),
     #                                                 os.path.join(scannerPath, 'HU_Material_Conversion.txt'),
@@ -155,10 +155,10 @@ def run(output_path=""):
     plan[2].layers[0].rangeShifterSettings.rangeShifterSetting = 'IN'
     plan[2].layers[0].rangeShifterSettings.rangeShifterWaterEquivalentThickness = 15 # [mm] None means get thickness from BDL
 
-    # Save plan in OpenTPS format (serialized)
+    # Save plan in quangstation format (serialized)
     saveRTPlan(plan, os.path.join(output_path, 'dummy_plan.tps'))
 
-    # Load plan in OpenTPS format (serialized)
+    # Load plan in quangstation format (serialized)
     plan2 = loadRTPlan(os.path.join(output_path, 'dummy_plan.tps'))
     print(plan2[0].layers[0].spotWeights)
     print(plan[0].layers[0].spotWeights)  # plan2 is the same as plan

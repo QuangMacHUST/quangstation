@@ -3,14 +3,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 import copy
 
-from opentps.core.processing.imageProcessing.resampler3D import resample, resampleOnImage3D, resampleImage3DOnImage3D
-from opentps.core.processing.registration.registrationRigid import RegistrationRigid
-from opentps.core.processing.dataComparison.image3DComparison import getTranslationAndRotation
-from opentps.core.processing.dataComparison.contourComparison import getBaselineShift, compareMasks
-from opentps.core.data._transform3D import Transform3D
-from opentps.core.processing.dataComparison.testShrink import eval
-from opentps.core.processing.deformableDataAugmentationToolBox.modelManipFunctions import *
-from opentps.core.processing.imageProcessing.syntheticDeformation import applyBaselineShift
+from quangstation.core.processing.imageProcessing.resampler3D import resample, resampleOnImage3D, resampleImage3DOnImage3D
+from quangstation.core.processing.registration.registrationRigid import RegistrationRigid
+from quangstation.core.processing.dataComparison.image3DComparison import getTranslationAndRotation
+from quangstation.core.processing.dataComparison.contourComparison import getBaselineShift, compareMasks
+from quangstation.core.data._transform3D import Transform3D
+from quangstation.core.processing.dataComparison.testShrink import eval
+from quangstation.core.processing.deformableDataAugmentationToolBox.modelManipFunctions import *
+from quangstation.core.processing.imageProcessing.syntheticDeformation import applyBaselineShift
 
 def compareModels(dynMod1, dynMod2, structList1=[], structList2=[], fixedModel=1):
     """

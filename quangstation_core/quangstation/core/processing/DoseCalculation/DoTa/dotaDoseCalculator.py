@@ -9,10 +9,10 @@ import random
 import os
 import sys
 
-# from opentps.core.processing.imageProcessing import imageTransform3D
-from opentps.core.processing.doseCalculation.DoTA.models import dota_energies
-from opentps.core.processing.doseCalculation.DoTA.plot import plot_slice, plot_beam
-# from opentps.core.data.images._doseImage import DoseImage
+from quangstation.core.processing.imageProcessing import imageTransform3D
+from quangstation.core.processing.doseCalculation.DoTA.models import dota_energies
+from quangstation.core.processing.doseCalculation.DoTA.plot import plot_slice, plot_beam
+from quangstation.core.data.images._doseImage import DoseImage
 
 currentWorkingDir = os.getcwd()
 sys.path.append(currentWorkingDir)

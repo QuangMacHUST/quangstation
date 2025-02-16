@@ -5,8 +5,8 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-from opentps.core.processing.planOptimization.acceleration.baseAccel import Dummy
-from opentps.core.processing.planOptimization.acceleration.backtracking import Backtracking
+from quangstation.core.processing.planOptimization.acceleration.baseAccel import Dummy
+from quangstation.core.processing.planOptimization.acceleration.backtracking import Backtracking
 
 
 class FistaAccel(Dummy):

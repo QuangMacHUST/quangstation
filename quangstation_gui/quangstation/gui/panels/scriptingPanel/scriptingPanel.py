@@ -3,8 +3,8 @@ import os
 from PyQt5.QtCore import pyqtSignal
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QPushButton, QFrame, QMessageBox, QFileDialog, QLabel, QHBoxLayout
 
-from opentps.core import APIInterpreter
-from opentps.gui.panels.scriptingPanel.scriptingWindow import ScriptingWindow
+from quangstation.core import APIInterpreter
+from quangstation.gui.panels.scriptingPanel.scriptingWindow import ScriptingWindow
 
 
 class ScriptingPanel(QWidget):

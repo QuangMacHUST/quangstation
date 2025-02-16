@@ -3,10 +3,10 @@ from typing import Sequence
 
 import numpy as np
 
-from opentps.core.data.plan._planProtonBeam import PlanProtonBeam
-from opentps.core.data.plan._planProtonLayer import PlanProtonLayer
-from opentps.core.data.plan._planProtonSpot import PlanProtonSpot
-from opentps.core.data.plan._protonPlan import ProtonPlan
+from quangstation.core.data.plan._planProtonBeam import PlanProtonBeam
+from quangstation.core.data.plan._planProtonLayer import PlanProtonLayer
+from quangstation.core.data.plan._planProtonSpot import PlanProtonSpot
+from quangstation.core.data.plan._protonPlan import ProtonPlan
 
 '''
 Extend rtplan with attributs .layers and .spots to access directly global id and energy for each beam, layer and spot without looping. 

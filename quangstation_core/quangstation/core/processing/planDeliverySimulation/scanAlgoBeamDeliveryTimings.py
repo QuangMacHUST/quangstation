@@ -1,9 +1,9 @@
 import requests
 import numpy as np
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.data.plan._scanAlgoPlan import ScanAlgoPlan
-from opentps.core.io.serializedObjectIO import saveRTPlan
-from opentps.core.processing.planDeliverySimulation.scanAlgoSimulationConfig import ScanAlgoSimulationConfig
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.data.plan._scanAlgoPlan import ScanAlgoPlan
+from quangstation.core.io.serializedObjectIO import saveRTPlan
+from quangstation.core.processing.planDeliverySimulation.scanAlgoSimulationConfig import ScanAlgoSimulationConfig
 
 class ScanAlgoBeamDeliveryTimings:
     """

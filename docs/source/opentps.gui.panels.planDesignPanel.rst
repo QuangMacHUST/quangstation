@@ -1,29 +1,29 @@
-opentps.gui.panels.planDesignPanel package
+quangstation.gui.panels.planDesignPanel package
 ==========================================
 
 Submodules
 ----------
 
-opentps.gui.panels.planDesignPanel.beamDialog module
+quangstation.gui.panels.planDesignPanel.beamDialog module
 ----------------------------------------------------
 
-.. automodule:: opentps.gui.panels.planDesignPanel.beamDialog
+.. automodule:: quangstation.gui.panels.planDesignPanel.beamDialog
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.panels.planDesignPanel.planDesignPanel module
+quangstation.gui.panels.planDesignPanel.planDesignPanel module
 ---------------------------------------------------------
 
-.. automodule:: opentps.gui.panels.planDesignPanel.planDesignPanel
+.. automodule:: quangstation.gui.panels.planDesignPanel.planDesignPanel
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.panels.planDesignPanel.robustnessSettings module
+quangstation.gui.panels.planDesignPanel.robustnessSettings module
 ------------------------------------------------------------
 
-.. automodule:: opentps.gui.panels.planDesignPanel.robustnessSettings
+.. automodule:: quangstation.gui.panels.planDesignPanel.robustnessSettings
    :members:
    :undoc-members:
    :show-inheritance:
@@ -31,7 +31,7 @@ opentps.gui.panels.planDesignPanel.robustnessSettings module
 Module contents
 ---------------
 
-.. automodule:: opentps.gui.panels.planDesignPanel
+.. automodule:: quangstation.gui.panels.planDesignPanel
    :members:
    :undoc-members:
    :show-inheritance:

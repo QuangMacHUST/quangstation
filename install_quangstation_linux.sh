@@ -11,7 +11,7 @@ if [ -d "$ENV_PATH" ]; then
     exit 1;
 fi
 
-echo "This script will install system libraries and tools that you will need to work with OpenTPS. At several points in the installation process apt will ask you to confirm the installation and updates of packages. The script will also create a virtual python environment in the CURRENT directory named $ENV_PATH that will be used to install the python dependencies of quangstation."
+echo "This script will install system libraries and tools that you will need to work with quangstation. At several points in the installation process apt will ask you to confirm the installation and updates of packages. The script will also create a virtual python environment in the CURRENT directory named $ENV_PATH that will be used to install the python dependencies of quangstation."
 
 read -p "Do you want to proceed? (y/n) " CONT
 if [ "$CONT" = "y" ]; then

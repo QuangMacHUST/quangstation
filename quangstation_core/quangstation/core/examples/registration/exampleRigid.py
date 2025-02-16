@@ -6,10 +6,10 @@ import time
 import logging
 import os
 
-from opentps.core.processing.registration.registrationRigid import RegistrationRigid
-from opentps.core.examples.syntheticData import *
-from opentps.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
-from opentps.core.processing.imageProcessing.imageTransform3D import rotateData, translateData
+from quangstation.core.processing.registration.registrationRigid import RegistrationRigid
+from quangstation.core.examples.syntheticData import *
+from quangstation.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
+from quangstation.core.processing.imageProcessing.imageTransform3D import rotateData, translateData
 
 logger = logging.getLogger(__name__)
 

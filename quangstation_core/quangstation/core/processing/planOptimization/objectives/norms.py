@@ -14,8 +14,8 @@ try:
 except:
     use_MKL = False
 
-from opentps.core.processing.planOptimization import tools
-from opentps.core.processing.planOptimization.objectives.baseFunction import BaseFunc
+from quangstation.core.processing.planOptimization import tools
+from quangstation.core.processing.planOptimization.objectives.baseFunction import BaseFunc
 
 logger = logging.getLogger(__name__)
 

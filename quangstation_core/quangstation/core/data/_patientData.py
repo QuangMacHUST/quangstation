@@ -8,7 +8,7 @@ import unittest
 import numpy as np
 import pydicom
 
-from opentps.core import Event
+from quangstation.core import Event
 
 
 class PatientData:
@@ -124,7 +124,7 @@ class EventTestCase(unittest.TestCase):
         obj = PatientData()
         obj.name = name
 
-        from opentps.core.data import Patient
+        from quangstation.core.data import Patient
         patient = Patient()
         obj.patient = patient
 

@@ -2,7 +2,7 @@
 # All rights reserved.
 import copy
 import numpy as np
-from opentps.core.processing.planOptimization.acceleration.baseAccel import Dummy
+from quangstation.core.processing.planOptimization.acceleration.baseAccel import Dummy
 # -----------------------------------------------------------------------------
 # Stepsize optimizers
 # -----------------------------------------------------------------------------

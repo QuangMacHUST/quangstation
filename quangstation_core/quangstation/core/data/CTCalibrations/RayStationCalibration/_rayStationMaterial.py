@@ -2,11 +2,11 @@ from math import log, pi
 
 import numpy as np
 
-from opentps.core.data.CTCalibrations.MCsquareCalibration._G4StopPow import G4StopPow, SP
-from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareElement import MCsquareElement
-from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareMaterial import MCsquareMaterial
-from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareMolecule import MCsquareMolecule
-from opentps.core.data.CTCalibrations.RayStationCalibration._X0 import X0
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._G4StopPow import G4StopPow, SP
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareElement import MCsquareElement
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareMaterial import MCsquareMaterial
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareMolecule import MCsquareMolecule
+from quangstation.core.data.CTCalibrations.RayStationCalibration._X0 import X0
 
 
 class RayStationMaterial:

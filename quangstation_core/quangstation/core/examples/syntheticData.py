@@ -2,9 +2,9 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.data.images._ctImage import CTImage
-from opentps.core.data.images._roiMask import ROIMask
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.data.images._ctImage import CTImage
+from quangstation.core.data.images._roiMask import ROIMask
 
 
 def createSynthetic3DCT(diaphragmPos = 20, targetPos = [50, 100, 35], spacing=[1, 1, 2], returnTumorMask = False):

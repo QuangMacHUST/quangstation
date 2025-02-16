@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QComboBox
-from opentps.core import Event
-from opentps.core.data import Patient, PatientData
+from quangstation.core import Event
+from quangstation.core.data import Patient, PatientData
 
 
 class PatientDataComboBox(QComboBox):

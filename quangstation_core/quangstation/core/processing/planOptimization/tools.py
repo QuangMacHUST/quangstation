@@ -2,11 +2,11 @@ import numpy as np
 import scipy.sparse as sp
 import pandas as pd
 
-from opentps.core.data import DVH
-from opentps.core.data.plan._planProtonBeam import PlanProtonBeam
-from opentps.core.data.plan._planProtonLayer import PlanProtonLayer
-from opentps.core.data.plan._planProtonSpot import PlanProtonSpot
-from opentps.core.data.plan._rtPlan import RTPlan
+from quangstation.core.data import DVH
+from quangstation.core.data.plan._planProtonBeam import PlanProtonBeam
+from quangstation.core.data.plan._planProtonLayer import PlanProtonLayer
+from quangstation.core.data.plan._planProtonSpot import PlanProtonSpot
+from quangstation.core.data.plan._rtPlan import RTPlan
 
 import logging
 

@@ -7,7 +7,7 @@ import copy
 import logging
 logger = logging.getLogger(__name__)
 
-from opentps.core.processing.imageProcessing import sitkImageProcessing, cupyImageProcessing
+from quangstation.core.processing.imageProcessing import sitkImageProcessing, cupyImageProcessing
 
 def getMaskVolume(mask, inVoxels=False):
     """

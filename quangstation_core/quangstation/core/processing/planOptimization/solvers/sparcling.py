@@ -1,6 +1,6 @@
-from opentps.core.processing.planOptimization.solvers import bfgs, gradientDescent, lp, scipyOpt
-from opentps.core.data.plan._planProtonLayer import PlanProtonLayer
-from opentps.core.data.plan._planProtonBeam import PlanProtonBeam
+from quangstation.core.processing.planOptimization.solvers import bfgs, gradientDescent, lp, scipyOpt
+from quangstation.core.data.plan._planProtonLayer import PlanProtonLayer
+from quangstation.core.data.plan._planProtonBeam import PlanProtonBeam
 
 
 class SPArCling:

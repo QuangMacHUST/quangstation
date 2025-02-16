@@ -3,9 +3,9 @@ import functools
 from PyQt5.QtWidgets import QVBoxLayout, QLabel, QLineEdit, QMainWindow, QWidget, QPushButton, QHBoxLayout, QCheckBox, \
     QFrame, QGroupBox
 
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.gui.panels.mainToolbar import MainToolbar
-from opentps.core.utils.programSettings import ProgramSettings
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.gui.panels.mainToolbar import MainToolbar
+from quangstation.core.utils.programSettings import ProgramSettings
 
 
 class EditableSetting(QWidget):

@@ -7,8 +7,8 @@ from typing import Sequence
 import numpy as np
 from PyQt5.QtWidgets import QWidget, QHBoxLayout, QMainWindow, QVBoxLayout, QPushButton, QFrame, QLabel, QDoubleSpinBox
 
-from opentps.core.processing.imageProcessing import resampler3D
-from opentps.gui.panels.patientDataPanel.patientDataSelection import PatientDataSelection
+from quangstation.core.processing.imageProcessing import resampler3D
+from quangstation.gui.panels.patientDataPanel.patientDataSelection import PatientDataSelection
 
 
 class ResampleWidget(QMainWindow):

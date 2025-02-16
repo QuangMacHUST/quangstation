@@ -1,4 +1,4 @@
-opentps.core.data.CTCalibrations package
+quangstation.core.data.CTCalibrations package
 ========================================
 
 Subpackages
@@ -7,13 +7,13 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   opentps.core.data.CTCalibrations.MCsquareCalibration
-   opentps.core.data.CTCalibrations.RayStationCalibration
+   quangstation.core.data.CTCalibrations.MCsquareCalibration
+   quangstation.core.data.CTCalibrations.RayStationCalibration
 
 Module contents
 ---------------
 
-.. automodule:: opentps.core.data.CTCalibrations
+.. automodule:: quangstation.core.data.CTCalibrations
    :members:
    :undoc-members:
    :show-inheritance:

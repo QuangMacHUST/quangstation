@@ -7,13 +7,13 @@ import logging
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem, QMainWindow, QAction, QFileDialog, QToolBar, QCheckBox, QLabel, QVBoxLayout, QWidget
 
-from opentps.core.data.images import ROIMask
-from opentps.core.data.plan import ProtonPlanDesign,Robustness
-from opentps.core.data.plan import FidObjective, ObjectivesList
-from opentps.core.data import Patient
-from opentps.core import Event
+from quangstation.core.data.images import ROIMask
+from quangstation.core.data.plan import ProtonPlanDesign,Robustness
+from quangstation.core.data.plan import FidObjective, ObjectivesList
+from quangstation.core.data import Patient
+from quangstation.core import Event
 
-import opentps.gui.res.icons as IconModule
+import quangstation.gui.res.icons as IconModule
 
 
 class ObjectivesWindow(QMainWindow):

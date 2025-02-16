@@ -2,8 +2,8 @@ import numpy as np
 from pydicom.uid import generate_uid
 import logging
 
-from opentps.core.processing.registration.registrationMorphons import RegistrationMorphons
-from opentps.core.data.images._deformation3D import Deformation3D
+from quangstation.core.processing.registration.registrationMorphons import RegistrationMorphons
+from quangstation.core.data.images._deformation3D import Deformation3D
 
 
 logger = logging.getLogger(__name__)

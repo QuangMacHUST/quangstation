@@ -1,9 +1,9 @@
 import glob
 import os
 
-from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareCTCalibration import MCsquareCTCalibration
-from opentps.core.data.CTCalibrations.RayStationCalibration._rayStationCTCalibration import RayStationCTCalibration
-from opentps.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareCTCalibration import MCsquareCTCalibration
+from quangstation.core.data.CTCalibrations.RayStationCalibration._rayStationCTCalibration import RayStationCTCalibration
+from quangstation.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
 
 
 def readScanner(scannerFolder, materialsPath='default') -> AbstractCTCalibration:

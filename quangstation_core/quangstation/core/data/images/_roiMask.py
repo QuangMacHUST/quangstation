@@ -6,12 +6,12 @@ import scipy
 import copy
 import logging
 
-from opentps.core.data.images._image3D import Image3D
-from opentps.core import Event
-from opentps.core.processing.imageProcessing import sitkImageProcessing, cupyImageProcessing
-from opentps.core.processing.imageProcessing import roiMasksProcessing
-from opentps.core.processing.imageProcessing.resampler3D import crop3DDataAroundBox
-from opentps.core.processing.segmentation.segmentation3D import getBoxAroundROI
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core import Event
+from quangstation.core.processing.imageProcessing import sitkImageProcessing, cupyImageProcessing
+from quangstation.core.processing.imageProcessing import roiMasksProcessing
+from quangstation.core.processing.imageProcessing.resampler3D import crop3DDataAroundBox
+from quangstation.core.processing.segmentation.segmentation3D import getBoxAroundROI
 
 logger = logging.getLogger(__name__)
 
@@ -295,7 +295,7 @@ class ROIMask(Image3D):
                     polygonMeshList.append(polygonMesh)
 
 
-        from opentps.core.data._roiContour import ROIContour  ## this is done here to avoir circular imports issue
+        from quangstation.core.data._roiContour import ROIContour  ## this is done here to avoir circular imports issue
         contour = ROIContour(name=self.name, displayColor=self._displayColor)
         contour.polygonMesh = polygonMeshList
 

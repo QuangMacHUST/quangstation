@@ -1,10 +1,10 @@
-opentps.core.processing.doseCalculation.MCsquare.BDL package
+quangstation.core.processing.doseCalculation.MCsquare.BDL package
 ============================================================
 
 Module contents
 ---------------
 
-.. automodule:: opentps.core.processing.doseCalculation.MCsquare.BDL
+.. automodule:: quangstation.core.processing.doseCalculation.MCsquare.BDL
    :members:
    :undoc-members:
    :show-inheritance:

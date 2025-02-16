@@ -2,13 +2,13 @@
 import logging
 from typing import Optional
 
-from opentps.core.data.images import DoseImage, CTImage, MRImage
-from opentps.core import Event
-from opentps.gui.mainWindow import MainWindow
-from opentps.gui.viewer.dataViewerComponents.profileWidget import ProfileWidget
-from opentps.gui.viewer.dataViewer import DataViewer
-from opentps.gui.viewer.dynamicDisplayController import DynamicDisplayController
-from opentps.gui.viewer.viewerPanel import ViewerPanel
+from quangstation.core.data.images import DoseImage, CTImage, MRImage
+from quangstation.core import Event
+from quangstation.gui.mainWindow import MainWindow
+from quangstation.gui.viewer.dataViewerComponents.profileWidget import ProfileWidget
+from quangstation.gui.viewer.dataViewer import DataViewer
+from quangstation.gui.viewer.dynamicDisplayController import DynamicDisplayController
+from quangstation.gui.viewer.viewerPanel import ViewerPanel
 
 
 class ViewController():

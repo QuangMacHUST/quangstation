@@ -2,7 +2,7 @@
 # from typing import TYPE_CHECKING
 #
 # if TYPE_CHECKING:
-#     from opentps.core.data.images import ROIMask
+#     from quangstation.core.data.images import ROIMask
 
 __all__ = ['ROIContour']
 
@@ -11,10 +11,10 @@ import numpy as np
 from PIL import Image, ImageDraw
 import logging
 
-from opentps.core.data._patientData import PatientData
+from quangstation.core.data._patientData import PatientData
 
-from opentps.core.processing.imageProcessing import resampler3D
-from opentps.core import Event
+from quangstation.core.processing.imageProcessing import resampler3D
+from quangstation.core import Event
 
 
 class ROIContour(PatientData):
@@ -46,7 +46,7 @@ class ROIContour(PatientData):
         self.referencedFrameOfReferenceUID = referencedFrameOfReferenceUID
         self.referencedSOPInstanceUIDs = []
         self.polygonMesh = []
-        # from opentps.core.data.images._roiMask import ROIMask
+        # from quangstation.core.data.images._roiMask import ROIMask
     @property
     def color(self):
         return self._displayColor
@@ -109,7 +109,7 @@ class ROIContour(PatientData):
 
         if len(zDiff) == 0:
 
-            from opentps.core.data.images._roiMask import ROIMask
+            from quangstation.core.data.images._roiMask import ROIMask
             return ROIMask(imageArray=None, name=self.name, origin=contourOrigin, spacing=contourSpacing,
                            displayColor=self._displayColor)
 
@@ -149,7 +149,7 @@ class ROIContour(PatientData):
             mask2D = np.array(img).transpose(1, 0)
             mask3D[:, :, sliceZ] = np.logical_xor(mask3D[:, :, sliceZ], mask2D)
 
-        from opentps.core.data.images._roiMask import ROIMask
+        from quangstation.core.data.images._roiMask import ROIMask
         mask = ROIMask(imageArray=mask3D, name=self.name, origin=contourOrigin, spacing=contourSpacing,
                        displayColor=self._displayColor)
 
@@ -207,7 +207,7 @@ class ROIContour(PatientData):
             mask2D = np.array(img).transpose(1, 0)
             # mask3D[:, :, sliceZ] = np.logical_xor(mask3D[:, :, sliceZ], mask2D)
             mask3D[:, :, sliceZ] = mask3D[:, :, sliceZ] - mask2D
-        from opentps.core.data.images._roiMask import ROIMask
+        from quangstation.core.data.images._roiMask import ROIMask
         mask = ROIMask(imageArray=mask3D, name=self.name, origin=origin, spacing=spacing, displayColor=self._displayColor)
 
         return mask
@@ -284,7 +284,7 @@ class ROIContour(PatientData):
             mask2D = np.array(img).transpose(1, 0)
             mask3D[:, :, sliceZ] = np.logical_or(mask3D[:, :, sliceZ], mask2D)
 
-        from opentps.core.data.images._roiMask import ROIMask
+        from quangstation.core.data.images._roiMask import ROIMask
         contourMask = ROIMask(imageArray=mask3D, name=self.name, origin=origin, spacing=spacing,
                        displayColor=self._displayColor)
 

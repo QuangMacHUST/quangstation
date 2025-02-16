@@ -5,11 +5,11 @@ from vtkmodules import vtkImagingCore, vtkCommonCore
 from vtkmodules.vtkFiltersCore import vtkContourFilter
 from vtkmodules.vtkRenderingCore import vtkActor, vtkPolyDataMapper
 
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.data.images import ROIMask
-from opentps.core.data._roiContour import ROIContour
-from opentps.gui.viewer.dataForViewer.ROIContourForViewer import ROIContourForViewer
-from opentps.gui.viewer.dataForViewer.ROIMaskForViewer import ROIMaskForViewer
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data.images import ROIMask
+from quangstation.core.data._roiContour import ROIContour
+from quangstation.gui.viewer.dataForViewer.ROIContourForViewer import ROIContourForViewer
+from quangstation.gui.viewer.dataForViewer.ROIMaskForViewer import ROIMaskForViewer
 
 
 class ContourLayer:

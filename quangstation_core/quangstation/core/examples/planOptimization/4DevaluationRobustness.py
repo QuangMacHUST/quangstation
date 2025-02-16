@@ -7,18 +7,18 @@ import datetime
 
 import numpy as np
 from matplotlib import pyplot as plt
-from opentps.core.data.images import CTImage
-from opentps.core.data.images import ROIMask
-from opentps.core.data.plan import PlanDesign
-from opentps.core.data import Patient
-from opentps.core.io import mcsquareIO
-from opentps.core.io.scannerReader import readScanner
-from opentps.core.io.serializedObjectIO import saveRTPlan, loadRTPlan
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.core.processing.doseCalculation.mcsquareDoseCalculator import MCsquareDoseCalculator
-from opentps.core.processing.planEvaluation.robustnessEvaluation import RobustnessEval
-from opentps.core.io.dataLoader import readData
-from opentps.core.data import DVH
+from quangstation.core.data.images import CTImage
+from quangstation.core.data.images import ROIMask
+from quangstation.core.data.plan import PlanDesign
+from quangstation.core.data import Patient
+from quangstation.core.io import mcsquareIO
+from quangstation.core.io.scannerReader import readScanner
+from quangstation.core.io.serializedObjectIO import saveRTPlan, loadRTPlan
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.core.processing.doseCalculation.mcsquareDoseCalculator import MCsquareDoseCalculator
+from quangstation.core.processing.planEvaluation.robustnessEvaluation import RobustnessEval
+from quangstation.core.io.dataLoader import readData
+from quangstation.core.data import DVH
 
 logger = logging.getLogger(__name__)
 
@@ -47,7 +47,7 @@ def run(output_path=""):
 
         # CT
         patient = Patient()
-        patient.name = f'Miro_OpenTPS_4DCT'
+        patient.name = f'Miro_quangstation_4DCT'
         Patient.id = f'12082024'
         Patient.birthDate = dt.strftime('%Y%m%d')
         patient.sex = ""

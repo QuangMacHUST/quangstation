@@ -1,7 +1,7 @@
-opentps
+quangstation
 =======
 
 .. toctree::
    :maxdepth: 4
 
-   opentps
+   quangstation

@@ -1,19 +1,19 @@
 import os
-from opentps.core.data.images._ctImage import CTImage
-from opentps.core.io.scannerReader import readScanner
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.core.processing.doseCalculation.photons.cccDoseCalculator import CCCDoseCalculator
-from opentps.core.io.sitkIO import exportImageSitk
+from quangstation.core.data.images._ctImage import CTImage
+from quangstation.core.io.scannerReader import readScanner
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.core.processing.doseCalculation.photons.cccDoseCalculator import CCCDoseCalculator
+from quangstation.core.io.sitkIO import exportImageSitk
 import numpy as np
-from opentps.core.data.images import ROIMask
+from quangstation.core.data.images import ROIMask
 import logging
-from opentps.core.data.plan._photonPlan import PhotonPlan
-from opentps.core.data.plan._planPhotonBeam import PlanPhotonBeam
-from opentps.core.data.plan._planPhotonSegment import PlanPhotonSegment
-from opentps.core.io.serializedObjectIO import loadRTPlan, saveRTPlan
+from quangstation.core.data.plan._photonPlan import PhotonPlan
+from quangstation.core.data.plan._planPhotonBeam import PlanPhotonBeam
+from quangstation.core.data.plan._planPhotonSegment import PlanPhotonSegment
+from quangstation.core.io.serializedObjectIO import loadRTPlan, saveRTPlan
 from pathlib import Path
-from opentps.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
-from opentps.core.data._dvh import DVH
+from quangstation.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
+from quangstation.core.data._dvh import DVH
 import matplotlib.pyplot as plt
 
 

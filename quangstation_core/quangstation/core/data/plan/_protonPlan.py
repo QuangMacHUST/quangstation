@@ -7,11 +7,11 @@ logger = logging.getLogger(__name__)
 __all__ = ['ProtonPlan']
 
 from typing import TYPE_CHECKING
-from opentps.core.data.plan._rtPlan import RTPlan
+from quangstation.core.data.plan._rtPlan import RTPlan
 
 # if TYPE_CHECKING:
-from opentps.core.data.plan._planProtonBeam import PlanProtonBeam
-from opentps.core.data.plan._planProtonLayer import PlanProtonLayer
+from quangstation.core.data.plan._planProtonBeam import PlanProtonBeam
+from quangstation.core.data.plan._planProtonLayer import PlanProtonLayer
 
 
 class ProtonPlan(RTPlan):
@@ -309,7 +309,7 @@ class ProtonPlan(RTPlan):
 
 class PlanIonLayerTestCase(unittest.TestCase):
         def testLen(self):
-                from opentps.core.data.plan import PlanProtonBeam, PlanProtonLayer
+                from quangstation.core.data.plan import PlanProtonBeam, PlanProtonLayer
 
                 plan = ProtonPlan()
                 beam = PlanProtonBeam()
@@ -325,7 +325,7 @@ class PlanIonLayerTestCase(unittest.TestCase):
                 self.assertEqual(len(plan), 0)
 
         def testLenWithTimings(self):
-                from opentps.core.data.plan import PlanProtonBeam, PlanProtonLayer
+                from quangstation.core.data.plan import PlanProtonBeam, PlanProtonLayer
 
                 plan = ProtonPlan()
                 beam = PlanProtonBeam()
@@ -341,7 +341,7 @@ class PlanIonLayerTestCase(unittest.TestCase):
                 self.assertEqual(len(plan), 0)
 
         def testReorderPlan(self):
-                from opentps.core.data.plan import PlanProtonBeam, PlanProtonLayer
+                from quangstation.core.data.plan import PlanProtonBeam, PlanProtonLayer
 
                 plan = ProtonPlan()
                 beam = PlanProtonBeam()
@@ -376,7 +376,7 @@ class PlanIonLayerTestCase(unittest.TestCase):
                 np.testing.assert_array_almost_equal(layer0.spotMUs, np.array([0.1, 0.2, 0.5, 0.3]))
 
         def testFusionDuplicates(self):
-                from opentps.core.data.plan import PlanProtonBeam, PlanProtonLayer
+                from quangstation.core.data.plan import PlanProtonBeam, PlanProtonLayer
 
                 plan = ProtonPlan()
                 beam1 = PlanProtonBeam()
@@ -416,7 +416,7 @@ class PlanIonLayerTestCase(unittest.TestCase):
                 np.testing.assert_array_almost_equal(plan._beams[0]._layers[1].spotMUs, np.array([0.3, 0.6, 0.4, 0.2]))
 
         def testSimplify(self):
-                from opentps.core.data.plan import PlanProtonBeam, PlanProtonLayer
+                from quangstation.core.data.plan import PlanProtonBeam, PlanProtonLayer
 
                 plan = ProtonPlan()
                 beam1 = PlanProtonBeam()

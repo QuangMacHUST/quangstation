@@ -1,5 +1,5 @@
-from opentps.gui.viewer.dataViewerComponents.image3DViewer import Image3DViewer
-from opentps.gui.viewer.dataForViewer.dyn3DSeqForViewer import Dyn3DSeqForViewer
+from quangstation.gui.viewer.dataViewerComponents.image3DViewer import Image3DViewer
+from quangstation.gui.viewer.dataForViewer.dyn3DSeqForViewer import Dyn3DSeqForViewer
 
 
 class DynamicImage3DViewer(Image3DViewer):

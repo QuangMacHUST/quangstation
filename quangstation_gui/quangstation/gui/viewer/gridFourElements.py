@@ -2,8 +2,8 @@ from PyQt5 import QtCore
 from PyQt5.QtCore import QSize
 from PyQt5.QtWidgets import QHBoxLayout, QFrame, QSplitter, QVBoxLayout
 
-from opentps.gui.viewer.doseComparisonDataViewer import DoseComparisonDataViewer
-from opentps.gui.viewer.grid import Grid
+from quangstation.gui.viewer.doseComparisonDataViewer import DoseComparisonDataViewer
+from quangstation.gui.viewer.grid import Grid
 
 
 class GridFourElements(Grid):

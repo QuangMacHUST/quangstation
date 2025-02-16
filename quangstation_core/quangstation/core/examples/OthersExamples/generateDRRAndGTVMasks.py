@@ -18,15 +18,15 @@ import os
 import sys
 import numpy as np
 
-from opentps.core.processing.imageProcessing.resampler3D import crop3DDataAroundBox
-from opentps.core.io.serializedObjectIO import saveSerializedObjects, loadDataStructure
-from opentps.core.data.dynamicData._breathingSignals import SyntheticBreathingSignal
-from opentps.core.processing.deformableDataAugmentationToolBox.generateDynamicSequencesFromModel import generateDeformationListFromBreathingSignalsAndModel
-from opentps.core.processing.imageSimulation.DRRToolBox import forwardProjection
-from opentps.core.processing.imageProcessing.image2DManip import getBinaryMaskFromROIDRR, get2DMaskCenterOfMass
-from opentps.core.processing.imageProcessing.crop2D import getBoxAroundROI
-from opentps.core.processing.imageProcessing.imageTransform3D import getVoxelIndexFromPosition
-from opentps.core.processing.deformableDataAugmentationToolBox.modelManipFunctions import getAverageModelValuesAroundPosition
+from quangstation.core.processing.imageProcessing.resampler3D import crop3DDataAroundBox
+from quangstation.core.io.serializedObjectIO import saveSerializedObjects, loadDataStructure
+from quangstation.core.data.dynamicData._breathingSignals import SyntheticBreathingSignal
+from quangstation.core.processing.deformableDataAugmentationToolBox.generateDynamicSequencesFromModel import generateDeformationListFromBreathingSignalsAndModel
+from quangstation.core.processing.imageSimulation.DRRToolBox import forwardProjection
+from quangstation.core.processing.imageProcessing.image2DManip import getBinaryMaskFromROIDRR, get2DMaskCenterOfMass
+from quangstation.core.processing.imageProcessing.crop2D import getBoxAroundROI
+from quangstation.core.processing.imageProcessing.imageTransform3D import getVoxelIndexFromPosition
+from quangstation.core.processing.deformableDataAugmentationToolBox.modelManipFunctions import getAverageModelValuesAroundPosition
 
 if __name__ == '__main__':
     ## paths selection ------------------------------------
@@ -172,7 +172,7 @@ if __name__ == '__main__':
     ## get the mask in cropped version (the dynMod.midp is now cropped so its origin and gridSize has changed)
     GTVMask = gtvContour.getBinaryMask(origin=dynMod.midp.origin, gridSize=dynMod.midp.gridSize, spacing=dynMod.midp.spacing)
 
-    ## if you want to see the crop in the opentps_core you can save the data in cropped version
+    ## if you want to see the crop in the quangstation_core you can save the data in cropped version
     saveSerializedObjects(patient, savingPath + 'croppedModelAndROIs')
 
     ## get the 3D center of mass of this ROI

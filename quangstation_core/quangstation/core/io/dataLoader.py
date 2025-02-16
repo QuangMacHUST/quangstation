@@ -4,12 +4,12 @@ from typing import Sequence, Optional, Union
 import pydicom
 import logging
 
-from opentps.core.data._patientData import PatientData
-from opentps.core.data._patient import Patient
-from opentps.core.data._patientList import PatientList
-from opentps.core.io.dicomIO import readDicomCT, readDicomMRI, readDicomDose, readDicomVectorField, readDicomStruct, readDicomPlan, readDicomRigidTransform
-from opentps.core.io import mhdIO
-from opentps.core.io.serializedObjectIO import loadDataStructure
+from quangstation.core.data._patientData import PatientData
+from quangstation.core.data._patient import Patient
+from quangstation.core.data._patientList import PatientList
+from quangstation.core.io.dicomIO import readDicomCT, readDicomMRI, readDicomDose, readDicomVectorField, readDicomStruct, readDicomPlan, readDicomRigidTransform
+from quangstation.core.io import mhdIO
+from quangstation.core.io.serializedObjectIO import loadDataStructure
 
 logger = logging.getLogger(__name__)
 

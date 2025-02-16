@@ -1,12 +1,12 @@
-.. OpenTPS documentation master file, created by
+.. quangstation documentation master file, created by
    sphinx-quickstart on Tue Nov 23 11:04:03 2021.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to OpenTPS's documentation!
+Welcome to quangstation's documentation!
 ===================================
 
-**OpenTPS** is an open source treatment planning system (TPS) developed in Python
+**quangstation** is an open source treatment planning system (TPS) developed in Python
 
 .. note::
 
@@ -22,5 +22,5 @@ Contents
    :titlesonly:
 
    installation
-   opentps.core
-   opentps.gui
+   quangstation.core
+   quangstation.gui

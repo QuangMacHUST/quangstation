@@ -3,13 +3,13 @@ from typing import Sequence, Any
 import numpy as np
 import logging
 
-import opentps.core.processing.imageProcessing.filter3D as imageFilter3D
+import quangstation.core.processing.imageProcessing.filter3D as imageFilter3D
 
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.data.images._deformation3D import Deformation3D
-from opentps.core.data.images._vectorField3D import VectorField3D
-from opentps.core.processing.C_libraries.libInterp3_wrapper import interpolateTrilinear
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data.images._deformation3D import Deformation3D
+from quangstation.core.data.images._vectorField3D import VectorField3D
+from quangstation.core.processing.C_libraries.libInterp3_wrapper import interpolateTrilinear
 
 logger = logging.getLogger(__name__)
 
@@ -42,7 +42,7 @@ def resample(data:Any, spacing:Sequence[float]=None, gridSize:Sequence[int]=None
         The resampled data (if inPlace = False)
     """
 
-    from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+    from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
 
     if isinstance(data, Deformation3D):
         if not(data.velocity is None):
@@ -176,7 +176,7 @@ def resampleImage3D(image:Image3D, spacing:Sequence[float]=None, gridSize:Sequen
                 logger.info("data is filtered before downsampling")
                 image.imageArray = imageFilter3D.gaussConv(image.imageArray, sigma)
         try:
-            from opentps.core.processing.imageProcessing import sitkImageProcessing
+            from quangstation.core.processing.imageProcessing import sitkImageProcessing
             sitkImageProcessing.resize(image, spacing, origin, gridSize, fillValue=fillValue)
         except Exception as e:
             logger.info('Failed to use SITK resampler. Try OpenMP without GPU instead.')
@@ -411,7 +411,7 @@ def crop3DDataAroundBox(data, box, marginInMM=[0, 0, 0]):
                 logger.warning('In crop3DDataAroundBox, negative margins not allowed. The margin is set to 0.')
                 marginInMM[i] = 0
 
-        from opentps.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
+        from quangstation.core.data.dynamicData._dynamic3DModel import Dynamic3DModel
 
         if isinstance(data, Image3D):
             logger.info(f'Before crop image 3D origin and grid size: {data.origin}, {data.gridSize}')

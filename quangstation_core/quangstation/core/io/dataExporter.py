@@ -3,15 +3,15 @@ import os
 from enum import Enum
 from typing import Sequence
 
-from opentps.core.data.images import Image3D
-from opentps.core.data.plan import RTPlan
-from opentps.core.data import Patient
-from opentps.core.io import mhdIO
-from opentps.core.io import dicomIO
-from opentps.core.data.images import CTImage,DoseImage
-from opentps.core.data import RTStruct
-from opentps.core.io.serializedObjectIO import saveSerializedObjects
-from opentps.core.io.mcsquareIO import writeCT, writePlan, writeContours
+from quangstation.core.data.images import Image3D
+from quangstation.core.data.plan import RTPlan
+from quangstation.core.data import Patient
+from quangstation.core.io import mhdIO
+from quangstation.core.io import dicomIO
+from quangstation.core.data.images import CTImage,DoseImage
+from quangstation.core.data import RTStruct
+from quangstation.core.io.serializedObjectIO import saveSerializedObjects
+from quangstation.core.io.mcsquareIO import writeCT, writePlan, writeContours
 
 
 logger = logging.getLogger(__name__)

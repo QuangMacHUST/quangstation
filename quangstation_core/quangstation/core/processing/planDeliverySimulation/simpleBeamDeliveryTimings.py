@@ -1,8 +1,8 @@
 import numpy as np
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.io.serializedObjectIO import saveRTPlan
-from opentps.core.data.MCsquare import BDL
-from opentps.core.processing.planDeliverySimulation.irradiationDurationLUT import IrradiationDurationLUT
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.io.serializedObjectIO import saveRTPlan
+from quangstation.core.data.MCsquare import BDL
+from quangstation.core.processing.planDeliverySimulation.irradiationDurationLUT import IrradiationDurationLUT
 
 class SimpleBeamDeliveryTimings:
     """

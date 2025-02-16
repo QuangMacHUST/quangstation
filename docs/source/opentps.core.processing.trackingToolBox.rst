@@ -1,13 +1,13 @@
-opentps.core.processing.trackingToolBox package
+quangstation.core.processing.trackingToolBox package
 ===============================================
 
 Submodules
 ----------
 
-opentps.core.processing.trackingToolBox.NavigatorTracking module
+quangstation.core.processing.trackingToolBox.NavigatorTracking module
 ----------------------------------------------------------------
 
-.. automodule:: opentps.core.processing.trackingToolBox.NavigatorTracking
+.. automodule:: quangstation.core.processing.trackingToolBox.NavigatorTracking
    :members:
    :undoc-members:
    :show-inheritance:
@@ -15,7 +15,7 @@ opentps.core.processing.trackingToolBox.NavigatorTracking module
 Module contents
 ---------------
 
-.. automodule:: opentps.core.processing.trackingToolBox
+.. automodule:: quangstation.core.processing.trackingToolBox
    :members:
    :undoc-members:
    :show-inheritance:

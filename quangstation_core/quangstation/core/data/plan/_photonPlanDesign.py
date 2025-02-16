@@ -8,11 +8,11 @@ from typing import Sequence, Union
 import numpy as np
 import pydicom
 
-from opentps.core.data.plan import PhotonPlan
-from opentps.core.data.plan._robustnessPhoton import RobustnessPhoton
-from opentps.core.data.plan._rtPlanDesign import RTPlanDesign
-from opentps.core.processing.planEvaluation.robustnessEvaluation import RobustnessEvalPhoton
-from opentps.core.processing.planOptimization.planInitializer_Photons import PhotonPlanInitializer
+from quangstation.core.data.plan import PhotonPlan
+from quangstation.core.data.plan._robustnessPhoton import RobustnessPhoton
+from quangstation.core.data.plan._rtPlanDesign import RTPlanDesign
+from quangstation.core.processing.planEvaluation.robustnessEvaluation import RobustnessEvalPhoton
+from quangstation.core.processing.planOptimization.planInitializer_Photons import PhotonPlanInitializer
 
 logger = logging.getLogger(__name__)
 
@@ -101,7 +101,7 @@ class PhotonPlanDesign(RTPlanDesign):
         for beam in plan:
             plan.removeBeam(beam)
 
-        from opentps.core.data.plan import PlanPhotonBeam
+        from quangstation.core.data.plan import PlanPhotonBeam
         for i, gantryAngle in enumerate(self.gantryAngles):
             beam = PlanPhotonBeam()
             beam.gantryAngle_degree = gantryAngle

@@ -1,45 +1,44 @@
-opentps.core.data.dynamicData package
+quangstation.core.data.dynamicData package
 =====================================
 
 Submodules
 ----------
 
-opentps.core.data.dynamicData.breathingSignals module
+quangstation.core.data.dynamicData.breathingSignals module
 -----------------------------------------------------
 
-.. automodule:: opentps.core.data.dynamicData.breathingSignals
+.. automodule:: quangstation.core.data.dynamicData.breathingSignals
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.data.dynamicData.dynamic2DModel module
+quangstation.core.data.dynamicData.dynamic2DModel module
 ---------------------------------------------------
 
-.. automodule:: opentps.core.data.dynamicData.dynamic2DModel
+.. automodule:: quangstation.core.data.dynamicData.dynamic2DModel
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.data.dynamicData.dynamic2DSequence module
+quangstation.core.data.dynamicData.dynamic2DSequence module
 ------------------------------------------------------
 
-.. automodule:: opentps.core.data.dynamicData.dynamic2DSequence
+.. automodule:: quangstation.core.data.dynamicData.dynamic2DSequence
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.data.dynamicData.dynamic3DModel module
----------------------------------------------------
+quangstation---------------------------------------------------
 
-.. automodule:: opentps.core.data.dynamicData.dynamic3DModel
+.. automodule:: quangstation.core.data.dynamicData.dynamic3DModel
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.core.data.dynamicData.dynamic3DSequence module
+quangstation.core.data.dynamicData.dynamic3DSequence module
 ------------------------------------------------------
 
-.. automodule:: opentps.core.data.dynamicData.dynamic3DSequence
+.. automodule:: quangstation.core.data.dynamicData.dynamic3DSequence
    :members:
    :undoc-members:
    :show-inheritance:
@@ -47,7 +46,7 @@ opentps.core.data.dynamicData.dynamic3DSequence module
 Module contents
 ---------------
 
-.. automodule:: opentps.core.data.dynamicData
+.. automodule:: quangstation.core.data.dynamicData
    :members:
    :undoc-members:
    :show-inheritance:

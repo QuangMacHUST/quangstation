@@ -5,8 +5,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-from opentps.core.io.serializedObjectIO import loadDataStructure
-from opentps.core.processing.deformableDataAugmentationToolBox.generateRandomSamplesFromModel import generateRandomImagesFromModel, generateRandomDeformationsFromModel
+from quangstation.core.io.serializedObjectIO import loadDataStructure
+from quangstation.core.processing.deformableDataAugmentationToolBox.generateRandomSamplesFromModel import generateRandomImagesFromModel, generateRandomDeformationsFromModel
 
 if __name__ == '__main__':
 

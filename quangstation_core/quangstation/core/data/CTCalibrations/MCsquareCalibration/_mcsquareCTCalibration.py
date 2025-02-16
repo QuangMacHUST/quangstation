@@ -7,10 +7,10 @@ import os
 import numpy as np
 from scipy.interpolate import interpolate
 
-from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareHU2Material import MCsquareHU2Material
-from opentps.core.data.CTCalibrations.MCsquareCalibration._mcsquareMolecule import MCsquareMolecule
-from opentps.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
-from opentps.core.data.CTCalibrations._piecewiseHU2Density import PiecewiseHU2Density
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareHU2Material import MCsquareHU2Material
+from quangstation.core.data.CTCalibrations.MCsquareCalibration._mcsquareMolecule import MCsquareMolecule
+from quangstation.core.data.CTCalibrations._abstractCTCalibration import AbstractCTCalibration
+from quangstation.core.data.CTCalibrations._piecewiseHU2Density import PiecewiseHU2Density
 
 
 class MCsquareCTCalibration(AbstractCTCalibration, PiecewiseHU2Density, MCsquareHU2Material):
@@ -260,7 +260,7 @@ class MCsquareCTCalibration(AbstractCTCalibration, PiecewiseHU2Density, MCsquare
         NotImplementedError
             If the conversion is not implemented.
         """
-        from opentps.core.data.CTCalibrations.RayStationCalibration._rayStationCTCalibration import RayStationCTCalibration
+        from quangstation.core.data.CTCalibrations.RayStationCalibration._rayStationCTCalibration import RayStationCTCalibration
 
         if isinstance(ctCalibration, RayStationCTCalibration):
             return ctCalibration.toMCSquareCTCalibration()
@@ -270,7 +270,7 @@ class MCsquareCTCalibration(AbstractCTCalibration, PiecewiseHU2Density, MCsquare
 # test
 if __name__ == '__main__':
     import os
-    import opentps.core.processing.doseCalculation.MCsquare as MCsquareModule
+    import quangstation.core.processing.doseCalculation.MCsquare as MCsquareModule
 
     MCSquarePath = str(MCsquareModule.__path__[0])
     scannerPath = os.path.join(MCSquarePath, 'scanners', 'UCL_Toshiba')

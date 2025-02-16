@@ -11,9 +11,9 @@ This file contains an example on how to:
 import os
 import sys
 
-from opentps.core.processing.imageProcessing.resampler3D import crop3DDataAroundBox
-from opentps.core.processing.segmentation.segmentation3D import getBoxAroundROI
-from opentps.core.io.serializedObjectIO import loadDataStructure
+from quangstation.core.processing.imageProcessing.resampler3D import crop3DDataAroundBox
+from quangstation.core.processing.segmentation.segmentation3D import getBoxAroundROI
+from quangstation.core.io.serializedObjectIO import loadDataStructure
 
 if __name__ == '__main__':
 

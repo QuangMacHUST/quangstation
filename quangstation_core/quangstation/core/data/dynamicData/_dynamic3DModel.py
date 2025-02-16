@@ -1,8 +1,8 @@
 import numpy as np
 import logging
 
-from opentps.core.data._patientData import PatientData
-import opentps.core.processing.registration.midPosition as midPosition
+from quangstation.core.data._patientData import PatientData
+import quangstation.core.processing.registration.midPosition as midPosition
 from concurrent.futures import ProcessPoolExecutor
 
 logger = logging.getLogger(__name__)

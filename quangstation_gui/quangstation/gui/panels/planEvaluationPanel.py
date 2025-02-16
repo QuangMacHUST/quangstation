@@ -3,12 +3,12 @@ from datetime import datetime
 
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import Qt, pyqtSignal
-from opentps.core.data import Patient
-from opentps.core.data.plan import RTPlan
-from opentps.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
-from opentps.core.processing.planEvaluation.robustnessEvaluation import RobustnessEvalProton
-from opentps.gui.panels.patientDataWidgets import PatientDataComboBox
-from opentps.gui.panels.planDesignPanel.robustnessSettings import RobustnessSettings
+from quangstation.core.data import Patient
+from quangstation.core.data.plan import RTPlan
+from quangstation.core.processing.doseCalculation.protons.mcsquareDoseCalculator import MCsquareDoseCalculator
+from quangstation.core.processing.planEvaluation.robustnessEvaluation import RobustnessEvalProton
+from quangstation.gui.panels.patientDataWidgets import PatientDataComboBox
+from quangstation.gui.panels.planDesignPanel.robustnessSettings import RobustnessSettings
 
 
 class PlanEvaluationPanel(QWidget):
@@ -141,7 +141,7 @@ class PlanEvaluationPanel(QWidget):
         scenarios = doseCalculator.MCsquare_RobustScenario_calculation(ct, plan, AllContours)
 
         # save data
-        output_path = os.path.join(self.data_path, "OpenTPS")
+        output_path = os.path.join(self.data_path, "quangstation")
         if not os.path.isdir(output_path):
             os.mkdir(output_path)
         output_folder = os.path.join(output_path,

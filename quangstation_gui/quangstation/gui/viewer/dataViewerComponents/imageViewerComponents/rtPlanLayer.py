@@ -7,10 +7,10 @@ from vtkmodules.vtkCommonDataModel import vtkPolyLine, vtkCellArray, vtkPolyData
 from vtkmodules.vtkFiltersSources import vtkSphereSource, vtkLineSource
 from vtkmodules.vtkRenderingCore import vtkActor, vtkPolyDataMapper
 
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.data.plan import PlanProtonBeam
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.processing.imageProcessing import imageTransform3D
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.data.plan import PlanProtonBeam
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.processing.imageProcessing import imageTransform3D
 
 
 class BeamLayer:

@@ -7,22 +7,22 @@ import pydicom
 import datetime
 sys.path.append('..')
 
-from opentps.core.data.images import CTImage
-from opentps.core.data.images import ROIMask
-from opentps.core.data.plan import PlanDesign
-from opentps.core.data import DVH
-from opentps.core.data import Patient
-from opentps.core.data.plan import FidObjective
-from opentps.core.io import mcsquareIO
-from opentps.core.io.dataLoader import readData
-from opentps.core.io.scannerReader import readScanner
-from opentps.core.io.serializedObjectIO import loadRTPlan, saveRTPlan
-from opentps.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
-from opentps.core.processing.doseCalculation.mcsquareDoseCalculator import MCsquareDoseCalculator
-from opentps.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
-from opentps.core.processing.planOptimization.planOptimization import IMPTPlanOptimizer
-from opentps.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
-from opentps.core.io.dicomIO import writeRTDose, readDicomDose
+from quangstation.core.data.images import CTImage
+from quangstation.core.data.images import ROIMask
+from quangstation.core.data.plan import PlanDesign
+from quangstation.core.data import DVH
+from quangstation.core.data import Patient
+from quangstation.core.data.plan import FidObjective
+from quangstation.core.io import mcsquareIO
+from quangstation.core.io.dataLoader import readData
+from quangstation.core.io.scannerReader import readScanner
+from quangstation.core.io.serializedObjectIO import loadRTPlan, saveRTPlan
+from quangstation.core.processing.doseCalculation.doseCalculationConfig import DoseCalculationConfig
+from quangstation.core.processing.doseCalculation.mcsquareDoseCalculator import MCsquareDoseCalculator
+from quangstation.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
+from quangstation.core.processing.planOptimization.planOptimization import IMPTPlanOptimizer
+from quangstation.core.processing.imageProcessing.resampler3D import resampleImage3DOnImage3D
+from quangstation.core.io.dicomIO import writeRTDose, readDicomDose
 
 
 logger = logging.getLogger(__name__)
@@ -53,7 +53,7 @@ def run():
 
         # CT
         patient = Patient()
-        patient.name = f'Miro_OpenTPS_4DCT'
+        patient.name = f'Miro_quangstation_4DCT'
         Patient.id = f'12082024'
         Patient.birthDate = dt.strftime('%Y%m%d')
         patient.sex = ""

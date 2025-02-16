@@ -9,11 +9,11 @@ from PyQt5.QtWidgets import QWidget, QHBoxLayout, QMainWindow, QVBoxLayout, QPus
 from vtkmodules import vtkCommonMath
 from vtkmodules.vtkInteractionWidgets import vtkBoxWidget2, vtkBoxRepresentation
 
-from opentps.core.data.images._image3D import Image3D
-from opentps.core.processing.imageProcessing.resampler3D import crop3DDataAroundBox
-from opentps.gui.panels.patientDataPanel.patientDataSelection import PatientDataSelection
-from opentps.gui.viewer.dataViewerComponents.image3DViewer import Image3DViewer
-from opentps.gui.viewer.dataViewer import DroppedObject
+from quangstation.core.data.images._image3D import Image3D
+from quangstation.core.processing.imageProcessing.resampler3D import crop3DDataAroundBox
+from quangstation.gui.panels.patientDataPanel.patientDataSelection import PatientDataSelection
+from quangstation.gui.viewer.dataViewerComponents.image3DViewer import Image3DViewer
+from quangstation.gui.viewer.dataViewer import DroppedObject
 
 
 class CropWidget(QMainWindow):

@@ -8,14 +8,14 @@ import os
 from pathlib import Path
 import sys
 
-from opentps.core.io.dataLoader import readData
-from opentps.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
-from opentps.core.io.serializedObjectIO import saveSerializedObjects
+from quangstation.core.io.dataLoader import readData
+from quangstation.core.data.dynamicData._dynamic3DSequence import Dynamic3DSequence
+from quangstation.core.io.serializedObjectIO import saveSerializedObjects
 
 if __name__ == '__main__':
 
     # Get the current working directory, its parent, then add the testData folder at the end of it
-    testDataPath = os.path.join(Path(os.getcwd()).parent.absolute(), 'opentps/testData/')
+    testDataPath = os.path.join(Path(os.getcwd()).parent.absolute(), 'quangstation/testData/')
 
     ## read a serialized dynamic sequence
     dataPath = testDataPath + "4DCTDicomLight"

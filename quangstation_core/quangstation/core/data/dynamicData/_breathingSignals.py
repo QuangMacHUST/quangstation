@@ -5,8 +5,8 @@ Created on Wed Feb 23 09:09:09 2022
 @author: grotsartdehe
 """
 import numpy as np
-from opentps.core.data._patientData import PatientData
-from opentps.core.processing.deformableDataAugmentationToolBox.BreathingSignalGeneration import signalGeneration, signal2DGeneration, signal3DGeneration
+from quangstation.core.data._patientData import PatientData
+from quangstation.core.processing.deformableDataAugmentationToolBox.BreathingSignalGeneration import signalGeneration, signal2DGeneration, signal3DGeneration
 
 
 #real breathing data 

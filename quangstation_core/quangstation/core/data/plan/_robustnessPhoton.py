@@ -3,8 +3,8 @@ __all__ = ['RobustnessPhoton','RobustScenario']
 import itertools
 import logging
 import numpy as np
-from opentps.core.data._sparseBeamlets import SparseBeamlets
-from opentps.core.data.plan._robustness import Robustness
+from quangstation.core.data._sparseBeamlets import SparseBeamlets
+from quangstation.core.data.plan._robustness import Robustness
 
 logger = logging.getLogger(__name__)
 

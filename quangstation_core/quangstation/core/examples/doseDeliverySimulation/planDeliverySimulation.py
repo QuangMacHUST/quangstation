@@ -2,12 +2,12 @@ import matplotlib.pyplot as plt
 import logging
 import os
 
-from opentps.core.io.dataLoader import readData
-from opentps.core.io.dicomIO import readDicomPlan, readDicomStruct
-from opentps.core.data.images._ctImage import CTImage
-from opentps.core.data.images._deformation3D import Deformation3D
-from opentps.core.data._rtStruct import RTStruct
-from opentps.core.processing.planDeliverySimulation.planDeliverySimulation import *
+from quangstation.core.io.dataLoader import readData
+from quangstation.core.io.dicomIO import readDicomPlan, readDicomStruct
+from quangstation.core.data.images._ctImage import CTImage
+from quangstation.core.data.images._deformation3D import Deformation3D
+from quangstation.core.data._rtStruct import RTStruct
+from quangstation.core.processing.planDeliverySimulation.planDeliverySimulation import *
 
 logger = logging.getLogger(__name__)
 

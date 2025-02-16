@@ -4,7 +4,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-from opentps.core.processing.imageProcessing import cupyImageProcessing
+from quangstation.core.processing.imageProcessing import cupyImageProcessing
 def gaussConv(data, sigma, truncate=2.5, mode="reflect", tryGPU=True):
     """Apply Gaussian convolution on input data.
 

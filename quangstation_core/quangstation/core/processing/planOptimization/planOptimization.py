@@ -5,7 +5,7 @@ from typing import Iterable
 import numpy as np
 import scipy.sparse as sp
 
-from opentps.core.processing.planOptimization.objectives.doseFidelity import DoseFidelity
+from quangstation.core.processing.planOptimization.objectives.doseFidelity import DoseFidelity
 
 try:
     import sparse_dot_mkl
@@ -20,16 +20,16 @@ try:
     cupy_available = True
 except:
     cupy_available = False
-from opentps.core.data.plan._photonPlan import PhotonPlan
-from opentps.core.data.plan._rtPlan import RTPlan
-from opentps.core.data.plan._protonPlan import ProtonPlan
-from opentps.core.processing.planOptimization.solvers import sparcling, \
+from quangstation.core.data.plan._photonPlan import PhotonPlan
+from quangstation.core.data.plan._rtPlan import RTPlan
+from quangstation.core.data.plan._protonPlan import ProtonPlan
+from quangstation.core.processing.planOptimization.solvers import sparcling, \
     beamletFree
-from opentps.core.processing.planOptimization.solvers import scipyOpt, bfgs, localSearch
-from opentps.core.processing.planOptimization.solvers import fista, gradientDescent
-from opentps.core.processing.planOptimization import planPreprocessing
+from quangstation.core.processing.planOptimization.solvers import scipyOpt, bfgs, localSearch
+from quangstation.core.processing.planOptimization.solvers import fista, gradientDescent
+from quangstation.core.processing.planOptimization import planPreprocessing
 from scipy.sparse import csc_matrix
-from opentps.core.data.images._doseImage import DoseImage
+from quangstation.core.data.images._doseImage import DoseImage
 
 
 logger = logging.getLogger(__name__)
@@ -467,7 +467,7 @@ class IntensityModulationOptimizer(PlanOptimizer):
         elif self.method == "FISTA":
             self.solver = fista.FISTA(**kwargs)
         elif self.method == "LP":
-            from opentps.core.processing.planOptimization.solvers import lp
+            from quangstation.core.processing.planOptimization.solvers import lp
             self.xSquared = False
             self.solver = lp.LP(self.plan, **kwargs)
         else:
@@ -618,7 +618,7 @@ class ARCPTPlanOptimizer(PlanOptimizer):
         elif method == 'LS':
             self.solver = localSearch.LS()
         elif method == 'MIP':
-            from opentps.core.processing.planOptimization.solvers import mip
+            from quangstation.core.processing.planOptimization.solvers import mip
             self.xSquared = False
             self.solver = mip.MIP(self.plan, **kwargs)
         elif method == 'SPArcling':

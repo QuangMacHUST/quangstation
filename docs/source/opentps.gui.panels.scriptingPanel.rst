@@ -1,29 +1,29 @@
-opentps.gui.panels.scriptingPanel package
+quangstation.gui.panels.scriptingPanel package
 =========================================
 
 Submodules
 ----------
 
-opentps.gui.panels.scriptingPanel.pythonHighlighter module
+quangstation.gui.panels.scriptingPanel.pythonHighlighter module
 ----------------------------------------------------------
 
-.. automodule:: opentps.gui.panels.scriptingPanel.pythonHighlighter
+.. automodule:: quangstation.gui.panels.scriptingPanel.pythonHighlighter
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.panels.scriptingPanel.scriptingPanel module
+quangstation.gui.panels.scriptingPanel.scriptingPanel module
 -------------------------------------------------------
 
-.. automodule:: opentps.gui.panels.scriptingPanel.scriptingPanel
+.. automodule:: quangstation.gui.panels.scriptingPanel.scriptingPanel
    :members:
    :undoc-members:
    :show-inheritance:
 
-opentps.gui.panels.scriptingPanel.scriptingWindow module
+quangstation.gui.panels.scriptingPanel.scriptingWindow module
 --------------------------------------------------------
 
-.. automodule:: opentps.gui.panels.scriptingPanel.scriptingWindow
+.. automodule:: quangstation.gui.panels.scriptingPanel.scriptingWindow
    :members:
    :undoc-members:
    :show-inheritance:
@@ -31,7 +31,7 @@ opentps.gui.panels.scriptingPanel.scriptingWindow module
 Module contents
 ---------------
 
-.. automodule:: opentps.gui.panels.scriptingPanel
+.. automodule:: quangstation.gui.panels.scriptingPanel
    :members:
    :undoc-members:
    :show-inheritance:

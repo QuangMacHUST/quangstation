@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import logging
 import os
 
-from opentps.core.data.images import CTImage
-from opentps.core.processing.imageSimulation.ForwardProjectorTigre import forwardProjectionTigre
+from quangstation.core.data.images import CTImage
+from quangstation.core.processing.imageSimulation.ForwardProjectorTigre import forwardProjectionTigre
 
 logger = logging.getLogger(__name__)
 
