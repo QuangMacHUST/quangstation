@@ -1,20 +1,3 @@
-[tool.poetry]
-name = "opentps"
-homepage = "http://opentps.org/"
-version = "2.0.1"
-readme = "README.md"
-license = "Apache-2.0"
-description = "Open source TPS for advanced proton therapy"
-authors = ["Sylvain Deffet <sylvaindeffet@gmail.com>",
-    "Damien Dasnoy <damien.dasnoy@uclouvain.be>",
-    "Valentin Hamaide <valentin.hamaide@uclouvain.be>",
-    "Guillaume Janssens <guillaume.janssens@iba-group.com>",
-    "Kevin Souris <kevin.souris@iba-group.com>",
-    "Sophie Wuyckens <sophie.wuyckens@uclouvain.be>"]
-packages = [
-    { include = "opentps/core", from="opentps_core"},
-    { include = "opentps/gui", from="opentps_gui"}
-]
 
 [tool.poetry.dependencies]
 python = "~3.11"
