@@ -1,1 +1,5 @@
-Requirement already satisfied: numpy in e:\hoctap\anaconda3\envs\quangstation\lib\site-packages (2.0.2)
+Collecting numpy
+  Using cached numpy-2.0.2-cp39-cp39-win_amd64.whl.metadata (59 kB)
+Using cached numpy-2.0.2-cp39-cp39-win_amd64.whl (15.9 MB)
+Installing collected packages: numpy
+Successfully installed numpy-2.0.2

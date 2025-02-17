@@ -10,4 +10,4 @@ call conda activate quangstation
 
 set "PYTHONPATH=%~dp0core;%~dp0gui"
 
-python "%~dp0gui\main.py"
+python "%~dp0quangstation_gui\quangstation\gui\main.py"

@@ -21,4 +21,4 @@ source $ENV_PATH/bin/activate
 export PYTHONPATH="$SCRIPT_DIR/core:$SCRIPT_DIR/gui"
 
 # Run main.py
-python3 "$SCRIPT_DIR/gui/main.py"
+python3 "$SCRIPT_DIR/quangstation_gui/quangstation/gui/main.py"

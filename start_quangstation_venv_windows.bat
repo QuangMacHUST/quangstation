@@ -21,4 +21,4 @@ echo Virtual environment 'quangstation_venv' activated
 REM Run main.py
 set "PYTHONPATH=%~dp0quangstation_core;%~dp0quangstation_gui"
 
-python "%~dp0gui\main.py"
+python "%~dp0quangstation_gui\quanstation\gui\main.py"
