@@ -2,7 +2,7 @@ from typing import Sequence
 import numpy as np
 import logging
 
-from quangstation.core.data.images._roiMask import ROIMask
+#from quangstation.core.data.images._roiMask import ROIMask
 from quangstation.core.data.images._image3D import Image3D
 from quangstation.core.data._roiContour import ROIContour
 

@@ -1,5 +1,5 @@
 from quangstation.core._event import Event
-from oquangstation.core._api import APIInterpreter
+from quangstation.core._api import APIInterpreter
 from quangstation.core._loggingConfig import loggerConfig
 loggerConfig().configure()
 

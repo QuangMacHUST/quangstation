@@ -14,8 +14,8 @@ class MainWindow(QMainWindow):
     def __init__(self, viewControler):
         QMainWindow.__init__(self)
 
-        self.setWindowTitle('quangstation')
-        self.setWindowIcon(QIcon(IconModule.__path__[0] + os.path.sep + 'OpenTPS_icon.png'))
+        self.setWindowTitle('Quang Station')
+        self.setWindowIcon(QIcon(IconModule.__path__[0] + os.path.sep + 'quangstation_logo.png'))
         self.resize(1400, 920)
 
         centralWidget = QWidget()

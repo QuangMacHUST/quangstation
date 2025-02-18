@@ -8,6 +8,6 @@ if not defined CONDA_PREFIX (
 
 call conda activate quangstation
 
-set "PYTHONPATH=%~dp0core;%~dp0gui"
+set "PYTHONPATH=%~dp0quangstation_core;%~dp0quangstation_gui"
 
 python "%~dp0quangstation_gui\quangstation\gui\main.py"
