@@ -36,7 +36,7 @@ def runWithMainWindow(mainWindow):
     #display a message box
     msg = QMessageBox()
     msg.setIcon(QMessageBox.Warning)
-    msg.setText(" ------------------------------DISCLAIMER------------------------------ \nquangstation is not a medical device, it is purely intended for research purposes and should only be used as such. It is neither FDA or CE approved.")
+    msg.setText("Đây là ứng dụng phục vụ cho mục đích nghiên cứu và học tập cho sinh viên, tuyệt đối không kinh doanh, lạm dụng.")
     msg.setFont(QFont("Arial", 12))
     msg.setWindowTitle("Disclaimer")
     msg.setStandardButtons(QMessageBox.Ok)
