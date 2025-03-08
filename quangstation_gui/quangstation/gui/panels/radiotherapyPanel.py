@@ -160,7 +160,7 @@ class RadiotherapyPanel(QWidget):
         self._calculate_dose_btn.clicked.connect(self._onCalculateDose)
         
         # Connect to patient/CT changes to update available structures
-        self._viewController.selectedImageChangedSignal.connect(self._onSelectedImageChanged)
+        self._viewController.mainImageChangedSignal.connect(self._onSelectedImageChanged)
         
         # Connect to technique signals
         for technique in self._techniques.values():

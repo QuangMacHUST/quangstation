@@ -6,7 +6,7 @@ if not defined CONDA_PREFIX (
      exit /b
 )
 
-call conda activate quangstation_new
+call conda activate quangstation_310
 
 set "PYTHONPATH=%~dp0quangstation_core;%~dp0quangstation_gui"
 

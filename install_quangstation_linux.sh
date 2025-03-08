@@ -28,13 +28,13 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install python3.9
 
 # Add Python path to system environment
-echo 'export PATH="/usr/bin/python3.9:$PATH"' >> ~/.bashrc
+echo 'export PATH="/usr/bin/python3.10.16:$PATH"' >> ~/.bashrc
 source ~/.bashrc
-echo "Python 3.9 installed and path added to system environment."
+echo "Python 3.10.16 installed and path added to system environment."
 
 # Check if Python 3.9 is installed 
-if ! command -v python3.9 &>/dev/null; then
-    echo "Python 3.9 is not installed. Please install it and try again."
+if ! command -v python3.10.16 &>/dev/null; then
+    echo "Python 3.10.16 is not installed. Please install it and try again."
     exit 1
 fi
 
@@ -55,7 +55,7 @@ echo 'export LD_LIBRARY_PATH=/opt/intel/mkl/lib/intel64:$LD_LIBRARY_PATH' | sudo
 # curl -sSL https://install.python-poetry.org | python3 -
 
 # Create a virtual environment
-sudo apt-get install python3.9-venv
+sudo apt-get install python3.10.16-venv
 python3.9 -m venv $ENV_PATH
 
 # Activate the virtual environment
@@ -81,6 +81,7 @@ pip3 install scikit-image
 pip3 install tensorflow
 pip3 install keras
 pip3 install pymedphys==0.40.0
+pip3 install cupy-cuda12x
 # pip3 install cupy
 
 echo

@@ -1,4 +1,3 @@
-
 from quangstation.core.data._dvh import *
 from quangstation.core.data._patient import *
 from quangstation.core.data._patientData import *
@@ -7,6 +6,7 @@ from quangstation.core.data._roiContour import *
 from quangstation.core.data._rtStruct import *
 from quangstation.core.data._sparseBeamlets import *
 from quangstation.core.data._transform3D import *
+from quangstation.core.data.images._roiMask import ROIMask
 
 import quangstation.core.data.CTCalibrations as CTCalibrations
 import quangstation.core.data.dynamicData as dynamicData

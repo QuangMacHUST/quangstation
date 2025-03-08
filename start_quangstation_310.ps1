@@ -1,5 +1,5 @@
-# Script khởi động Quangstation với môi trường Conda mới
-# Để chạy: powershell -ExecutionPolicy Bypass -File start_quangstation_new.ps1
+# Script khởi động Quangstation với môi trường Conda
+# Để chạy: powershell -ExecutionPolicy Bypass -File start_quangstation_310.ps1
 
 # Kiểm tra Anaconda
 if (-not $env:CONDA_EXE) {

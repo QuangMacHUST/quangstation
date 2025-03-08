@@ -6,13 +6,13 @@ if not defined CONDA_PREFIX (
     exit /b
 )
 
-conda env list | findstr /c:"quangstation" >nul 2>&1
+conda env list | findstr /c:"quangstation_310" >nul 2>&1
 if %errorlevel% == 1 (
-    echo Creating the quangstation environment
-    call conda create --name quangstation python=3.9
+    echo Creating the quangstation_310 environment
+    call conda create --name quangstation_310 python=3.10
 )
 
-call conda activate quangstation
+call conda activate quangstation_310
 
 pip3 install --upgrade pip
 pip3 install pydicom
@@ -31,7 +31,7 @@ pip3 install pymedphys==0.40.0
 
 pip3 install tensorflow
 pip3 install keras
-rem pip3 install cupy
+pip3 install cupy-cuda12x
 
 echo
 echo Start the quangstation GUI by running

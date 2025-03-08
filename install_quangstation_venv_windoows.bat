@@ -47,7 +47,7 @@ pip install numpy>=1.24.0
 pip install scipy
 pip install matplotlib
 pip install Pillow
-pip install PyQt5==5.15.10
+pip install PyQt5==5.15.7
 pip install PyQt5-Qt5=='5.15.2'
 pip install pyqtgraph
 pip install sparse_dot_mkl
@@ -58,7 +58,7 @@ pip install scikit-image
 pip install tensorflow
 pip install keras
 pip3 install pymedphys==0.40.0
-REM pip3 install cupy
+pip3 install cupy-cuda12x
 
 echo All packages installed successfully.
 
