@@ -15,6 +15,8 @@ from quangstation.gui.panels.planOptimizationPanel.planOptiPanel import PlanOpti
 from quangstation.gui.panels.roiPanel import ROIPanel
 from quangstation.gui.panels.scriptingPanel.scriptingPanel import ScriptingPanel
 from quangstation.gui.panels.registrationPanel import RegistrationPanel
+from quangstation.gui.panels.contouringPanel import ContouringPanel
+from quangstation.gui.panels.radiotherapyPanel import RadiotherapyPanel
 
 logger = logging.getLogger(__name__)
 
@@ -54,6 +56,8 @@ class MainToolbar(QToolBox):
         # initialize toolbox panels
         patientDataPanel = PatientDataPanel(self._viewController)
         roiPanel = ROIPanel(self._viewController)
+        contouringPanel = ContouringPanel(self._viewController)
+        radiotherapyPanel = RadiotherapyPanel(self._viewController)
         planDesignPanel = PlanDesignPanel(self._viewController)
         planDesignPanel.setMaximumWidth(self._maxWidth)
         planOptiPanel = PlanOptiPanel(self._viewController)
@@ -70,6 +74,8 @@ class MainToolbar(QToolBox):
 
         self.addWidget(patientDataPanel, 'Patient data')
         self.addWidget(roiPanel, 'ROI')
+        self.addWidget(contouringPanel, 'Contouring')
+        self.addWidget(radiotherapyPanel, 'Radiotherapy')
         self.addWidget(planDesignPanel, 'Plan design')
         self.addWidget(planOptiPanel, 'Plan optimization')
         self.addWidget(dosePanel, 'Dose computation')
